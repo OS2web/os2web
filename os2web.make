@@ -160,6 +160,8 @@ projects[strongarm][subdir] = "contrib"
 
 projects[token][subdir] = "contrib"
 
+projects[transliteration][subdir] = "contrib"
+
 projects[variable][subdir] = "contrib"
 
 projects[varnish][subdir] = "contrib"
