@@ -1,0 +1,14 @@
+name = OS2Web
+description = Basic install
+version = 0.90
+core = 7.x
+
+dependencies[] = toolbar
+
+;OS2web modules
+;; UI modules - Optional
+dependencies[] = views_ui
+dependencies[] = feeds_ui
+dependencies[] = context_ui
+dependencies[] = delta_ui
+dependencies[] = field_ui
