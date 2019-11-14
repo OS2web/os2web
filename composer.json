@@ -16,6 +16,7 @@
         }
     },
     "require": {
+        "drupal/core": "^8",
         "drupal/config_ignore": "^2.1",
         "drupal/config_split": "^1.4",
         "drupal/ctools": "^3.2",

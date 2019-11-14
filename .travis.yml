@@ -1,0 +1,40 @@
+language: php
+
+sudo: false
+
+php:
+  - 7.2
+
+services:
+  - mysql
+
+mysql:
+  database: drupal
+  username: root
+  encoding: utf8
+
+before_install:
+  - OS2WEB_PATH=$(pwd);
+
+install:
+  - mysql -e 'create database drupal;'
+  - composer global require drush/drush:8.x-dev
+  - composer global require drupal/coder
+  - export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+  - phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer
+  - echo 'sendmail_path = /bin/true' > $(php --ini|grep -m 1 "ini files in:"|cut -d ":" -f 2)/sendmail.ini
+  - phpenv rehash
+  - composer create-project drupal-composer/drupal-project:8.x-dev ../drupal --no-interaction
+  - cd ../drupal
+  - sed -i 's/"repositories":: \[/"repositories":: \[{"type":: "path","url":: "..\/os2web"\},/g' composer.json
+  - sed -i 's/"require":: {/"require":: {"os2web\/os2web":: "\*",/g' composer.json
+  - composer update
+  - cd web
+  - DRUAPL_ROOT=$(pwd)
+  - ln -s $OS2WEB_PATH $DRUAPL_ROOT/profiles/os2web
+
+script:
+  - cd $OS2WEB_PATH
+  - phpcs ./
+  - cd $DRUAPL_ROOT
+  - drush si os2web --db-url=mysql://root:@127.0.0.1/drupal --yes
