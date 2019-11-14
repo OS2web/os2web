@@ -1,16 +1,19 @@
 # OS2Web
 
-This is a basic installation profile and makefile for an OS2Web project.
+This is a Drupal 8 basic installation profile for an OS2Web project.
 
 ## Usage
 
-### Makefile
+### Composer
 
-Use the makefile to fetch general os2web modules and their dependencies.
+Use [drupal-composer project](https://github.com/drupal-composer/drupal-project) to fetch drupal core and os2web profile with contribution modules and their dependencies.
 
 Example:
 ```
-> drush make os2web.make {path to document root}
+composer create-project drupal-composer/drupal-project:8.x-dev os2web --no-interaction
+cd os2web
+composer require os2web/os2web
+drush si os2web --db-url=mysql://db_user:db_pass@mysql_host/db_name --account-pass=admin -y
 ```
 
 ### Installation profile

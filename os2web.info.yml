@@ -1,0 +1,32 @@
+name: OS2Web
+type: profile
+description: 'OS2Web installation profile.'
+core: 8.x
+install:
+  # Drupal core
+  - node
+  - block
+  - ckeditor
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - options
+  - image
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - field_ui
+  - file
+  - views
+  - telephone
+
+  # Contrib
+  - admin_toolbar
+
+themes:
+  - seven
+  - bartik
