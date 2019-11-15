@@ -26,8 +26,13 @@ install:
   - phpenv rehash
   - composer create-project drupal-composer/drupal-project:8.x-dev ../drupal --no-interaction
   - cd ../drupal
-  - sed -i 's/"repositories":: \[/"repositories":: \[{"type":: "path","url":: "..\/os2web"\},/g' composer.json
-  - sed -i 's/"require":: {/"require":: {"os2web\/os2web":: "\*",/g' composer.json
+# See definition of variabled in Travis CI config.
+#  - export REPOSITORIES='"repositories": \['
+#  - export REPOSITORIES_REPLACE='"repositories": \[{"type": "path","url": "..\/os2web"\},'
+#  - export REQUIRE='"require": {'
+#  - export REQUIRE_REPLACE='"require": {"os2web\/os2web": "\*",'
+  - sed -i "s/$REPOSITORIES/$REPOSITORIES_REPLACE/g" composer.json
+  - sed -i "s/$REQUIRE/$REQUIRE_REPLACE/g" composer.json
   - composer update
   - cd web
   - DRUAPL_ROOT=$(pwd)
@@ -35,6 +40,8 @@ install:
 
 script:
   - cd $OS2WEB_PATH
+  - ls -al
   - phpcs ./
   - cd $DRUAPL_ROOT
+  - ls -al
   - drush si os2web --db-url=mysql://root:@127.0.0.1/drupal --yes
