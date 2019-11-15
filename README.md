@@ -1,4 +1,4 @@
-# OS2Web
+# OS2Web [![Build Status](https://travis-ci.org/bellcom/os2web.svg?branch=8.x)](https://travis-ci.org/bellcom/os2web)
 
 This is a Drupal 8 basic installation profile for an OS2Web project.
 
