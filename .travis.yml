@@ -41,7 +41,7 @@ install:
 script:
   - cd $OS2WEB_PATH
   - ls -al
-  - phpcs --standard=Drupal ./
+  - phpcs --standard=Drupal --ignore=*.md ./
   - cd $DRUAPL_ROOT
   - ls -al
   - drush si os2web --db-url=mysql://root:@127.0.0.1/drupal --yes

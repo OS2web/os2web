@@ -6,7 +6,6 @@
  */
 
 use Drupal\user\Entity\User;
-use Drupal\shortcut\Entity\Shortcut;
 
 /**
  * Implements hook_install().
