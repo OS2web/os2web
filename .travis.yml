@@ -20,6 +20,7 @@ install:
   - mysql -e 'create database drupal;'
   - composer global require drush/drush:8.x-dev
   - composer global require drupal/coder
+  - composer global require mglaman/drupal-check
   - export PATH="$HOME/.config/composer/vendor/bin:$PATH"
   - phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer
   - echo 'sendmail_path = /bin/true' > $(php --ini|grep -m 1 "ini files in:"|cut -d ":" -f 2)/sendmail.ini
@@ -36,12 +37,10 @@ install:
   - composer update
   - cd web
   - DRUAPL_ROOT=$(pwd)
-  - ln -s $OS2WEB_PATH $DRUAPL_ROOT/profiles/os2web
 
 script:
   - cd $OS2WEB_PATH
-  - ls -al
   - phpcs --standard=Drupal --ignore=*.md ./
+  - drupal-check $DRUAPL_ROOT/profiles
   - cd $DRUAPL_ROOT
-  - ls -al
   - drush si os2web --db-url=mysql://root:@127.0.0.1/drupal --yes
