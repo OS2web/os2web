@@ -29,7 +29,7 @@ install:
   - cd ../drupal
 # See definition of variabled in Travis CI config.
 #  - export REPOSITORIES='"repositories": \['
-#  - export REPOSITORIES_REPLACE='"repositories": \[{"type": "path","url": "..\/os2web"\},'
+#  - export REPOSITORIES_REPLACE='"repositories": \[\{"type": "path","url": "..\/os2web", "options": \{"symlink": false\}\},\},'
 #  - export REQUIRE='"require": {'
 #  - export REQUIRE_REPLACE='"require": {"os2web\/os2web": "\*",'
   - sed -i "s/$REPOSITORIES/$REPOSITORIES_REPLACE/g" composer.json
