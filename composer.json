@@ -14,15 +14,31 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
-        "os2web_simplesaml": {
-            "type": "github",
-            "url": "https://github.com/OS2web/os2web_simplesaml",
-            "no-api": true
+        {
+            "type": "package",
+            "package": {
+                "name": "os2web/os2web_simplesaml",
+                "version": "2.0",
+                "type":"drupal-module",
+                "source": {
+                    "url": "https://github.com/OS2web/os2web_simplesaml",
+                    "type": "git",
+                    "reference": "8.x"
+                }
+            }
         },
-        "os2web_simplesaml_checklist": {
-            "type": "github",
-            "url": "https://github.com/OS2web/os2web_simplesaml_checklist",
-            "no-api": true
+        {
+            "type": "package",
+            "package": {
+                "name": "os2web/os2web_simplesaml_checklist",
+                "version": "2.0",
+                "type":"drupal-module",
+                "source": {
+                    "url": "https://github.com/OS2web/os2web_simplesaml_checklist",
+                    "type": "git",
+                    "reference": "8.x"
+                }
+            }
         }
     },
     "require": {
@@ -51,7 +67,7 @@
         "drupal/token": "^1.5",
         "drupal/entity": "^1.0-rc3",
         "drupal/admin_toolbar": "^2.0",
-        "os2web/os2web_simplesaml": "8.x-dev",
-        "os2web/os2web_simplesaml_checklist": "8.x-dev"
+        "os2web/os2web_simplesaml": "^2.0",
+        "os2web/os2web_simplesaml_checklist": "^2.0",
     }
 }
