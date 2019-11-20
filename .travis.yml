@@ -18,14 +18,14 @@ before_install:
 
 install:
   - mysql -e 'create database drupal;'
-  - composer global require drush/drush:8.x-dev
-  - composer global require drupal/coder
-  - composer global require mglaman/drupal-check
-  - composer global require friendsoftwig/twigcs
+  - composer global require drush/drush:8.x-dev drupal/coder mglaman/drupal-check friendsoftwig/twigcs
   - export PATH="$HOME/.config/composer/vendor/bin:$PATH"
   - phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer
   - echo 'sendmail_path = /bin/true' > $(php --ini|grep -m 1 "ini files in:"|cut -d ":" -f 2)/sendmail.ini
   - phpenv rehash
+  - nvm install node
+  - nvm use node
+  - npm install --global yarn
   - composer create-project drupal-composer/drupal-project:8.x-dev ../drupal --no-interaction
   - cd ../drupal
 # See definition of variabled in Travis CI config.
@@ -36,13 +36,18 @@ install:
   - sed -i "s/$REPOSITORIES/$REPOSITORIES_REPLACE/g" composer.json
   - sed -i "s/$REQUIRE/$REQUIRE_REPLACE/g" composer.json
   - composer update
-  - cd web
-  - DRUAPL_ROOT=$(pwd)
+  - DRUPAL_ROOT=$(pwd)/web
+  - cd $DRUPAL_ROOT/core
+  - yarn install
+  - npm install --global eslint-config-drupal-bundle stylelint
 
 script:
   - cd $OS2WEB_PATH
   - phpcs --standard=Drupal --ignore=*.md ./
-  - drupal-check $DRUAPL_ROOT/profiles
   - twigcs $OS2WEB_PATH
-  - cd $DRUAPL_ROOT
+  - cd $DRUPAL_ROOT/core
+  - eslint $DRUPAL_ROOT/modules/contrib/os2forms
+  - stylelint --aei $DRUPAL_ROOT/modules/contrib/os2forms/**/*.css
+  - drupal-check $DRUPAL_ROOT/profiles
+  - cd $DRUPAL_ROOT
   - drush si os2web --db-url=mysql://root:@127.0.0.1/drupal --yes
