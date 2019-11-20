@@ -13,6 +13,16 @@
         "assets": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "os2web_simplesaml": {
+            "type": "github",
+            "url": "https://github.com/OS2web/os2web_simplesaml",
+            "no-api": true
+        },
+        "os2web_simplesaml_checklist": {
+            "type": "github",
+            "url": "https://github.com/OS2web/os2web_simplesaml_checklist",
+            "no-api": true
         }
     },
     "require": {
@@ -40,6 +50,8 @@
         "drupal/scheduler": "^1.1",
         "drupal/token": "^1.5",
         "drupal/entity": "^1.0-rc3",
-        "drupal/admin_toolbar": "^2.0"
+        "drupal/admin_toolbar": "^2.0",
+        "os2web/os2web_simplesaml": "dev-8.x",
+        "os2web/os2web_simplesaml_checklist": "dev-8.x"
     }
 }
