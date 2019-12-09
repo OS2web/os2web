@@ -13,7 +13,7 @@ Example:
 composer create-project drupal-composer/drupal-project:8.x-dev os2web --no-interaction
 cd os2web
 composer require os2web/os2web
-drush si os2web --db-url=mysql://db_user:db_pass@mysql_host/db_name --account-pass=admin -y
+drush si os2web --db-url=mysql://db_user:db_pass@mysql_host/db_name--locale=da --site-name="OS2Web" --account-pass=admin -y
 ```
 
 ### Installation profile
