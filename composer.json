@@ -49,8 +49,8 @@
         "drupal/inline_entity_form": "^1.0",
         "drupal/editor_advanced_link": "^1.4",
         "drupal/linkit": "^5.0",
-        "os2web/os2web_datalookup": "8.x-dev",
-        "os2web/os2web_nemlogin": "8.x-dev",
+        "os2web/os2web_datalookup": "^1.0",
+        "os2web/os2web_nemlogin": "^1.0",
         "os2web/os2web_simplesaml": "8.x-dev",
         "os2web/os2web_simplesaml_checklist": "8.x-dev"
     }
