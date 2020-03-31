@@ -48,6 +48,7 @@
         "drupal/crop": "^2.0.0-rc1",
         "drupal/inline_entity_form": "^1.0",
         "drupal/editor_advanced_link": "^1.4",
+        "drupal/chosen": "^2.9",
         "drupal/linkit": "^5.0",
         "os2web/os2web_datalookup": "^1.0",
         "os2web/os2web_nemlogin": "^1.0",
