@@ -26,6 +26,7 @@ install:
 
   # Contrib
   - admin_toolbar
+  - admin_toolbar_tools
 
 themes:
   - seven
