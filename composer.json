@@ -16,6 +16,6 @@
         }
     },
     "require": {
-        "os2core/os2core": "dev-master",
+        "os2core/os2core": "dev-master"
     }
 }
