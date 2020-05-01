@@ -16,6 +16,7 @@
         }
     },
     "require": {
-        "os2core/os2core": "dev-master"
+        "os2core/os2core": "dev-master",
+        "drupal/menu_item_extras": "^2.11"
     }
 }
