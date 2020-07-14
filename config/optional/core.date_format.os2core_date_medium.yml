@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2core_date_medium
+label: 'OS2 - mellem dato'
+locked: false
+pattern: 'j. F Y'
