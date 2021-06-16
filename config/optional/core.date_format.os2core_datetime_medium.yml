@@ -4,4 +4,4 @@ dependencies: {  }
 id: os2core_datetime_medium
 label: 'OS2 - mellem dato og tid'
 locked: false
-pattern: 'j. F Y - h:i'
+pattern: 'j. F Y - H:i'
