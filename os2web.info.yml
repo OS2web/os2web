@@ -2,6 +2,7 @@ name: OS2Web
 type: profile
 description: 'OS2Web installation profile.'
 core: 8.x
+core_version_requirement: ^8 || ^9
 install:
   # Drupal core
   - node
