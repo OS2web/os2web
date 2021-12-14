@@ -23,4 +23,25 @@ function os2web_install() {
   // We install some menu links, so we have to rebuild the router, to ensure the
   // menu links are valid.
   \Drupal::service('router.builder')->rebuildIfNeeded();
+  \Drupal::service("module_installer")
+    ->install([
+      "os2web_pagebuilder",
+      "os2web_accordion_paragraph",
+      "os2web_contact_form_paragraph",
+      "os2web_contact_paragraph",
+      "os2web_content_reference_paragraph",
+      "os2web_factbox_paragraph",
+      "os2web_files_paragraph",
+      "os2web_iframe_paragraph",
+      "os2web_image_paragraph",
+      "os2web_keyword_paragraph",
+      "os2web_menu_links_paragraph",
+      "os2web_person_information",
+      "os2web_section_paragraph",
+      "os2web_slideshow_paragraph",
+      "os2web_twi_paragraph",
+      "os2web_webform_paragraph",
+      "os2web_logging",
+      "os2web_embedded_code"
+    ]);
 }

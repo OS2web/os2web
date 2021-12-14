@@ -26,8 +26,24 @@ install:
   - telephone
 
   # Contrib
+  - action
   - admin_toolbar
   - admin_toolbar_tools
+  - dblog
+  - editor_file
+  - embed
+  - environment_indicator
+  - environment_indicator_ui
+  - honeypot
+  - mailsystem
+  - quickedit
+  - queue_mail
+  - user_delete_reassign
+  - rules
+  - workbench
+  - scheduled_transitions
+  - language
+  - queue_ui
 
 themes:
   - seven
