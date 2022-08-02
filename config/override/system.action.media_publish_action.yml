@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - media
+id: media_publish_action
+label: 'Udgiv medie'
+type: media
+plugin: 'entity:publish_action:media'
+configuration: {  }

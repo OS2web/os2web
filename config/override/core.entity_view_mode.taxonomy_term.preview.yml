@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.preview
+label: Preview
+targetEntityType: taxonomy_term
+cache: true

@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_ep_domain
+    - node.type.os2web_external_page
+id: node.os2web_external_page.field_os2web_ep_domain
+field_name: field_os2web_ep_domain
+entity_type: node
+bundle: os2web_external_page
+label: Domain
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,59 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_external_page.body
+    - field.field.node.os2web_external_page.feeds_item
+    - field.field.node.os2web_external_page.field_os2web_ep_domain
+    - field.field.node.os2web_external_page.field_os2web_ep_nid
+    - field.field.node.os2web_external_page.field_os2web_ep_url
+    - node.type.os2web_external_page
+  module:
+    - text
+    - user
+id: node.os2web_external_page.default
+targetEntityType: node
+bundle: os2web_external_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_os2web_ep_domain:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_os2web_ep_nid:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_os2web_ep_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  search_api_excerpt: true

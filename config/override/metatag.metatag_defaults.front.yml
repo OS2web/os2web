@@ -1,0 +1,8 @@
+langcode: da
+status: true
+dependencies: {  }
+id: front
+label: Forside
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

@@ -1,0 +1,8 @@
+langcode: da
+status: true
+dependencies: {  }
+id: statistik
+label: Statistik
+description: ''
+checkbox_default_state: unchecked
+weight: -7

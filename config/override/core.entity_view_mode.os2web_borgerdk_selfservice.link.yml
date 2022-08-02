@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_borgerdk
+id: os2web_borgerdk_selfservice.link
+label: 'Borger.dk Selfservice Link'
+targetEntityType: os2web_borgerdk_selfservice
+cache: true

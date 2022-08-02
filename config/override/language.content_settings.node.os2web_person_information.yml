@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_person_information
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.os2web_person_information
+target_entity_type_id: node
+target_bundle: os2web_person_information
+default_langcode: site_default
+language_alterable: true

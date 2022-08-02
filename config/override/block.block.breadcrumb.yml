@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fds_custom_theme
+id: breadcrumb
+theme: fds_custom_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Brødkrummer
+  label_display: '0'
+  provider: system
+visibility: {  }

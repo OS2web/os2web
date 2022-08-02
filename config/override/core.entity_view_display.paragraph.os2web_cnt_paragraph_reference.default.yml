@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_cnt_paragraph_reference.field_os2web_cnt_par_ref
+    - paragraphs.paragraphs_type.os2web_cnt_paragraph_reference
+id: paragraph.os2web_cnt_paragraph_reference.default
+targetEntityType: paragraph
+bundle: os2web_cnt_paragraph_reference
+mode: default
+content:
+  field_os2web_cnt_par_ref:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

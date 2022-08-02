@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_page.field_indholdsgruppe
+    - taxonomy.vocabulary.workbench_access
+id: adgangs_grupper
+plural_label: 'Adgangs grupper'
+label: 'Adgangs grupper'
+scheme: taxonomy
+scheme_settings:
+  vocabularies:
+    - workbench_access
+  fields:
+    -
+      entity_type: node
+      bundle: os2web_page
+      field: field_indholdsgruppe

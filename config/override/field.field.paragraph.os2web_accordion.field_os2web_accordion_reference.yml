@@ -1,0 +1,81 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_accordion_reference
+    - paragraphs.paragraphs_type.os2web_accordion
+    - paragraphs.paragraphs_type.os2web_accordion_item
+  module:
+    - entity_reference_revisions
+id: paragraph.os2web_accordion.field_os2web_accordion_reference
+field_name: field_os2web_accordion_reference
+entity_type: paragraph
+bundle: os2web_accordion
+label: 'Accordion afsnit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      os2web_accordion_item: os2web_accordion_item
+    negate: 0
+    target_bundles_drag_drop:
+      os2web_2_columns:
+        weight: 19
+        enabled: false
+      os2web_3_columns:
+        weight: 20
+        enabled: false
+      os2web_accordion:
+        weight: 21
+        enabled: false
+      os2web_accordion_item:
+        weight: 24
+        enabled: true
+      os2web_banner_paragraph:
+        weight: 23
+        enabled: false
+      os2web_box_paragraph:
+        weight: 24
+        enabled: false
+      os2web_content_reference:
+        weight: 25
+        enabled: false
+      os2web_files_paragraph:
+        weight: 26
+        enabled: false
+      os2web_gis_map:
+        weight: 27
+        enabled: false
+      os2web_iframe:
+        weight: 28
+        enabled: false
+      os2web_image_paragraph:
+        weight: 29
+        enabled: false
+      os2web_meetings_search:
+        weight: 30
+        enabled: false
+      os2web_simple_text_paragraph:
+        weight: 31
+        enabled: false
+      os2web_slideshow:
+        weight: 32
+        enabled: false
+      os2web_spotbox:
+        weight: 33
+        enabled: false
+      os2web_spotbox_reference:
+        weight: 34
+        enabled: false
+      os2web_twi_paragraph:
+        weight: 35
+        enabled: false
+      os2web_wrapper:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

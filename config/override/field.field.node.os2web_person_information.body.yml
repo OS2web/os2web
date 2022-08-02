@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.os2web_person_information
+  module:
+    - text
+id: node.os2web_person_information.body
+field_name: body
+entity_type: node
+bundle: os2web_person_information
+label: Beskrivelse
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

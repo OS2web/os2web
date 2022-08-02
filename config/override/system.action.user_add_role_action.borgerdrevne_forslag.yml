@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.borgerdrevne_forslag
+  module:
+    - user
+id: user_add_role_action.borgerdrevne_forslag
+label: 'Add the Borgerdrevne forslag role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: borgerdrevne_forslag

@@ -1,0 +1,8 @@
+all_news_url: 'https://OS2Web.devel.dk/da/nyheder'
+all_events_url: 'https://OS2Web.devel.dk/da/borger/kultur-fritid'
+submit: 'Gem indstillinger'
+form_build_id: form-_7xaGJyJDgbQUP3XEJ3fl2B5Vbys6ay2BWPdmq9SZnA
+form_token: RUlBmwxVTySb9mqgJSEVfykdPZogQiK8qvZVCB9OEpM
+form_id: os2web_newsletter_settings_form
+op: 'Gem indstillinger'
+langcode: da

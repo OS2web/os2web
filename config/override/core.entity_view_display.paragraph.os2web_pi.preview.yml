@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.os2web_pi.field_os2web_pi_paragraph_group
+    - paragraphs.paragraphs_type.os2web_pi
+id: paragraph.os2web_pi.preview
+targetEntityType: paragraph
+bundle: os2web_pi
+mode: preview
+content:
+  field_os2web_pi_paragraph_group:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

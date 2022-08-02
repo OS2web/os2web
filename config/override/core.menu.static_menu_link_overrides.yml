@@ -1,0 +1,8 @@
+langcode: da
+definitions:
+  standard__front_page:
+    menu_name: main
+    parent: ''
+    weight: -54
+    expanded: false
+    enabled: false

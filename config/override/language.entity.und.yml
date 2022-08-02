@@ -1,0 +1,8 @@
+langcode: da
+status: true
+dependencies: {  }
+id: und
+label: 'Ikke angivet'
+direction: ltr
+weight: 2
+locked: true

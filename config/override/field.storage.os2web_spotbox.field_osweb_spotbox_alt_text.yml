@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_spotbox
+id: os2web_spotbox.field_osweb_spotbox_alt_text
+field_name: field_osweb_spotbox_alt_text
+entity_type: os2web_spotbox
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

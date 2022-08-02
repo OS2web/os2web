@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_hearings_hearing_reply
+    - field.storage.comment.field_os2web_hearings_reply_secr
+id: comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_secr
+field_name: field_os2web_hearings_reply_secr
+entity_type: comment
+bundle: os2web_hearings_hearing_reply
+label: 'Jeg har hemmelig adresse'
+description: 'Adressen offentliggøres ikke ved politisk behandling'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Tilsluttet
+  off_label: Afbrudt
+field_type: boolean

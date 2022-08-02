@@ -1,0 +1,93 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.os2web_spotbox.os2web_spotbox.field_os2web_spotbox_bg_image
+    - field.field.os2web_spotbox.os2web_spotbox.field_os2web_spotbox_icon
+    - field.field.os2web_spotbox.os2web_spotbox.field_os2web_spotbox_link
+    - field.field.os2web_spotbox.os2web_spotbox.field_os2web_spotbox_link_butt
+    - field.field.os2web_spotbox.os2web_spotbox.field_os2web_spotbox_link_text
+    - field.field.os2web_spotbox.os2web_spotbox.field_os2web_spotbox_video
+    - field.field.os2web_spotbox.os2web_spotbox.field_osweb_spotbox_alt_text
+    - image.style.os2web_spotbox_image
+  module:
+    - link
+    - os2web_spotbox
+    - svg_image
+    - text
+id: os2web_spotbox.os2web_spotbox.default
+targetEntityType: os2web_spotbox
+bundle: os2web_spotbox
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_os2web_spotbox_bg_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: os2web_spotbox_image
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_spotbox_icon:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_spotbox_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_spotbox_link_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_spotbox_video:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_osweb_spotbox_alt_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  field_os2web_spotbox_link_butt: true
+  langcode: true
+  search_api_excerpt: true
+  user_id: true

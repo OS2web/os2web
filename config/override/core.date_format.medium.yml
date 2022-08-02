@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: medium
+label: 'Standard mellem dato'
+locked: false
+pattern: 'D, m/d/Y - H:i'

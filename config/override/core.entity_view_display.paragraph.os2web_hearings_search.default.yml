@@ -1,0 +1,14 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_hearings_search.field_os2web_hearings_search_typ
+    - paragraphs.paragraphs_type.os2web_hearings_search
+id: paragraph.os2web_hearings_search.default
+targetEntityType: paragraph
+bundle: os2web_hearings_search
+mode: default
+content: {  }
+hidden:
+  field_os2web_hearings_search_typ: true
+  search_api_excerpt: true

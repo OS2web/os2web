@@ -1,0 +1,31 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.os2web_event_category.field_os2web_event_section
+    - taxonomy.vocabulary.os2web_event_category
+  module:
+    - text
+id: taxonomy_term.os2web_event_category.default
+targetEntityType: taxonomy_term
+bundle: os2web_event_category
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_event_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

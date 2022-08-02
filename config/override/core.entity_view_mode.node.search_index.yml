@@ -1,0 +1,9 @@
+langcode: da
+status: false
+dependencies:
+  module:
+    - node
+id: node.search_index
+label: Søgeindex
+targetEntityType: node
+cache: true

@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fds_redwhite_theme
+id: fds_redwhite_theme_messages
+theme: fds_redwhite_theme
+region: highlighted
+weight: -21
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Beskeder
+  label_display: '0'
+  provider: system
+visibility: {  }

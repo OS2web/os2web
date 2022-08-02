@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_news_section
+    - node.type.os2web_news
+    - taxonomy.vocabulary.os2web_sektion
+id: node.os2web_news.field_os2web_news_section
+field_name: field_os2web_news_section
+entity_type: node
+bundle: os2web_news
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_sektion: os2web_sektion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

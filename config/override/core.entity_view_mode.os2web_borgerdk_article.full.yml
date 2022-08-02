@@ -1,0 +1,9 @@
+langcode: da
+status: false
+dependencies:
+  module:
+    - os2web_borgerdk
+id: os2web_borgerdk_article.full
+label: 'Full content'
+targetEntityType: os2web_borgerdk_article
+cache: true

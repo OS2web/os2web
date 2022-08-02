@@ -1,0 +1,35 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.os2web_paragraphs_search
+    - field.field.paragraph.os2web_2_columns.field_os2web_column_1
+    - field.field.paragraph.os2web_2_columns.field_os2web_column_2
+    - paragraphs.paragraphs_type.os2web_2_columns
+  module:
+    - entity_reference_revisions
+id: paragraph.os2web_2_columns.os2web_paragraphs_search
+targetEntityType: paragraph
+bundle: os2web_2_columns
+mode: os2web_paragraphs_search
+content:
+  field_os2web_column_1:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: os2web_paragraphs_search
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_column_2:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: os2web_paragraphs_search
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,31 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.raad_naevn_udvalg
+  module:
+    - node
+    - views
+  theme:
+    - fds_redwhite_theme
+id: views_block__raad_naevn_udvalg_block_1
+theme: fds_redwhite_theme
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:raad_naevn_udvalg-block_1'
+settings:
+  id: 'views_block:raad_naevn_udvalg-block_1'
+  label: 'Andre udvalg'
+  label_display: visible
+  provider: views
+  views_label: 'Andre udvalg'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      os2web_meetings_meeting: os2web_meetings_meeting

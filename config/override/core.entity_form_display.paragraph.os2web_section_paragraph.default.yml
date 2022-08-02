@@ -1,0 +1,31 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_section_paragraph.field_os2web_section_par_section
+    - field.field.paragraph.os2web_section_paragraph.field_os2web_section_par_type
+    - paragraphs.paragraphs_type.os2web_section_paragraph
+id: paragraph.os2web_section_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_section_paragraph
+mode: default
+content:
+  field_os2web_section_par_section:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_section_par_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,98 @@
+langcode: da
+status: false
+dependencies: {  }
+id: send_mail_naar_indhold_saettes_som_udloebet
+label: 'Send mail når indhold sættes som udløbet'
+events:
+  -
+    event_name: 'rules_entity_insert:content_moderation_state'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 5ba52c30-9444-43a0-a5c3-000de1e69015
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 3f97222d-ae6a-43e9-970f-83c522b5ccac
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 7e32246f-2766-4e4c-9fa1-9831b693748a
+        weight: 0
+        condition_id: rules_data_comparison
+        negate: false
+        context_values:
+          operation: '=='
+          value: foraeldet
+        context_mapping:
+          data: content_moderation_state.moderation_state.value
+        context_processors:
+          operation:
+            rules_tokens: {  }
+          value:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 77c63a51-af2d-4adb-ab11-91bb5c669a4c
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: e58c2bfa-54c2-4919-942f-510061a8a53c
+        weight: 0
+        action_id: rules_entity_fetch_by_id
+        context_values:
+          type: node
+        context_mapping:
+          entity_id: content_moderation_state.content_entity_id.value
+        context_processors:
+          type:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 19792efe-504c-46c5-a90a-794382e4f9c4
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - js@bellcom.dk
+          subject: 'Der er forældet indhold'
+          message: 'Der er indhold som trænger til gennemgang {{ entity_fetched.title.value }} på https://OS2Web.dk/{{ entity_f'
+          reply: skifter@bellcom.dk
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 370d536b-01e9-4801-b012-f96601908100
+        weight: 0
+        action_id: rules_system_message
+        context_values:
+          message: 'Der burde være sendt en mail nu'
+          type: status
+          repeat: true
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }

@@ -1,0 +1,43 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_webform.field_os2web_webform_heading
+    - field.field.paragraph.os2web_webform.field_os2web_webform_reference
+    - paragraphs.paragraphs_type.os2web_webform
+  module:
+    - webform
+id: paragraph.os2web_webform.default
+targetEntityType: paragraph
+bundle: os2web_webform
+mode: default
+content:
+  field_os2web_webform_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_webform_reference:
+    type: webform_entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_limit: 10
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      default_data: true
+    third_party_settings: {  }
+  field_os2web_webform_webform:
+    type: webform_entity_reference_select
+    weight: 1
+    region: content
+    settings:
+      default_data: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,32 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_os2web_bg_color
+field_name: field_os2web_bg_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: transparent
+      label: Ingen
+    -
+      value: primary
+      label: Primær
+    -
+      value: secondary
+      label: Sekundær
+    -
+      value: tertiary
+      label: Tertiær
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

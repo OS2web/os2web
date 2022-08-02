@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_news_block_header
+    - paragraphs.paragraphs_type.os2web_news_block
+id: paragraph.os2web_news_block.field_os2web_news_block_header
+field_name: field_os2web_news_block_header
+entity_type: paragraph
+bundle: os2web_news_block
+label: Overskrift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

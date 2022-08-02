@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_hearings_hearing_reply
+    - field.storage.comment.field_os2web_hearings_reply_docs
+  module:
+    - file
+id: comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_docs
+field_name: field_os2web_hearings_reply_docs
+entity_type: comment
+bundle: os2web_hearings_hearing_reply
+label: 'Bilag '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf png jpg'
+  max_filesize: ''
+  description_field: true
+field_type: file

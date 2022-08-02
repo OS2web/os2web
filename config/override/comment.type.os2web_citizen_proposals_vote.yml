@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_citizen_proposals_vote
+label: 'OS2Web Citizen Proposals vote'
+target_entity_type_id: node
+description: ''

@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+    - os2web_meetings
+  theme:
+    - fds_redwhite_theme
+id: os2webmeetingrelatedmeetinglink
+theme: fds_redwhite_theme
+region: sidebar_second
+weight: -20
+provider: null
+plugin: os2web_meetings_related_meeting
+settings:
+  id: os2web_meetings_related_meeting
+  label: 'Næste referat'
+  label_display: visible
+  provider: os2web_meetings
+  related_meeting_type: next
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      os2web_meetings_meeting: os2web_meetings_meeting

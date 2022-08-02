@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.os2web_spotbox_image
+  module:
+    - crop
+name: os2web_spotbox_image
+label: 'Spotbox image'
+effects:
+  6499814f-8b09-4d11-b1fe-0cbc3405b992:
+    uuid: 6499814f-8b09-4d11-b1fe-0cbc3405b992
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: os2web_spotbox_image
+  fe3b8038-3fa6-48ac-a6ef-1e0dc2d0b176:
+    uuid: fe3b8038-3fa6-48ac-a6ef-1e0dc2d0b176
+    id: image_scale
+    weight: 2
+    data:
+      width: 317
+      height: null
+      upscale: true

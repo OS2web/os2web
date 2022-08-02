@@ -1,0 +1,217 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.os2web_event.status
+    - core.base_field_override.node.os2web_event.title
+    - field.field.node.os2web_event.body
+    - field.field.node.os2web_event.feeds_item
+    - field.field.node.os2web_event.field_os2web_event_end_date
+    - field.field.node.os2web_event.field_os2web_event_kategori
+    - field.field.node.os2web_event.field_os2web_event_section
+    - field.field.node.os2web_event.field_os2web_event_start_date
+    - field.field.node.os2web_event.field_os2web_event_url
+    - field.field.node.os2web_event.field_os2web_evnet_image
+    - node.type.os2web_event
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      9484a363-ea8f-4ad1-9f88-9c31219b9f4c:
+        uuid: 9484a363-ea8f-4ad1-9f88-9c31219b9f4c
+        plugin: os2web_events_kulturnaut_category_map_tamper
+        source: os2web_category
+        weight: 0
+        label: 'Category Map'
+      dd4e5b66-a36d-453c-b052-743326546122:
+        uuid: dd4e5b66-a36d-453c-b052-743326546122
+        plugin: os2web_events_kulturnaut_section_map_tamper
+        source: os2web_section
+        weight: 0
+        label: 'OS2Web Section Map'
+      51f209c9-6e64-46c8-b6c3-cdb7107ee900:
+        default_value: '1'
+        only_if_empty: true
+        uuid: 51f209c9-6e64-46c8-b6c3-cdb7107ee900
+        plugin: default_value
+        source: blank
+        weight: 0
+        label: 'Set value or default value'
+label: 'Events import'
+id: os2web_events_import
+description: ''
+help: ''
+import_period: 1800
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: xml
+parser_configuration:
+  context:
+    value: //arr
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+  use_tidy: false
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: os2web_event
+  langcode: und
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: 'entity:unpublish_action:node'
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 1
+custom_sources:
+  sted:
+    label: sted
+    machine_name: sted
+    value: sted
+    type: xml
+  overskrift:
+    label: overskrift
+    machine_name: overskrift
+    value: overskrift
+    type: xml
+  startdato:
+    label: startdato
+    machine_name: startdato
+    value: startdato
+    type: xml
+  slutdato:
+    label: slutdato
+    machine_name: slutdato
+    value: slutdato
+    type: xml
+  billede:
+    label: billede
+    machine_name: billede
+    value: billede
+    type: xml
+  beskrivelse:
+    label: beskrivelse
+    machine_name: beskrivelse
+    value: beskrivelse
+    type: xml
+  url:
+    label: url
+    machine_name: url
+    value: url
+    type: xml
+  blank:
+    label: blank
+    machine_name: blank
+    value: blank
+    type: xml
+  kategori:
+    label: kategori
+    machine_name: kategori
+    value: kategori
+    type: xml
+  os2web_category:
+    label: os2web_category
+    machine_name: os2web_category
+    value: os2web_category
+    type: xml
+  os2web_section:
+    label: os2web_section
+    machine_name: os2web_section
+    value: os2web_section
+    type: xml
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: blank
+mappings:
+  -
+    target: title
+    map:
+      value: overskrift
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: beskrivelse
+      summary: ''
+    settings:
+      language: ''
+      format: wysiwyg_tekst
+  -
+    target: field_os2web_event_url
+    map:
+      value: url
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_os2web_event_end_date
+    map:
+      value: slutdato
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_os2web_event_start_date
+    map:
+      value: startdato
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_os2web_evnet_image
+    map:
+      target_id: billede
+      alt: kategori
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      existing: '2'
+      autocreate: 0
+  -
+    target: feeds_item
+    map:
+      url: 'parent:source'
+      guid: 'parent:uuid'
+    settings: {  }
+    unique: {  }
+  -
+    target: field_os2web_event_kategori
+    map:
+      target_id: os2web_category
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_os2web_event_section
+    map:
+      target_id: os2web_section
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: status
+    map:
+      value: blank
+    settings:
+      language: ''

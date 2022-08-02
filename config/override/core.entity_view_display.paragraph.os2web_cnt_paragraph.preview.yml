@@ -1,0 +1,100 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.os2web_cnt_paragraph.field_adresse
+    - field.field.paragraph.os2web_cnt_paragraph.field_arbejdsopgaver
+    - field.field.paragraph.os2web_cnt_paragraph.field_beskrivelse
+    - field.field.paragraph.os2web_cnt_paragraph.field_by
+    - field.field.paragraph.os2web_cnt_paragraph.field_direkte_nummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_efternavn
+    - field.field.paragraph.os2web_cnt_paragraph.field_fornavn
+    - field.field.paragraph.os2web_cnt_paragraph.field_hovednummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_jobtitel
+    - field.field.paragraph.os2web_cnt_paragraph.field_mobilnummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_body
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_email
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_facebook
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_heading
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_image
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_image_position
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_link
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_open_hours
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_phone
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_subheading
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_website
+    - field.field.paragraph.os2web_cnt_paragraph.field_postnummer
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.os2web_cnt_paragraph
+  module:
+    - link
+    - svg_image
+    - text
+id: paragraph.os2web_cnt_paragraph.preview
+targetEntityType: paragraph
+bundle: os2web_cnt_paragraph
+mode: preview
+content:
+  field_os2web_cnt_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_cnt_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_cnt_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_cnt_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_cnt_subheading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_adresse: true
+  field_arbejdsopgaver: true
+  field_beskrivelse: true
+  field_by: true
+  field_direkte_nummer: true
+  field_efternavn: true
+  field_fornavn: true
+  field_hovednummer: true
+  field_jobtitel: true
+  field_mobilnummer: true
+  field_os2web_cnt_email: true
+  field_os2web_cnt_facebook: true
+  field_os2web_cnt_image_position: true
+  field_os2web_cnt_open_hours: true
+  field_os2web_cnt_phone: true
+  field_os2web_cnt_website: true
+  field_postnummer: true
+  search_api_excerpt: true

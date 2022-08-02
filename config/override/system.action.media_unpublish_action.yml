@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - media
+id: media_unpublish_action
+label: 'Afpublicér medie'
+type: media
+plugin: 'entity:unpublish_action:media'
+configuration: {  }

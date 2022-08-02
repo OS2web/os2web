@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  theme:
+    - fds_custom_theme
+id: faner
+theme: fds_custom_theme
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Faner
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

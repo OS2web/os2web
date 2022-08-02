@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.os2web_normal
+  module:
+    - crop
+name: os2web_medium
+label: Medium
+effects:
+  32dac211-b3e0-4b91-a3fb-13fa4691603d:
+    uuid: 32dac211-b3e0-4b91-a3fb-13fa4691603d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: os2web_normal
+  47ecf2be-7315-47db-8002-f6dca969f67e:
+    uuid: 47ecf2be-7315-47db-8002-f6dca969f67e
+    id: image_scale
+    weight: 2
+    data:
+      width: 470
+      height: null
+      upscale: false

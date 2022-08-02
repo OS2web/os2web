@@ -1,0 +1,9 @@
+langcode: da
+status: false
+dependencies:
+  module:
+    - media
+id: media.full
+label: 'Fuldt indhold'
+targetEntityType: media
+cache: true

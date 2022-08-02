@@ -1,0 +1,62 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.os2web_kle.feeds_item
+    - field.field.taxonomy_term.os2web_kle.field_os2web_kle_legi_ref
+    - taxonomy.vocabulary.os2web_kle
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.os2web_kle.default
+targetEntityType: taxonomy_term
+bundle: os2web_kle
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_kle_legi_ref:
+    type: link_default
+    weight: 101
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

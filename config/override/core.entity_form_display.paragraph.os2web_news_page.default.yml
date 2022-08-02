@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_news_page.field_os2web_news_par_section
+    - paragraphs.paragraphs_type.os2web_news_page
+id: paragraph.os2web_news_page.default
+targetEntityType: paragraph
+bundle: os2web_news_page
+mode: default
+content:
+  field_os2web_news_par_section:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

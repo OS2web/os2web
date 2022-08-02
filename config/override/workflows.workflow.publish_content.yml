@@ -1,0 +1,68 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_page
+  module:
+    - content_moderation
+id: publish_content
+label: Indholdspublicering
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Kladde
+      weight: 0
+      published: null
+      default_revision: null
+    foraeldet:
+      label: Forældet
+      weight: 3
+      published: null
+      default_revision: null
+    published:
+      label: Publiceret
+      weight: 1
+      published: true
+      default_revision: true
+    upubliceret:
+      label: Upubliceret
+      weight: 2
+      published: false
+      default_revision: true
+  transitions:
+    create_new_draft:
+      label: Kladde
+      from:
+        - draft
+        - published
+        - upubliceret
+      to: draft
+      weight: 0
+    foraeldet:
+      label: Forældet
+      from:
+        - published
+      to: foraeldet
+      weight: 3
+    publish:
+      label: Publiceret
+      from:
+        - draft
+        - foraeldet
+        - published
+        - upubliceret
+      to: published
+      weight: 1
+    ubupliceret:
+      label: Ubupliceret
+      from:
+        - draft
+        - published
+        - upubliceret
+      to: upubliceret
+      weight: 2
+  entity_types:
+    node:
+      - os2web_page
+  default_moderation_state: draft

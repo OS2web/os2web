@@ -1,0 +1,189 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_cnt_paragraph.field_adresse
+    - field.field.paragraph.os2web_cnt_paragraph.field_arbejdsopgaver
+    - field.field.paragraph.os2web_cnt_paragraph.field_beskrivelse
+    - field.field.paragraph.os2web_cnt_paragraph.field_by
+    - field.field.paragraph.os2web_cnt_paragraph.field_direkte_nummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_efternavn
+    - field.field.paragraph.os2web_cnt_paragraph.field_fornavn
+    - field.field.paragraph.os2web_cnt_paragraph.field_hovednummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_jobtitel
+    - field.field.paragraph.os2web_cnt_paragraph.field_mobilnummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_body
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_email
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_facebook
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_heading
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_image
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_image_position
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_link
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_open_hours
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_phone
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_subheading
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_website
+    - field.field.paragraph.os2web_cnt_paragraph.field_postnummer
+    - paragraphs.paragraphs_type.os2web_cnt_paragraph
+  module:
+    - link
+    - office_hours
+id: paragraph.os2web_cnt_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_cnt_paragraph
+mode: default
+content:
+  field_adresse:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_arbejdsopgaver:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_beskrivelse:
+    type: string_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_by:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_direkte_nummer:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_efternavn:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fornavn:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hovednummer:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_jobtitel:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_mobilnummer:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_cnt_email:
+    type: email_default
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_os2web_cnt_facebook:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_cnt_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_cnt_image_position:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_os2web_cnt_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_os2web_cnt_open_hours:
+    type: office_hours_default
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_os2web_cnt_phone:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_cnt_website:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_postnummer:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_os2web_cnt_body: true
+  field_os2web_cnt_image: true
+  field_os2web_cnt_subheading: true
+  status: true

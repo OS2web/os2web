@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: short
+label: 'Standard kort dato'
+locked: false
+pattern: 'm/d/Y - H:i'

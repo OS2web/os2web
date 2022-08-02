@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.os2web_meetings_search_page
+  module:
+    - system
+    - views
+  theme:
+    - fds_redwhite_theme
+id: os2web_meetings_search_page_form
+theme: fds_redwhite_theme
+region: highlighted
+weight: -19
+provider: null
+plugin: 'views_exposed_filter_block:os2web_meetings_search_page-os2web_meeetings_search_page'
+settings:
+  id: 'views_exposed_filter_block:os2web_meetings_search_page-os2web_meeetings_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/soeg-dagsorden\r\n/soeg-dagsorden?sq=*"

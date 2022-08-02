@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - media
+id: media.os2web_reference
+label: Reference
+targetEntityType: media
+cache: true

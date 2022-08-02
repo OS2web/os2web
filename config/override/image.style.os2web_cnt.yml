@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.os2web_cnt_crop
+  module:
+    - crop
+name: os2web_cnt
+label: 'Paragraph - Contact section'
+effects:
+  967a7f72-7736-44d0-9f43-c965003225e5:
+    uuid: 967a7f72-7736-44d0-9f43-c965003225e5
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: os2web_cnt_crop
+  6518cdb1-9fd4-4309-a148-4d47e561180e:
+    uuid: 6518cdb1-9fd4-4309-a148-4d47e561180e
+    id: image_scale
+    weight: 2
+    data:
+      width: 800
+      height: null
+      upscale: true

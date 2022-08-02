@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.os2web_slideshow_crop
+  module:
+    - crop
+name: os2web_slideshow
+label: Slideshow
+effects:
+  f1481941-8ea5-4d26-a7ae-a90d625b670d:
+    uuid: f1481941-8ea5-4d26-a7ae-a90d625b670d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: os2web_slideshow_crop
+  aae8bf9f-0a90-4451-98ad-318292f5f816:
+    uuid: aae8bf9f-0a90-4451-98ad-318292f5f816
+    id: image_scale
+    weight: 2
+    data:
+      width: 310
+      height: null
+      upscale: true

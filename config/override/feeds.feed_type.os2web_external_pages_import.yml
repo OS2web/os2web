@@ -1,0 +1,118 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_external_page.body
+    - field.field.node.os2web_external_page.field_os2web_ep_domain
+    - field.field.node.os2web_external_page.field_os2web_ep_nid
+    - field.field.node.os2web_external_page.field_os2web_ep_url
+    - node.type.os2web_external_page
+  module:
+    - feeds_ex
+    - node
+label: 'External pages import'
+id: os2web_external_pages_import
+description: ''
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'private://feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: os2web_external_page
+  langcode: da
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  _title:
+    value: .title
+    label: .title
+    machine_name: _title
+    type: json
+  _body_value:
+    value: .body_value
+    label: .body_value
+    machine_name: _body_value
+    type: json
+  _nid:
+    value: .nid
+    label: .nid
+    machine_name: _nid
+    type: json
+  _url:
+    value: .url
+    label: .url
+    machine_name: _url
+    type: json
+  _created:
+    value: .created
+    label: .created
+    machine_name: _created
+    type: json
+  _subdomain:
+    value: .subdomain
+    label: .subdomain
+    machine_name: _subdomain
+    type: json
+mappings:
+  -
+    target: title
+    map:
+      value: _title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: _body_value
+      summary: ''
+    settings:
+      language: ''
+      format: wysiwyg_tekst
+  -
+    target: field_os2web_ep_nid
+    map:
+      value: _nid
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_os2web_ep_url
+    map:
+      value: _url
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: created
+    map:
+      value: _created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_os2web_ep_domain
+    map:
+      value: _subdomain
+    settings:
+      language: null
+    unique: {  }

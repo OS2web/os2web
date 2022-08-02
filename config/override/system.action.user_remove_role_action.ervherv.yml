@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.ervherv
+  module:
+    - user
+id: user_remove_role_action.ervherv
+label: 'Remove the Ervherv role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ervherv

@@ -1,0 +1,70 @@
+hide_os2web_contact_fields: 0
+hide_os2web_paragraph_banner_field: 0
+hide_os2web_paragraph_title_field: 0
+hide_os2web_paragraph_subtitle_field: 0
+hide_os2web_content_page_section_tab: 0
+os2web_related_links_block_reference_mode: null
+os2web_section_pages:
+  -
+    target_id: '4'
+  -
+    target_id: '2347'
+  -
+    target_id: '2348'
+  -
+    target_id: '2363'
+  -
+    target_id: '2401'
+  -
+    target_id: '2408'
+  -
+    target_id: '2407'
+  -
+    target_id: '2406'
+  -
+    target_id: '2402'
+  -
+    target_id: '2365'
+  -
+    target_id: '2375'
+  -
+    target_id: '2381'
+  -
+    target_id: '3979'
+  -
+    target_id: '2382'
+  -
+    target_id: '2383'
+  -
+    target_id: '4153'
+  -
+    target_id: '2412'
+  -
+    target_id: '3353'
+  -
+    target_id: '2416'
+  -
+    target_id: '2415'
+  -
+    target_id: '2414'
+  -
+    target_id: '2413'
+  -
+    target_id: '2361'
+  -
+    target_id: '3315'
+  -
+    target_id: '2410'
+  -
+    target_id: '2411'
+os2web_pagebuilder_translit_alter_0xd8: ''
+os2web_pagebuilder_translit_alter_0xf8: ''
+os2web_pagebuilder_translit_alter_0xc5: ''
+os2web_pagebuilder_translit_alter_0xe5: ''
+os2web_pagebuilder_translit_alter_0xc6: ''
+os2web_pagebuilder_translit_alter_0xe6: ''
+submit: 'Gem indstillinger'
+form_build_id: form-QKbi_8fYElAw2Mt5jU0dlaQTICsgc1jK4k84pM75iIM
+form_token: Ft8npcHGY3TQqVbGIwYliw024fm5lA17zwuXUmCebGE
+form_id: os2web_pagebuilder_settings_form
+op: 'Gem indstillinger'

@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.os2web_newsletter
+label: Newsletter
+targetEntityType: node
+cache: true

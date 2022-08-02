@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_pi_paragraph_group
+    - paragraphs.paragraphs_type.os2web_pi
+    - taxonomy.vocabulary.os2web_pi_group
+id: paragraph.os2web_pi.field_os2web_pi_paragraph_group
+field_name: field_os2web_pi_paragraph_group
+entity_type: paragraph
+bundle: os2web_pi
+label: Gruppe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_pi_group: os2web_pi_group
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

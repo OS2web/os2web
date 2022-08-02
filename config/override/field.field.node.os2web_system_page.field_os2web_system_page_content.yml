@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_system_page_content
+    - node.type.os2web_system_page
+  module:
+    - text
+id: node.os2web_system_page.field_os2web_system_page_content
+field_name: field_os2web_system_page_content
+entity_type: node
+bundle: os2web_system_page
+label: Indhold
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

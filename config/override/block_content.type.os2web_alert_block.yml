@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_alert_block
+label: Alert
+revision: 0
+description: ''

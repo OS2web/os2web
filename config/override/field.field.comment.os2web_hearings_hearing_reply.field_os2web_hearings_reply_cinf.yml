@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_hearings_hearing_reply
+    - field.storage.comment.field_os2web_hearings_reply_cinf
+id: comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_cinf
+field_name: field_os2web_hearings_reply_cinf
+entity_type: comment
+bundle: os2web_hearings_hearing_reply
+label: 'Anden kontaktinformation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

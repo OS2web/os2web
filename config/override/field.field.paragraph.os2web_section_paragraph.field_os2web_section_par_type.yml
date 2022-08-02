@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_section_par_type
+    - paragraphs.paragraphs_type.os2web_section_paragraph
+  module:
+    - options
+id: paragraph.os2web_section_paragraph.field_os2web_section_par_type
+field_name: field_os2web_section_par_type
+entity_type: paragraph
+bundle: os2web_section_paragraph
+label: 'List type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

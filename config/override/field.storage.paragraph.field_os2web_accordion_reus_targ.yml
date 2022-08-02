@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_accordion_paragraph
+    - paragraphs
+id: paragraph.field_os2web_accordion_reus_targ
+field_name: field_os2web_accordion_reus_targ
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: os2web_accordion
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: education
+label: Education
+category: Demografi
+likert: false
+options: |
+  High School: High School
+  Associate Degree: Associate Degree
+  Graduate or Professional Degree: Graduate or Professional Degree
+  Some College: Some College

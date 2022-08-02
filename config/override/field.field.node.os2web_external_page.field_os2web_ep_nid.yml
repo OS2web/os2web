@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_ep_nid
+    - node.type.os2web_external_page
+id: node.os2web_external_page.field_os2web_ep_nid
+field_name: field_os2web_ep_nid
+entity_type: node
+bundle: os2web_external_page
+label: 'Ekstern nid'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

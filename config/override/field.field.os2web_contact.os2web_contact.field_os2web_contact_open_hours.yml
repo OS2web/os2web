@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.os2web_contact.field_os2web_contact_open_hours
+  module:
+    - office_hours
+    - os2web_contact
+id: os2web_contact.os2web_contact.field_os2web_contact_open_hours
+field_name: field_os2web_contact_open_hours
+entity_type: os2web_contact
+bundle: os2web_contact
+label: Arbejdstimer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

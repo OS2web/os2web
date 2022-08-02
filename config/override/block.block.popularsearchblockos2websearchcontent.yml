@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - popular_search_keywords
+    - system
+  theme:
+    - fds_redwhite_theme
+id: popularsearchblockos2websearchcontent
+theme: fds_redwhite_theme
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'popular_search_block:os2web_search_content'
+settings:
+  id: 'popular_search_block:os2web_search_content'
+  label: 'Mest populære søgninger'
+  label_display: visible
+  provider: popular_search_keywords
+  num_phrases: '10'
+  path: s
+  param_name: sq
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/s?sq*\r\n/s"

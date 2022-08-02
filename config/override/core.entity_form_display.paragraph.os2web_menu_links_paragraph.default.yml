@@ -1,0 +1,36 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_menu_links_paragraph.field_os2web_menu_links_inc_pr_p
+    - field.field.paragraph.os2web_menu_links_paragraph.field_os2web_menu_links_show_int
+    - field.field.paragraph.os2web_menu_links_paragraph.field_os2web_menu_links_vm
+    - paragraphs.paragraphs_type.os2web_menu_links_paragraph
+id: paragraph.os2web_menu_links_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_menu_links_paragraph
+mode: default
+content:
+  field_os2web_menu_links_inc_pr_p:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_os2web_menu_links_show_int:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_os2web_menu_links_vm:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

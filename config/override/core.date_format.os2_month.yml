@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2_month
+label: 'OS2 month'
+locked: false
+pattern: M

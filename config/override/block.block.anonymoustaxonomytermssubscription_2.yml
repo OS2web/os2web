@@ -1,0 +1,80 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - anonymous_subscriptions
+    - system
+  theme:
+    - fds_redwhite_theme
+id: anonymoustaxonomytermssubscription_2
+theme: fds_redwhite_theme
+region: content
+weight: -15
+provider: null
+plugin: subscribe_taxonomy_terms_block
+settings:
+  id: subscribe_taxonomy_terms_block
+  label: 'Høringer og Udbud'
+  label_display: visible
+  provider: anonymous_subscriptions
+  0: vid
+  1: description_top
+  2: vid
+  3: description_top
+  4: vid
+  5: description_top
+  6: vid
+  7: description_top
+  8: vid
+  9: description_top
+  10: vid
+  11: description_top
+  12: vid
+  13: description_top
+  14: vid
+  15: description_top
+  16: vid
+  17: description_top
+  18: vid
+  19: description_top
+  20: vid
+  21: description_top
+  22: vid
+  23: description_top
+  24: vid
+  25: description_top
+  26: vid
+  27: description_top
+  28: vid
+  29: description_top
+  30: vid
+  31: description_top
+  32: vid
+  33: description_top
+  34: vid
+  35: description_top
+  36: vid
+  37: description_top
+  38: vid
+  39: description_top
+  40: vid
+  41: description_top
+  42: vid
+  43: description_top
+  44: vid
+  45: description_top
+  46: vid
+  47: description_top
+  48: vid
+  49: description_top
+  50: vid
+  51: description_top
+  52: vid
+  53: description_top
+  vid: os2web_hearings_categories
+  description_top: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /abonner

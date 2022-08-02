@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_hearings_search
+label: 'Høring søgning'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

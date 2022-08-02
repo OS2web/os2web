@@ -1,0 +1,59 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_hearings_hearing_reply
+    - field.field.comment.os2web_hearings_hearing_reply.comment_body
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_addr
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_arg
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_cinf
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_city
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_docs
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_mail
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_name
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_org
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_secr
+    - field.field.comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_zip
+  module:
+    - file
+    - text
+id: comment.os2web_hearings_hearing_reply.default
+targetEntityType: comment
+bundle: os2web_hearings_hearing_reply
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_hearings_reply_docs:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_hearings_reply_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_os2web_hearings_reply_addr: true
+  field_os2web_hearings_reply_arg: true
+  field_os2web_hearings_reply_cinf: true
+  field_os2web_hearings_reply_city: true
+  field_os2web_hearings_reply_mail: true
+  field_os2web_hearings_reply_org: true
+  field_os2web_hearings_reply_secr: true
+  field_os2web_hearings_reply_zip: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - search_api_synonym
+id: search_api_synonym.search_api_synonym
+target_entity_type_id: search_api_synonym
+target_bundle: search_api_synonym
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - facets.facet.os2web_search_section
+  module:
+    - facets
+    - system
+  theme:
+    - fds_redwhite_theme
+id: fds_redwhite_theme_os2web_search_section
+theme: fds_redwhite_theme
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'facet_block:os2web_search_section'
+settings:
+  id: 'facet_block:os2web_search_section'
+  label: Sektion
+  label_display: visible
+  provider: facets
+  block_id: os2web_search_section
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/s?sq*\r\n/s"

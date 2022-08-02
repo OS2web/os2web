@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.os2web_news
+  module:
+    - system
+    - views
+  theme:
+    - fds_custom_theme
+id: views_block__os2web_news_os2web_news_archive
+theme: fds_custom_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:os2web_news-os2web_news_archive'
+settings:
+  id: 'views_block:os2web_news-os2web_news_archive'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/nyheder*'

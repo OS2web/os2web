@@ -1,0 +1,25 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.os2web_borgerdk_selfservice_cat.field_os2web_bdk_ss_cat_icon
+    - taxonomy.vocabulary.os2web_borgerdk_selfservice_cat
+  module:
+    - text
+id: taxonomy_term.os2web_borgerdk_selfservice_cat.full
+targetEntityType: taxonomy_term
+bundle: os2web_borgerdk_selfservice_cat
+mode: full
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_os2web_bdk_ss_cat_icon: true
+  langcode: true
+  search_api_excerpt: true

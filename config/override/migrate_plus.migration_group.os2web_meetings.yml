@@ -1,0 +1,14 @@
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - os2web_meetings
+id: os2web_meetings
+label: 'Meeting import'
+description: 'Meeting content import'
+source_type: 'ESDH systems'
+module: null
+shared_configuration:
+  source:
+    key: default

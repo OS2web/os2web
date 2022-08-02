@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.borgerdrevne_forslag
+  module:
+    - user
+id: user_remove_role_action.borgerdrevne_forslag
+label: 'Remove the Borgerdrevne forslag role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: borgerdrevne_forslag

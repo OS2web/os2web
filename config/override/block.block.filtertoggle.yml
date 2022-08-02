@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:87a07b28-4754-400d-890e-4a91c2a19122'
+  module:
+    - block_content
+    - system
+  theme:
+    - fds_redwhite_theme
+id: filtertoggle
+theme: fds_redwhite_theme
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:87a07b28-4754-400d-890e-4a91c2a19122'
+settings:
+  id: 'block_content:87a07b28-4754-400d-890e-4a91c2a19122'
+  label: Filter-Toggle
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/s?sq*\r\n/s"

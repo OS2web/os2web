@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_os2web_event_section
+    - taxonomy.vocabulary.os2web_event_category
+    - taxonomy.vocabulary.os2web_sektion
+id: taxonomy_term.os2web_event_category.field_os2web_event_section
+field_name: field_os2web_event_section
+entity_type: taxonomy_term
+bundle: os2web_event_category
+label: Sektion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_sektion: os2web_sektion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

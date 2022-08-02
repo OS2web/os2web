@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+name: 'Os2web event category'
+vid: os2web_event_category
+description: ''
+weight: 0

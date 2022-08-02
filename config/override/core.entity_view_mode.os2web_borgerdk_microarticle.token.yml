@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - os2web_borgerdk
+id: os2web_borgerdk_microarticle.token
+label: Token
+targetEntityType: os2web_borgerdk_microarticle
+cache: true

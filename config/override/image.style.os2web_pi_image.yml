@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.os2web_pi_crop
+  module:
+    - crop
+name: os2web_pi_image
+label: 'Person oplysninger'
+effects:
+  33522e64-d81c-4ebd-8950-85e1eb747192:
+    uuid: 33522e64-d81c-4ebd-8950-85e1eb747192
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: os2web_pi_crop
+  0dcdee81-6f99-43c9-8c87-3cdf3adf4924:
+    uuid: 0dcdee81-6f99-43c9-8c87-3cdf3adf4924
+    id: image_scale
+    weight: 2
+    data:
+      width: 230
+      height: null
+      upscale: true

@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_hearings_sbsys_case
+    - node.type.os2web_hearings_hearing_case
+id: node.os2web_hearings_hearing_case.field_os2web_hearings_sbsys_case
+field_name: field_os2web_hearings_sbsys_case
+entity_type: node
+bundle: os2web_hearings_hearing_case
+label: 'E-doc sagsnummer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

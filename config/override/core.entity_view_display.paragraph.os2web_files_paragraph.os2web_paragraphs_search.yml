@@ -1,0 +1,41 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.os2web_paragraphs_search
+    - field.field.paragraph.os2web_files_paragraph.field_file_with_description
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_files
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_files_descrip
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_heading
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_media
+    - paragraphs.paragraphs_type.os2web_files_paragraph
+  module:
+    - search_api_attachments
+id: paragraph.os2web_files_paragraph.os2web_paragraphs_search
+targetEntityType: paragraph
+bundle: os2web_files_paragraph
+mode: os2web_paragraphs_search
+content:
+  field_os2web_files_files:
+    type: file_extracted_text
+    label: hidden
+    settings:
+      excluded_extensions: 'aif art avi bmp gif ico mov oga ogv png psd ra ram rgb flv'
+      max_filesize: '0'
+      excluded_private: 1
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_files_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_file_with_description: true
+  field_os2web_files_files_descrip: true
+  field_os2web_files_media: true
+  search_api_excerpt: true

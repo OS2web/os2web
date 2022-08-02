@@ -1,0 +1,47 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.os2web_meetings_bpa.body
+    - field.field.node.os2web_meetings_bpa.field_os2web_m_bpa_file
+    - field.field.node.os2web_meetings_bpa.field_os2web_m_esdh_id
+    - node.type.os2web_meetings_bpa
+  module:
+    - search_api_attachments
+    - text
+    - user
+id: node.os2web_meetings_bpa.search_index
+targetEntityType: node
+bundle: os2web_meetings_bpa
+mode: search_index
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_m_bpa_file:
+    type: file_extracted_text
+    label: hidden
+    settings:
+      excluded_extensions: 'aif art avi bmp gif ico mov oga ogv png psd ra ram rgb flv'
+      max_filesize: '0'
+      excluded_private: 1
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_m_esdh_id:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

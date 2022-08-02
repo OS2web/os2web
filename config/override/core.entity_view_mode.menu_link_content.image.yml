@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.image
+label: Billede
+targetEntityType: menu_link_content
+cache: true

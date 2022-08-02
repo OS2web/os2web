@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.banner_crop
+  module:
+    - crop
+name: paragraph_background_image_thumb
+label: 'Paragraph - background image (thumb)'
+effects:
+  c1805642-8c9a-434c-99d8-d43aae28b623:
+    uuid: c1805642-8c9a-434c-99d8-d43aae28b623
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: banner_crop
+  4bf56b5f-6eee-49f6-b431-5fd323e91cb5:
+    uuid: 4bf56b5f-6eee-49f6-b431-5fd323e91cb5
+    id: image_scale
+    weight: 2
+    data:
+      width: 500
+      height: null
+      upscale: true

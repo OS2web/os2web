@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.os2web_contact.field_os2web_contact_facebook
+  module:
+    - os2web_contact
+id: os2web_contact.os2web_contact.field_os2web_contact_facebook
+field_name: field_os2web_contact_facebook
+entity_type: os2web_contact
+bundle: os2web_contact
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

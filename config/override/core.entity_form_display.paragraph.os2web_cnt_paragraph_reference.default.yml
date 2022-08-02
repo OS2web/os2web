@@ -1,0 +1,33 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_cnt_paragraph_reference.field_os2web_cnt_par_ref
+    - paragraphs.paragraphs_type.os2web_cnt_paragraph_reference
+  module:
+    - inline_entity_form
+id: paragraph.os2web_cnt_paragraph_reference.default
+targetEntityType: paragraph
+bundle: os2web_cnt_paragraph_reference
+mode: default
+content:
+  field_os2web_cnt_par_ref:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Kontakt
+      label_plural: Kontakter
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

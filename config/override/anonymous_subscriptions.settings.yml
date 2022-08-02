@@ -1,0 +1,36 @@
+anonymous_subscriptions_verify: 0
+anonymous_subscriptions_send_default: 0
+anonymous_subscriptions_limit_window: '60'
+anonymous_subscriptions_ip_limit: '5'
+anonymous_subscriptions_node_types:
+  os2web_hearings_hearing_case: os2web_hearings_hearing_case
+  os2web_newsletter: os2web_newsletter
+  os2web_postlister: os2web_postlister
+  os2web_citizen_proposals: 0
+  os2web_event: 0
+  os2web_external_page: 0
+  os2web_meetings_bp: 0
+  os2web_meetings_bpa: 0
+  os2web_meetings_meeting: 0
+  os2web_news: 0
+  os2web_page: 0
+  os2web_person_information: 0
+  os2web_system_page: 0
+anonymous_subscriptions_taxonomy_terms_depth: ''
+anonymous_subscriptions_lookup_parent_taxonomy_terms: 0
+anonymous_subscriptions_sender: drupal@bellcom.dk
+anonymous_subscriptions_subject_text: 'Der er kommet nyt indhold på [site:name]'
+anonymous_subscriptions_body_text: "Indholdet på OS2Web.dk for: [node:title] er opdateret.\r\n\r\nDu kan se indholdet her: [node:url]"
+langcode: da
+anonymous_subscriptions_subject_text_os2web_hearings_hearing_case: 'Hearing notification'
+anonymous_subscriptions_body_text_os2web_hearings_hearing_case: "<div style=\"text-align:right\">[current-date:os2core_date_medium]</div>\r\n<h1> Der er nyt om høringer eller udbud i OS2web Kommune </h1>\r\n<p> Du har tilmeldt dig vores abonnementsservice. Du modtager denne mail, da der er nyt på det område, du har valgt at abonnere på</p>\r\n<hr>\r\n<h3><a href=\"[node:url]\">[node:field_os2web_hearings_heading]</a></h3>\r\n\r\n[node:field_os2web_hearings_intro]\r\n<hr>\r\n"
+anonymous_subscriptions_subject_text_os2web_postlister: 'Postlister notification'
+anonymous_subscriptions_body_text_os2web_postlister: "<div style=\"text-align:right\">[current-date:os2core_date_medium]</div>\r\n<h1> Der er nyt om postlister i OS2Web Kommune </h1>\r\n<p> Du har tilmeldt dig vores abonnementsservice. Du modtager denne mail, da der er nyt på det område, du har valgt at abonnere på.</p>\r\n<hr><br>\r\n<h3><a href=\"[node:url]\">[node:field_os2web_postlister_heading]</a></h3>\r\n<br><hr>"
+anonymous_subscriptions_subject_text_os2web_newsletter: '[node:field_os2web_newsltr_subject:value]'
+anonymous_subscriptions_body_text_os2web_newsletter: '[node:render_os2web_newsletter]'
+anonymous_subscription_disabled_terms:
+  - '4512'
+anonymous_subscriptions_user_consent_page: '2439'
+anonymous_subscriptions_subject_text_os2web_meetings_meeting: ''
+anonymous_subscriptions_body_text_os2web_meetings_meeting: ''
+anonymous_subscriptions_scheduled_hour: '-1'

@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_postlister_kle
+    - node.type.os2web_postlister
+    - taxonomy.vocabulary.os2web_kle
+id: node.os2web_postlister.field_os2web_postlister_kle
+field_name: field_os2web_postlister_kle
+entity_type: node
+bundle: os2web_postlister
+label: KLE
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_kle: os2web_kle
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

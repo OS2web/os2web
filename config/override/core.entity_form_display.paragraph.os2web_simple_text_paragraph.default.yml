@@ -1,0 +1,33 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_simple_text_paragraph.field_os2web_simple_text_body
+    - field.field.paragraph.os2web_simple_text_paragraph.field_os2web_simple_text_heading
+    - field.field.paragraph.os2web_simple_text_paragraph.field_os2web_simple_text_subhead
+    - paragraphs.paragraphs_type.os2web_simple_text_paragraph
+  module:
+    - text
+id: paragraph.os2web_simple_text_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_simple_text_paragraph
+mode: default
+content:
+  field_os2web_simple_text_body:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_os2web_simple_text_heading: true
+  field_os2web_simple_text_subhead: true
+  status: true

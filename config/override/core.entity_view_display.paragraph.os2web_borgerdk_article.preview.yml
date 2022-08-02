@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.os2web_borgerdk_article.field_os2web_bdk_article
+    - paragraphs.paragraphs_type.os2web_borgerdk_article
+  module:
+    - os2web_borgerdk
+  enforced:
+    module:
+      - os2web_borgerdk
+id: paragraph.os2web_borgerdk_article.preview
+targetEntityType: paragraph
+bundle: os2web_borgerdk_article
+mode: preview
+content:
+  field_os2web_bdk_article:
+    type: os2web_borgerdk_article_preview
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

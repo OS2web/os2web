@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_hearings_status
+    - node.type.os2web_hearings_hearing_case
+    - taxonomy.vocabulary.os2web_hearings_status
+id: node.os2web_hearings_hearing_case.field_os2web_hearings_status
+field_name: field_os2web_hearings_status
+entity_type: node
+bundle: os2web_hearings_hearing_case
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_hearings_status: os2web_hearings_status
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

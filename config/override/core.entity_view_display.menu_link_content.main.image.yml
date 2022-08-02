@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.menu_link_content.image
+    - field.field.menu_link_content.main.field_os2web_icon
+    - system.menu.main
+  module:
+    - os2web_menu_links_paragraph
+id: menu_link_content.main.image
+targetEntityType: menu_link_content
+bundle: main
+mode: image
+content:
+  field_os2web_icon:
+    type: node_menu_image_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  children: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.banner_crop
+id: crop.banner_crop
+target_entity_type_id: crop
+target_bundle: banner_crop
+default_langcode: site_default
+language_alterable: false

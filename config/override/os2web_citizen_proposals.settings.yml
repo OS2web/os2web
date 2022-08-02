@@ -1,0 +1,21 @@
+admin_email: stan@bellcom.ee
+proposal_max_votes: '200'
+proposal_publish_period_months: '2'
+proposal_life_period_months: '24'
+email_subject_create_proposal_user: 'Borgerdrevet forslag oprettet'
+email_body_create_proposal_user: "Hej, \r\n\r\n\r\nForslagets titel er: @proposal_title\r\n"
+email_subject_proposal_accepted_user: 'Borgerdrevet forslag accepteret'
+email_body_proposal_accepted_user: "Hej,\r\n\r\nDit borgerdrevne forslag @proposal_title er blevet accepteret.\r\n\r\n\r\n"
+email_subject_proposal_rejected_user: 'Borgerdrevet forslag er afslået'
+email_body_proposal_rejected_user: "Hej,\r\n\r\nDit borgerdrevne forslag @proposal_link er blevet afslået\r\nDer er registreret følgende data på forslaget:\r\n@person_name\r\n@person_address\r\n@person_zipcode\r\n@person_city\r\n@person_email\r\nBegrundelsen for afslaget kan ses her: \r\n@proposal_reject_reason \r\n\r\nUddybende information kan ses her:\r\n@proposal_reject_reason_ext"
+email_subject_vote_received_user: 'Borgerdrevet forslag har modtaget stemmer'
+email_body_vote_received_user: "Hej,\r\n\r\nDit borgerdrevne forslag @proposal_title har modtaget en ny stemme. \r\nAntal stemmer : @proposal_vote_count\r\n"
+email_subject_create_proposal_admin: 'Der er blevet oprettet et borgerdrevent forslag'
+email_body_create_proposal_admin: "Hej,\r\n\r\nDer er oprettet et borgerdrevent forslag på hjemmesiden.\r\nDet kan findes her: @proposal_link\r\n\r\nDer er registrereret følgende data på forslaget:\r\nForslagets titel er: @proposal_title\r\nForslaget indeholder følgende brødtekst: @proposal_body\r\nDit forslag har følgende antal stemmer: @proposal_vote_count\r\nNavnet der er registreret på forslaget er: @person_name\r\nDer er registreret følgende adresse og postnummer på forslaget: @person_address\r\n@person_zipcode\r\n@person_city\r\nDer er registreret følgende email på forslaget @person_email"
+email_subject_vote_maxed_admin: 'Et borgerdrevent forslag har fået det maksimale antal stemmer'
+email_body_vote_maxed_admin: "Hej,\r\n\r\nEt borgerdrevent forslag @proposal_link har fået det maksimale antal stemmer.\r\nDet har nu @proposal_vote_count stemmer.\r\n\r\nDer er registreret følgende data på forslaget:\r\nForslagets titel er: @proposal_title\r\nForslaget indeholder følgende brødtekst: @proposal_body\r\nDit forslag har følgende antal stemmer: @proposal_vote_count\r\nNavnet der er registreret på forslaget er: @person_name\r\nDer er registreret følgende adresse og postnummer på forslaget: @person_address\r\n@person_zipcode\r\n@person_city\r\nDer er registreret følgende email på forslaget @person_email"
+submit: 'Gem indstillinger'
+form_build_id: form-WmljMR2WuK-tJhM6uy4DPZ1gi42UhIpRaJlYJi4QGBU
+form_token: LgOET17isXlCEcLopAaI2HobeftUqpVp3hdse9ZGzpY
+form_id: os2web_citizen_proposals_settings
+op: 'Gem indstillinger'

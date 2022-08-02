@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_page_paragraph_wide
+  module:
+    - entity_reference_revisions
+    - fieldblock
+  theme:
+    - fds_custom_theme
+id: paragraph_wide
+theme: fds_custom_theme
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'fieldblock:node'
+settings:
+  id: 'fieldblock:node'
+  label: 'Paragraph - wide'
+  label_display: '0'
+  provider: fieldblock
+  label_from_field: false
+  field_name: field_os2web_page_paragraph_wide
+  formatter_id: entity_reference_revisions_entity_view
+  formatter_settings:
+    view_mode: default
+visibility: {  }

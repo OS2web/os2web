@@ -1,0 +1,7 @@
+langcode: und
+status: true
+dependencies: {  }
+name: 'Person oplysninger gruppe'
+vid: os2web_pi_group
+description: ''
+weight: 0

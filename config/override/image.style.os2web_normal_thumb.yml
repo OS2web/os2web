@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.os2web_normal
+  module:
+    - crop
+name: os2web_normal_thumb
+label: 'Normal (thumb)'
+effects:
+  1278b7d2-6a27-4260-aa62-69eb112c04b6:
+    uuid: 1278b7d2-6a27-4260-aa62-69eb112c04b6
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: os2web_normal
+  68cb07d6-34e3-4435-96dc-c1606cc3cbc4:
+    uuid: 68cb07d6-34e3-4435-96dc-c1606cc3cbc4
+    id: image_crop
+    weight: 2
+    data:
+      width: 620
+      height: 294
+      anchor: center-center

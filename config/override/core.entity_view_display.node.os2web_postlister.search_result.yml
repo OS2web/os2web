@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.os2web_postlister.field_os2web_postlister_descript
+    - field.field.node.os2web_postlister.field_os2web_postlister_heading
+    - field.field.node.os2web_postlister.field_os2web_postlister_kle
+    - field.field.node.os2web_postlister.field_os2web_postlister_section
+    - node.type.os2web_postlister
+  module:
+    - user
+id: node.os2web_postlister.search_result
+targetEntityType: node
+bundle: os2web_postlister
+mode: search_result
+content:
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_os2web_postlister_descript: true
+  field_os2web_postlister_heading: true
+  field_os2web_postlister_kle: true
+  field_os2web_postlister_section: true
+  langcode: true
+  links: true

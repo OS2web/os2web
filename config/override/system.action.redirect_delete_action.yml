@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - redirect
+  enforced:
+    module:
+      - redirect
+id: redirect_delete_action
+label: 'Slet omdirigering'
+type: redirect
+plugin: redirect_delete_action
+configuration: {  }

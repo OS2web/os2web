@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - media
+name: 'restricted html'
+format: restricted_html
+weight: 0
+filters:
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }

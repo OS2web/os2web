@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.os2web_paragraphs_search
+label: 'OS2Web paragraphs search'
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,77 @@
+langcode: da
+popup_enabled: true
+popup_clicking_confirmation: true
+popup_scrolling_confirmation: false
+eu_only: false
+eu_only_js: false
+popup_position: false
+fixed_top_position: true
+popup_info:
+  value: "<h2><b>OS2Web Kommune bruger cookies på os2web.dk.&nbsp;</b></h2>\r\n\r\n<p>På os2web.dk&nbsp;bruger vi cookies til at indsamle statistik for at forbedre hjemmesiden.</p>\r\n\r\n<p>Vores statistiske cookies sletter sig selv efter 12 måneder.</p>\r\n\r\n<p>Læs mere om <a href=\"https://os2web.dk/da/kommunen/cookies-paa-hjemmesiden\" title=\"https://os2web.dk/da/kommunen/cookies-paa-hjemmesiden\"> OS2Web Kommunes brug af cookies</a>.</p>\r\n"
+  format: wysiwyg_tekst
+mobile_popup_info:
+  value: ''
+  format: wysiwyg_tekst
+popup_info_template: new
+popup_agree_button_message: Luk
+popup_more_info_button_message: 'Mere information'
+mobile_breakpoint: 768
+popup_agreed_enabled: false
+popup_hide_agreed: false
+disagree_button_label: 'Nej tak'
+popup_agreed:
+  value: "<h2>Vi bruger cookies.</h2>\r\n\r\n<p>Nogle sikrer at sitet virker, andre samler statistik ind til forbedring af din brugeroplevelse.</p>\r\n\r\n<p>Du har allerede givet dit samtykke.</p>\r\n"
+  format: wysiwyg_tekst
+popup_find_more_button_message: 'Mere information'
+popup_hide_button_message: Skjul
+popup_link: '<front>'
+popup_link_new_window: true
+popup_height: null
+popup_width: ''
+popup_delay: 1000
+show_more_info: false
+popup_bg_hex: ''
+popup_text_hex: ''
+domain: ''
+domains_option: 1
+domains_list: ''
+exclude_paths: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*\r\n/kultunautindhold"
+exclude_admin_theme: true
+cookie_session: 0
+set_cookie_session_zero_on_disagree: 0
+cookie_lifetime: 1
+use_mobile_message: false
+use_bare_css: true
+disagree_do_not_show_popup: false
+reload_page: true
+reload_options: 0
+reload_routes_list: ''
+cookie_name: ''
+exclude_uid_1: true
+better_support_for_screen_readers: false
+method: default
+disabled_javascripts: ''
+automatic_cookies_removal: true
+allowed_cookies: ''
+consent_storage_method: basic
+withdraw_message:
+  value: "<p data-pm-slice=\"1 1 []\"><strong>OS2Web Kommune bruger cookies på </strong><a href=\"http://os2web.dk\">os2web.dk</a> <strong>.</strong></p>\r\n\r\n<p>På <a href=\"http://os2web.dk\">os2web.dk</a> bruger vi cookies til at indsamle statistik for at forbedre hjemmesiden.</p>\r\n\r\n<p>Vores statistiske cookies sletter sig selv efter 12 måneder.</p>\r\n\r\n<p>Læs mere om <a href=\"https://os2web.dk/da/kommunen/cookies-paa-hjemmesiden\">OS2Web Kommunes brug af cookies</a>.</p>\r\n"
+  format: wysiwyg_tekst
+withdraw_tab_button_label: 'Indstillinger for privatliv'
+withdraw_action_button_label: 'Træk samtykke tilbage'
+withdraw_enabled: false
+withdraw_button_on_info_popup: false
+save_preferences_button_label: 'Gem mit valg'
+accept_all_categories_button_label: 'Accepter alle cookies'
+enable_save_preferences_button: true
+domain_all_sites: false
+settings_tab_enabled: false
+containing_element: body
+cookie_policy_version: 1.0.0
+cookie_value_disagreed: '0'
+cookie_value_agreed_show_thank_you: '1'
+cookie_value_agreed: '2'
+accessibility_focus: false
+dependencies:
+  config:
+    - filter.format.wysiwyg_tekst

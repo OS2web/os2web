@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: admin
+label: Administration
+description: 'Links til administrative opgaver'
+locked: true

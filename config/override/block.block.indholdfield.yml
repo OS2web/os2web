@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_til_andet_indhold
+  module:
+    - fieldblock
+  theme:
+    - fds_redwhite_theme
+id: indholdfield
+theme: fds_redwhite_theme
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'fieldblock:node'
+settings:
+  id: 'fieldblock:node'
+  label: 'Se også'
+  label_display: visible
+  provider: fieldblock
+  label_from_field: false
+  field_name: field_link_til_andet_indhold
+  formatter_id: entity_reference_label
+  formatter_settings:
+    link: true
+visibility: {  }

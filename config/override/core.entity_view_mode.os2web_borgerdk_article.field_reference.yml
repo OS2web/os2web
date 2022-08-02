@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_borgerdk
+id: os2web_borgerdk_article.field_reference
+label: 'Borger.dk Article field reference'
+targetEntityType: os2web_borgerdk_article
+cache: true

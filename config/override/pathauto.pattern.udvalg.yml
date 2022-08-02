@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: udvalg
+label: Udvalg
+type: 'canonical_entities:taxonomy_term'
+pattern: 'os2web-meetings-committees/[term:name]'
+selection_criteria:
+  b30c81b2-60da-408b-a680-2fbaf0f20f4f:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: b30c81b2-60da-408b-a680-2fbaf0f20f4f
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      os2web_m_committee: os2web_m_committee
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: indhold_a
+label: Indhold
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join:/]/[node:title]'
+selection_criteria:
+  acd1efc2-233b-472e-bb82-d83e6f8e38b6:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: acd1efc2-233b-472e-bb82-d83e6f8e38b6
+    context_mapping:
+      node: node
+    bundles:
+      os2web_hearings_hearing_case: os2web_hearings_hearing_case
+      os2web_page: os2web_page
+selection_logic: and
+weight: -5
+relationships: {  }

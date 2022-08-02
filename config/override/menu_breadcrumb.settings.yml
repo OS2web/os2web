@@ -1,0 +1,55 @@
+langcode: da
+determine_menu: true
+disable_admin_page: true
+append_current_page: true
+current_page_as_link: true
+stop_on_first_match: false
+append_member_page: false
+member_page_as_link: false
+remove_home: false
+add_home: false
+front_title: 2
+exclude_empty_url: false
+exclude_disabled_menu_items: false
+derived_active_trail: false
+menu_breadcrumb_menus:
+  main:
+    enabled: 1
+    weight: -10
+    taxattach: 0
+    langhandle: 1
+  admin:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  account:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  eksterne-links:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  interne-links:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  footer:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  tools:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  workbench:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0

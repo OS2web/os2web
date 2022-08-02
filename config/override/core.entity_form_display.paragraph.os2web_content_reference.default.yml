@@ -1,0 +1,54 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_content_reference.field_os2web_content_ref_subhead
+    - field.field.paragraph.os2web_content_reference.field_os2web_content_ref_vmod
+    - field.field.paragraph.os2web_content_reference.field_os2web_content_reference
+    - field.field.paragraph.os2web_content_reference.field_os2web_content_reference_h
+    - paragraphs.paragraphs_type.os2web_content_reference
+id: paragraph.os2web_content_reference.default
+targetEntityType: paragraph
+bundle: os2web_content_reference
+mode: default
+content:
+  field_os2web_content_ref_subhead:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_content_ref_vmod:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_os2web_content_reference:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_content_reference_h:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

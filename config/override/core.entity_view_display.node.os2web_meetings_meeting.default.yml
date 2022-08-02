@@ -1,0 +1,90 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_meetings_meeting.body
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_addendum
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_bps
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_committee
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_doc
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_end_date
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_esdh_id
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_location
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_meet_id
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_partic
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_partic_cancel
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_source
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_start_date
+    - field.field.node.os2web_meetings_meeting.field_os2web_m_type
+    - node.type.os2web_meetings_meeting
+  module:
+    - datetime
+    - user
+id: node.os2web_meetings_meeting.default
+targetEntityType: node
+bundle: os2web_meetings_meeting
+mode: default
+content:
+  field_os2web_m_bps:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_os2web_m_committee:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_m_end_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: os2core_datetime_medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_m_location:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_m_start_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: os2core_datetime_medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_m_type:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_os2web_m_addendum: true
+  field_os2web_m_doc: true
+  field_os2web_m_esdh_id: true
+  field_os2web_m_meet_id: true
+  field_os2web_m_partic: true
+  field_os2web_m_partic_cancel: true
+  field_os2web_m_source: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

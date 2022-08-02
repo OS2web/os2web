@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.interne-links
+  module:
+    - system
+  theme:
+    - fds_redwhite_theme
+id: internelinks
+theme: fds_redwhite_theme
+region: footer_third
+weight: -15
+provider: null
+plugin: 'system_menu_block:interne-links'
+settings:
+  id: 'system_menu_block:interne-links'
+  label: 'Interne links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_selfbetjening_ref
+  module:
+    - fieldblock
+  theme:
+    - fds_redwhite_theme
+id: selvbetjening
+theme: fds_redwhite_theme
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'fieldblock:node'
+settings:
+  id: 'fieldblock:node'
+  label: 'Populær selvbetjening'
+  label_display: visible
+  provider: fieldblock
+  label_from_field: false
+  field_name: field_selfbetjening_ref
+  formatter_id: entity_reference_entity_view
+  formatter_settings:
+    view_mode: borgerdk_selfservice_simple_link
+visibility: {  }

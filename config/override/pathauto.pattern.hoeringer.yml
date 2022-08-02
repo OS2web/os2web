@@ -1,0 +1,21 @@
+langcode: da
+status: false
+dependencies:
+  module:
+    - node
+id: hoeringer
+label: Høringer
+type: 'canonical_entities:node'
+pattern: 'kommunen/dialog-indflydelse/hoeringer-afgoerelser-og-borgermoeder/[node:title]'
+selection_criteria:
+  30c74e96-c4cd-4402-81ed-65aa297eadb8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 30c74e96-c4cd-4402-81ed-65aa297eadb8
+    context_mapping:
+      node: node
+    bundles:
+      os2web_hearings_hearing_case: os2web_hearings_hearing_case
+selection_logic: and
+weight: -5
+relationships: {  }

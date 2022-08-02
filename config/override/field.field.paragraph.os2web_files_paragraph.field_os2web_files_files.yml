@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_files_files
+    - paragraphs.paragraphs_type.os2web_files_paragraph
+  module:
+    - file
+id: paragraph.os2web_files_paragraph.field_os2web_files_files
+field_name: field_os2web_files_files
+entity_type: paragraph
+bundle: os2web_files_paragraph
+label: Filer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpg jpeg gif png txt doc docx xls xlsx pdf ppt pptx pps odt ods odp rtf mp4'
+  max_filesize: ''
+  description_field: true
+field_type: file

@@ -1,0 +1,35 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_os2web_spotbox_ref_display
+field_name: field_os2web_spotbox_ref_display
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: Standard
+    -
+      value: grid_1
+      label: 'Grid 1'
+    -
+      value: grid_2
+      label: 'Grid 2'
+    -
+      value: grid_3
+      label: 'Grid 3'
+    -
+      value: slider
+      label: Slider
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

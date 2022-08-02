@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_page_description
+    - node.type.os2web_page
+  module:
+    - os2web_field_paragraph
+    - text
+third_party_settings:
+  os2web_field_paragraph:
+    enabled: true
+id: node.os2web_page.field_os2web_page_description
+field_name: field_os2web_page_description
+entity_type: node
+bundle: os2web_page
+label: Beskrivelse
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

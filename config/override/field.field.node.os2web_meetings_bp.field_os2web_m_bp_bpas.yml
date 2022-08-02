@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_m_bp_bpas
+    - node.type.os2web_meetings_bp
+    - node.type.os2web_meetings_bpa
+id: node.os2web_meetings_bp.field_os2web_m_bp_bpas
+field_name: field_os2web_m_bp_bpas
+entity_type: node
+bundle: os2web_meetings_bp
+label: 'Bullet point attachments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      os2web_meetings_bpa: os2web_meetings_bpa
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

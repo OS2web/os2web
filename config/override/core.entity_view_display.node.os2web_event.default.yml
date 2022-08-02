@@ -1,0 +1,75 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_event.body
+    - field.field.node.os2web_event.feeds_item
+    - field.field.node.os2web_event.field_o2web_event_resume
+    - field.field.node.os2web_event.field_os2web_event_end_date
+    - field.field.node.os2web_event.field_os2web_event_kategori
+    - field.field.node.os2web_event.field_os2web_event_section
+    - field.field.node.os2web_event.field_os2web_event_start_date
+    - field.field.node.os2web_event.field_os2web_event_url
+    - field.field.node.os2web_event.field_os2web_evnet_image
+    - node.type.os2web_event
+  module:
+    - datetime
+    - svg_image
+    - text
+    - user
+id: node.os2web_event.default
+targetEntityType: node
+bundle: os2web_event
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_event_end_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: event_date
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_event_start_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: event_date
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_evnet_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  feeds_item: true
+  field_o2web_event_resume: true
+  field_os2web_event_kategori: true
+  field_os2web_event_section: true
+  field_os2web_event_url: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,46 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_address
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_city
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_email
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_name
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_proposal
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_rej_ext
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_rej_reas
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_status
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_votes
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_zip_code
+    - node.type.os2web_citizen_proposals
+  module:
+    - user
+id: node.os2web_citizen_proposals.default
+targetEntityType: node
+bundle: os2web_citizen_proposals
+mode: default
+content:
+  field_os2web_cit_props_proposal:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_os2web_cit_props_address: true
+  field_os2web_cit_props_city: true
+  field_os2web_cit_props_email: true
+  field_os2web_cit_props_name: true
+  field_os2web_cit_props_rej_ext: true
+  field_os2web_cit_props_rej_reas: true
+  field_os2web_cit_props_status: true
+  field_os2web_cit_props_votes: true
+  field_os2web_cit_props_zip_code: true
+  langcode: true
+  search_api_excerpt: true

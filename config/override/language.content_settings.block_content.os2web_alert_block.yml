@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.os2web_alert_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.os2web_alert_block
+target_entity_type_id: block_content
+target_bundle: os2web_alert_block
+default_langcode: site_default
+language_alterable: false

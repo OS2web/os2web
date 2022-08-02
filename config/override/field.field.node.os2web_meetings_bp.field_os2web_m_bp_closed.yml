@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_m_bp_closed
+    - node.type.os2web_meetings_bp
+id: node.os2web_meetings_bp.field_os2web_m_bp_closed
+field_name: field_os2web_m_bp_closed
+entity_type: node
+bundle: os2web_meetings_bp
+label: Closed
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

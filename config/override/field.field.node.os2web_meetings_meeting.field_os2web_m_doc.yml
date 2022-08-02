@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_m_doc
+    - node.type.os2web_meetings_meeting
+  module:
+    - file
+id: node.os2web_meetings_meeting.field_os2web_m_doc
+field_name: field_os2web_m_doc
+entity_type: node
+bundle: os2web_meetings_meeting
+label: Document
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx odt ods xls xlsx ppt pptx html'
+  max_filesize: ''
+  description_field: false
+field_type: file

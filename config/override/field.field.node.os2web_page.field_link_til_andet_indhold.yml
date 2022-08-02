@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_til_andet_indhold
+    - node.type.os2web_news
+    - node.type.os2web_page
+id: node.os2web_page.field_link_til_andet_indhold
+field_name: field_link_til_andet_indhold
+entity_type: node
+bundle: os2web_page
+label: 'Link til andet indhold'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      os2web_page: os2web_page
+      os2web_news: os2web_news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: os2web_page
+field_type: entity_reference

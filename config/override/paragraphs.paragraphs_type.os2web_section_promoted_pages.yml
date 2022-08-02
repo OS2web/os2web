@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_section_promoted_pages
+label: 'Sektion forfremmet sider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

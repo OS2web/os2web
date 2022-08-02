@@ -1,0 +1,33 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_accordion_reusable.field_os2web_accordion_reus_targ
+    - paragraphs.paragraphs_type.os2web_accordion_reusable
+  module:
+    - inline_entity_form
+id: paragraph.os2web_accordion_reusable.default
+targetEntityType: paragraph
+bundle: os2web_accordion_reusable
+mode: default
+content:
+  field_os2web_accordion_reus_targ:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

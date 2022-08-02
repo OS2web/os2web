@@ -1,0 +1,252 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.os2web_contact.os2web_contact.field_adresse
+    - field.field.os2web_contact.os2web_contact.field_by
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_body
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_email
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_facebook
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_fax
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_firstname
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_heading
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_job_task
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_job_title
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_main_phone
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_mobile
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_modal
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_modal_body
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_modal_butt
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_modal_head
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_more
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_open_hours
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_phone
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_secure_mail
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_surname
+    - field.field.os2web_contact.os2web_contact.field_os2web_contact_website
+    - field.field.os2web_contact.os2web_contact.field_postnummer
+  module:
+    - link
+    - office_hours
+    - os2web_contact
+    - text
+    - user
+id: os2web_contact.os2web_contact.default
+targetEntityType: os2web_contact
+bundle: os2web_contact
+mode: default
+content:
+  field_adresse:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_by:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_os2web_contact_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_contact_email:
+    type: email_mailto
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_os2web_contact_facebook:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_os2web_contact_fax:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_os2web_contact_firstname:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_os2web_contact_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_contact_job_task:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_os2web_contact_job_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_os2web_contact_main_phone:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_os2web_contact_mobile:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_os2web_contact_modal_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_os2web_contact_modal_butt:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_os2web_contact_modal_head:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_os2web_contact_more:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_contact_open_hours:
+    type: office_hours
+    label: hidden
+    settings:
+      day_format: long
+      time_format: G
+      compress: false
+      grouped: false
+      show_closed: all
+      closed_format: Closed
+      separator:
+        days: '<br />'
+        grouped_days: ' - '
+        day_hours: ': '
+        hours_hours: '-'
+        more_hours: ', '
+      current_status:
+        position: ''
+        open_text: 'Currently open!'
+        closed_text: 'Currently closed'
+      timezone_field: ''
+      office_hours_first_day: ''
+      schema:
+        enabled: false
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_os2web_contact_phone:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_os2web_contact_secure_mail:
+    type: link_separate
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_os2web_contact_surname:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_os2web_contact_website:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_postnummer:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_os2web_contact_modal: true
+  langcode: true
+  search_api_excerpt: true

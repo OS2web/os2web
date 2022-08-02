@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: sex
+label: Køn
+category: Demografi
+likert: false
+options: "Mand: Mand\r\nKvinde: Kvinde\n"

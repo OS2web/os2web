@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  theme:
+    - fds_redwhite_theme
+id: fds_redwhite_theme_faner
+theme: fds_redwhite_theme
+region: highlighted
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Faner
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

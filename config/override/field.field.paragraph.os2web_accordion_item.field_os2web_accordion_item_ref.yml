@@ -1,0 +1,151 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_accordion_item_ref
+    - paragraphs.paragraphs_type.os2web_accordion_item
+    - paragraphs.paragraphs_type.os2web_cnt_paragraph_reference
+    - paragraphs.paragraphs_type.os2web_pi
+    - paragraphs.paragraphs_type.os2web_simple_text_paragraph
+  module:
+    - entity_reference_revisions
+id: paragraph.os2web_accordion_item.field_os2web_accordion_item_ref
+field_name: field_os2web_accordion_item_ref
+entity_type: paragraph
+bundle: os2web_accordion_item
+label: Reference
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      os2web_simple_text_paragraph: os2web_simple_text_paragraph
+      os2web_cnt_paragraph_reference: os2web_cnt_paragraph_reference
+      os2web_pi: os2web_pi
+    negate: 0
+    target_bundles_drag_drop:
+      os2web_2_columns:
+        weight: 20
+        enabled: false
+      os2web_3_columns:
+        weight: 21
+        enabled: false
+      os2web_accordion:
+        weight: 22
+        enabled: false
+      os2web_accordion_item:
+        weight: 26
+        enabled: false
+      os2web_accordion_reusable:
+        weight: 44
+        enabled: false
+      os2web_banner_paragraph:
+        weight: 24
+        enabled: false
+      os2web_borgerdk_article:
+        weight: 46
+        enabled: false
+      os2web_borgerdk_selfser_ref:
+        weight: 48
+        enabled: false
+      os2web_borgerdk_selfservice_cats:
+        weight: 47
+        enabled: false
+      os2web_box_paragraph:
+        weight: 25
+        enabled: false
+      os2web_citizen_proposals:
+        weight: 50
+        enabled: false
+      os2web_cnt_paragraph:
+        weight: 51
+        enabled: false
+      os2web_cnt_paragraph_reference:
+        weight: 52
+        enabled: true
+      os2web_content_reference:
+        weight: 27
+        enabled: false
+      os2web_events:
+        weight: 54
+        enabled: false
+      os2web_events_search:
+        weight: 55
+        enabled: false
+      os2web_factbox_paragraph:
+        weight: 56
+        enabled: false
+      os2web_field_paragraph:
+        weight: 58
+        enabled: false
+      os2web_files_paragraph:
+        weight: 28
+        enabled: false
+      os2web_gis_map:
+        weight: 29
+        enabled: false
+      os2web_hearings_search:
+        weight: 59
+        enabled: false
+      os2web_iframe:
+        weight: 30
+        enabled: false
+      os2web_image_paragraph:
+        weight: 31
+        enabled: false
+      os2web_keyword_paragraph:
+        weight: 62
+        enabled: false
+      os2web_meetings:
+        weight: 63
+        enabled: false
+      os2web_meetings_search:
+        weight: 32
+        enabled: false
+      os2web_menu_links_paragraph:
+        weight: 65
+        enabled: false
+      os2web_news_block:
+        weight: 66
+        enabled: false
+      os2web_news_page:
+        weight: 67
+        enabled: false
+      os2web_pi:
+        weight: 68
+        enabled: true
+      os2web_section_paragraph:
+        weight: 69
+        enabled: false
+      os2web_section_promoted_pages:
+        weight: 70
+        enabled: false
+      os2web_simple_text_paragraph:
+        weight: 33
+        enabled: true
+      os2web_slideshow:
+        weight: 34
+        enabled: false
+      os2web_spotbox:
+        weight: 35
+        enabled: false
+      os2web_spotbox_reference:
+        weight: 36
+        enabled: false
+      os2web_twi_paragraph:
+        weight: 37
+        enabled: false
+      os2web_video:
+        weight: 76
+        enabled: false
+      os2web_webform:
+        weight: 77
+        enabled: false
+      os2web_wrapper:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

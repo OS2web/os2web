@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: postlister
+label: Postlister
+type: 'canonical_entities:node'
+pattern: 'postlister/[node:title]'
+selection_criteria:
+  940be6d9-12b0-40d7-87e2-f15745e0eaea:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 940be6d9-12b0-40d7-87e2-f15745e0eaea
+    context_mapping:
+      node: node
+    bundles:
+      os2web_postlister: os2web_postlister
+selection_logic: and
+weight: -5
+relationships: {  }

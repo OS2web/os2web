@@ -1,0 +1,25 @@
+import_closed_agenda: 0
+closed_bp_title_prefix: ''
+closed_bp_body_text: ''
+committee_whitelist: '§ 17, stk. 4 udvalg (Nedlagt),§ 17.4 udvalg (SIF-udvalget),Byrådet,Børne- og Undervisningsudvalget,Det Lokale Arbejdsmarkedsråd,Det Lokale Beskæftigelsesråd (Nedlagt),Frivilligrådet,Handicaprådet,Integrationsrådet,Klima- og Miljøudvalget,Kultur- og Fritidsudvalget,Plan- og Boligudvalget,Social- og Arbejdsmarkedsudvalget,Sundhedsrådet,Ungdomsskolens bestyrelse,Ældre- og Genoptræningsudvalget,Ældrerådet,Økonomiudvalget,Folkeoplysningsrådet,Plan- og Boligudvalget 2021,Børne- og Familieudvalget,Undervisning- og Fritidsudvalget,Arbejdsmarkeds- og Erhvervsudvalget,Ældre-, Social- og Sundhedsudvalget,94,95,105,108,109,112,117,129,135,136,137,138,149,161,169,170,178,184,192,193,195,196,197,198,199,200,201,202,205,210'
+unpublish_missing_agendas: 0
+create_files_copy: 0
+process_enclosures_as_attachments: 0
+clear_html_tags_list: ''
+replace_multiple_nbsp: 0
+replace_empty_paragraphs: 0
+banned_special_char: ''
+max_sequential_br: '1'
+resume_bpa_title: ''
+decision_bpa_title: ''
+text_before_bp_number: ''
+dot_after_bp_number: 0
+enclosures_max_title_length: '255'
+show_closed_agendas_separately: 0
+submit: 'Gem indstillinger'
+form_build_id: form-aD_lFi_5g9dkMfjMLTg2ZbravTnrHfBMDWFVpfExRWY
+form_token: k6GuAyVA1RcoBOb48VCetoHFxfJ3SYW8GYo-kDzWDV8
+form_id: os2web_meetings_settings
+edoc_fujitsu_meetings_manifest_path: 'public://edoc_fujitsu'
+op: 'Gem indstillinger'
+acadre_meetings_manifest_path: 'public://acadre/mm'

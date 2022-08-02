@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_news_par_section
+    - paragraphs.paragraphs_type.os2web_news_block
+    - taxonomy.vocabulary.os2web_sektion
+id: paragraph.os2web_news_block.field_os2web_news_par_section
+field_name: field_os2web_news_par_section
+entity_type: paragraph
+bundle: os2web_news_block
+label: Sektion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_sektion: os2web_sektion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

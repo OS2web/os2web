@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.field_os2web_cit_props_v_name
+field_name: field_os2web_cit_props_v_name
+entity_type: comment
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

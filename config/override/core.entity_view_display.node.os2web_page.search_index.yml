@@ -1,0 +1,128 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.os2web_page.field_indholdsgruppe
+    - field.field.node.os2web_page.field_link_til_andet_indhold
+    - field.field.node.os2web_page.field_os2web_page_contact
+    - field.field.node.os2web_page.field_os2web_page_contact_hide
+    - field.field.node.os2web_page.field_os2web_page_description
+    - field.field.node.os2web_page.field_os2web_page_heading
+    - field.field.node.os2web_page.field_os2web_page_institution
+    - field.field.node.os2web_page.field_os2web_page_intro
+    - field.field.node.os2web_page.field_os2web_page_keyword
+    - field.field.node.os2web_page.field_os2web_page_kle
+    - field.field.node.os2web_page.field_os2web_page_metatags
+    - field.field.node.os2web_page.field_os2web_page_paragraph_bann
+    - field.field.node.os2web_page.field_os2web_page_paragraph_left
+    - field.field.node.os2web_page.field_os2web_page_paragraph_narr
+    - field.field.node.os2web_page.field_os2web_page_paragraph_righ
+    - field.field.node.os2web_page.field_os2web_page_paragraph_wide
+    - field.field.node.os2web_page.field_os2web_page_primaryimage
+    - field.field.node.os2web_page.field_os2web_page_related_hide
+    - field.field.node.os2web_page.field_os2web_page_section
+    - field.field.node.os2web_page.field_selfbetjening_ref
+    - image.style.os2web_normal
+    - node.type.os2web_page
+  module:
+    - entity_reference_revisions
+    - svg_image
+    - text
+    - user
+id: node.os2web_page.search_index
+targetEntityType: node
+bundle: os2web_page
+mode: search_index
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_page_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_page_heading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_page_intro:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_page_paragraph_left:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: os2web_paragraphs_search
+      link: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_os2web_page_paragraph_narr:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: os2web_paragraphs_search
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_os2web_page_paragraph_righ:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: os2web_paragraphs_search
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_os2web_page_paragraph_wide:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: os2web_paragraphs_search
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_os2web_page_primaryimage:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: os2web_normal
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_indholdsgruppe: true
+  field_link_til_andet_indhold: true
+  field_os2web_page_contact: true
+  field_os2web_page_contact_hide: true
+  field_os2web_page_institution: true
+  field_os2web_page_keyword: true
+  field_os2web_page_kle: true
+  field_os2web_page_metatags: true
+  field_os2web_page_paragraph_bann: true
+  field_os2web_page_related_hide: true
+  field_os2web_page_section: true
+  field_selfbetjening_ref: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: workbench
+label: Workbench
+description: 'The editorial workbench.'
+locked: true

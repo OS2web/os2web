@@ -27,7 +27,6 @@ function os2web_install() {
     ->install([
       "os2web_pagebuilder",
       "os2web_accordion_paragraph",
-      "os2web_contact_form_paragraph",
       "os2web_contact_paragraph",
       "os2web_content_reference_paragraph",
       "os2web_factbox_paragraph",

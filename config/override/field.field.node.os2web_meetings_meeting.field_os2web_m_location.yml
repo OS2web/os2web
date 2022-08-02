@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_m_location
+    - node.type.os2web_meetings_meeting
+    - taxonomy.vocabulary.os2web_m_location
+id: node.os2web_meetings_meeting.field_os2web_m_location
+field_name: field_os2web_m_location
+entity_type: node
+bundle: os2web_meetings_meeting
+label: Lokation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_m_location: os2web_m_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,631 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_page.field_indholdsgruppe
+    - field.field.node.os2web_page.field_link_til_andet_indhold
+    - field.field.node.os2web_page.field_os2web_page_contact
+    - field.field.node.os2web_page.field_os2web_page_contact_hide
+    - field.field.node.os2web_page.field_os2web_page_description
+    - field.field.node.os2web_page.field_os2web_page_heading
+    - field.field.node.os2web_page.field_os2web_page_institution
+    - field.field.node.os2web_page.field_os2web_page_intro
+    - field.field.node.os2web_page.field_os2web_page_keyword
+    - field.field.node.os2web_page.field_os2web_page_kle
+    - field.field.node.os2web_page.field_os2web_page_metatags
+    - field.field.node.os2web_page.field_os2web_page_paragraph_bann
+    - field.field.node.os2web_page.field_os2web_page_paragraph_left
+    - field.field.node.os2web_page.field_os2web_page_paragraph_narr
+    - field.field.node.os2web_page.field_os2web_page_paragraph_righ
+    - field.field.node.os2web_page.field_os2web_page_paragraph_wide
+    - field.field.node.os2web_page.field_os2web_page_primaryimage
+    - field.field.node.os2web_page.field_os2web_page_related_hide
+    - field.field.node.os2web_page.field_os2web_page_section
+    - field.field.node.os2web_page.field_selfbetjening_ref
+    - image.style.os2web_normal
+    - node.type.os2web_page
+    - workflows.workflow.publish_content
+  module:
+    - content_moderation
+    - field_group
+    - image_widget_crop
+    - inline_entity_form
+    - metatag
+    - paragraphs
+    - path
+    - scheduler
+    - scheduler_content_moderation_integration
+    - text
+    - textfield_counter
+third_party_settings:
+  field_group:
+    group_editform:
+      children:
+        - group_standard
+        - group_media
+        - group_afsnit
+        - group_sidebars
+        - group_sidebygger
+        - group_references
+        - group_settings
+      label: Editform
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        classes: ''
+        id: ''
+        direction: horizontal
+    group_media:
+      children:
+        - field_os2web_page_paragraph_bann
+        - field_os2web_page_primaryimage
+      label: Media
+      region: content
+      parent_name: group_editform
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_standard:
+      children:
+        - field_os2web_page_heading
+        - field_os2web_page_intro
+        - field_os2web_page_description
+      label: Standard
+      region: content
+      parent_name: group_editform
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+    group_afsnit:
+      children:
+        - field_os2web_page_paragraph_narr
+      label: Afsnit
+      region: content
+      parent_name: group_editform
+      weight: 22
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_sidebars:
+      children:
+        - field_os2web_page_paragraph_left
+        - field_os2web_page_paragraph_righ
+      label: Sideafsnit
+      region: content
+      parent_name: group_editform
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_settings:
+      children:
+        - field_os2web_page_contact
+        - field_os2web_page_contact_hide
+        - field_os2web_page_related_hide
+      label: Indstillinger
+      region: content
+      parent_name: group_editform
+      weight: 27
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_references:
+      children:
+        - field_os2web_page_section
+        - field_os2web_page_kle
+        - field_link_til_andet_indhold
+        - field_selfbetjening_ref
+      label: Referencer
+      region: content
+      parent_name: group_editform
+      weight: 25
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_sidebygger:
+      children:
+        - field_os2web_page_paragraph_wide
+      label: Sidebygger
+      region: content
+      parent_name: group_editform
+      weight: 24
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: 'Benyt denne bygger til at bygge hele siden eller til at bygges indhold under det øvrige indhold.'
+        required_fields: true
+id: node.os2web_page.default
+targetEntityType: node
+bundle: os2web_page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_indholdsgruppe:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link_til_andet_indhold:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_page_contact:
+    type: inline_entity_form_complex
+    weight: 14
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Kontakt
+      label_plural: Kontakter
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsible: true
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_os2web_page_contact_hide:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_os2web_page_description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_page_heading:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_page_intro:
+    type: string_textarea_with_counter
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+      maxlength: 200
+      counter_position: after
+      js_prevent_submit: true
+      count_html_characters: true
+      textcount_status_message: 'Maxlength: <span class="maxlength_count">@maxlength</span><br />Used: <span class="current_count">@current_length</span><br />Remaining: <span class="remaining_count">@remaining_count</span>'
+    third_party_settings: {  }
+  field_os2web_page_keyword:
+    type: entity_reference_autocomplete_tags
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_page_kle:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_page_metatags:
+    type: metatag_firehose
+    weight: 16
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_os2web_page_paragraph_bann:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Banner
+      title_plural: Bannere
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: '0'
+    third_party_settings: {  }
+  field_os2web_page_paragraph_left:
+    type: paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Afsnit
+      title_plural: Afsnit
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_os2web_page_paragraph_narr:
+    type: paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Afsnit
+      title_plural: Afsnit
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_os2web_page_paragraph_righ:
+    type: paragraphs
+    weight: 6
+    region: content
+    settings:
+      title: Afsnit
+      title_plural: Afsnit
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_os2web_page_paragraph_wide:
+    type: paragraphs
+    weight: 6
+    region: content
+    settings:
+      title: Afsnit
+      title_plural: Afsnit
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_os2web_page_primaryimage:
+    type: image_widget_crop
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: os2web_normal
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - os2web_normal
+      crop_types_required:
+        - os2web_normal
+      warn_multiple_usages: true
+      show_crop_area: false
+      show_default_crop: true
+    third_party_settings: {  }
+  field_os2web_page_related_hide:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_os2web_page_section:
+    type: entity_reference_autocomplete
+    weight: 16
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_selfbetjening_ref:
+    type: inline_entity_form_complex
+    weight: 20
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_state:
+    type: scheduler_moderation
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  third_party_settings:
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    field_group:
+      group_editform:
+        children:
+          - group_standard
+          - group_media
+          - group_afsnit
+          - group_sidebars
+          - group_sidebygger
+          - group_references
+          - group_settings
+        parent_name: ''
+        weight: 3
+        format_type: tabs
+        format_settings:
+          id: ''
+          classes: ''
+          direction: horizontal
+        label: Editform
+      group_media:
+        children:
+          - field_os2web_page_paragraph_bann
+          - field_os2web_page_primaryimage
+        parent_name: group_editform
+        weight: 21
+        format_type: tab
+        format_settings:
+          id: ''
+          classes: ''
+          formatter: closed
+          description: ''
+          required_fields: true
+        label: Media
+      group_standard:
+        children:
+          - field_os2web_page_heading
+          - field_os2web_page_intro
+          - field_os2web_page_description
+        parent_name: group_editform
+        weight: 20
+        format_type: tab
+        format_settings:
+          id: ''
+          classes: ''
+          formatter: open
+          description: ''
+          required_fields: true
+        label: Standard
+      group_afsnit:
+        children:
+          - field_os2web_page_paragraph_narr
+        parent_name: group_editform
+        weight: 22
+        format_type: tab
+        format_settings:
+          id: ''
+          classes: ''
+          formatter: closed
+          description: ''
+          required_fields: true
+        label: Afsnit
+      group_sidebars:
+        children:
+          - field_os2web_page_paragraph_left
+          - field_os2web_page_paragraph_righ
+        parent_name: group_editform
+        weight: 23
+        format_type: tab
+        format_settings:
+          id: ''
+          classes: ''
+          formatter: closed
+          description: ''
+          required_fields: true
+        label: Sideafsnit
+      group_settings:
+        children:
+          - field_os2web_page_contact
+          - field_os2web_page_contact_hide
+          - field_os2web_page_related_hide
+        parent_name: group_editform
+        weight: 26
+        format_type: tab
+        format_settings:
+          id: ''
+          classes: ''
+          formatter: closed
+          description: ''
+          required_fields: true
+        label: Indstillinger
+      group_references:
+        children:
+          - field_os2web_page_section
+          - field_os2web_page_kle
+        parent_name: group_editform
+        weight: 25
+        format_type: tab
+        format_settings:
+          id: ''
+          classes: ''
+          formatter: closed
+          description: ''
+          required_fields: true
+        label: Referencer
+      group_sidebygger:
+        children:
+          - field_os2web_page_paragraph_wide
+        parent_name: group_editform
+        weight: 24
+        format_type: tab
+        format_settings:
+          id: ''
+          classes: ''
+          formatter: closed
+          description: 'Benyt denne bygger til at bygge hele siden eller til at bygges indhold under det øvrige indhold.'
+          required_fields: true
+        label: Sidebygger
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  unpublish_state:
+    type: scheduler_moderation
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_os2web_page_institution: true
+  promote: true
+  sticky: true

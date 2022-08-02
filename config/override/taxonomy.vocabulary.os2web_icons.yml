@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+name: Ikoner
+vid: os2web_icons
+description: ''
+weight: 0

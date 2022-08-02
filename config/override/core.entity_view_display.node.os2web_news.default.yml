@@ -1,0 +1,180 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_news.field_os2web_news_article_author
+    - field.field.node.os2web_news.field_os2web_news_article_date
+    - field.field.node.os2web_news.field_os2web_news_description
+    - field.field.node.os2web_news.field_os2web_news_heading
+    - field.field.node.os2web_news.field_os2web_news_intro
+    - field.field.node.os2web_news.field_os2web_news_kle
+    - field.field.node.os2web_news.field_os2web_news_paragraph_bann
+    - field.field.node.os2web_news.field_os2web_news_paragraph_left
+    - field.field.node.os2web_news.field_os2web_news_paragraph_narr
+    - field.field.node.os2web_news.field_os2web_news_paragraph_righ
+    - field.field.node.os2web_news.field_os2web_news_paragraph_wid
+    - field.field.node.os2web_news.field_os2web_news_primaryimage
+    - field.field.node.os2web_news.field_os2web_news_section
+    - image.style.nyhed
+    - node.type.os2web_news
+  module:
+    - datetime
+    - entity_reference_revisions
+    - svg_image
+    - text
+    - user
+id: node.os2web_news.default
+targetEntityType: node
+bundle: os2web_news
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_field_os2web_news_primaryi:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_news_accordion:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_os2web_news_article_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: os2core_date_medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_news_deck:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_os2web_news_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_os2web_news_heading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_news_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_news_intro:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_news_paragraph_nar:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_os2web_news_paragraph_narr:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_os2web_news_primaryimage:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: nyhed
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_os2web_news_video:
+    type: video_embed_field_video
+    label: hidden
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_page_heading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_os2web_news_accord_title: true
+  field_os2web_news_article_author: true
+  field_os2web_news_image_video: true
+  field_os2web_news_kle: true
+  field_os2web_news_paragraph_bann: true
+  field_os2web_news_paragraph_left: true
+  field_os2web_news_paragraph_righ: true
+  field_os2web_news_paragraph_wid: true
+  field_os2web_news_section: true
+  langcode: true
+  search_api_excerpt: true

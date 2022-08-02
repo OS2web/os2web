@@ -1,0 +1,76 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_citizen_proposals_vote
+    - field.field.comment.os2web_citizen_proposals_vote.field_os2web_cit_props_v_address
+    - field.field.comment.os2web_citizen_proposals_vote.field_os2web_cit_props_v_city
+    - field.field.comment.os2web_citizen_proposals_vote.field_os2web_cit_props_v_email
+    - field.field.comment.os2web_citizen_proposals_vote.field_os2web_cit_props_v_name
+    - field.field.comment.os2web_citizen_proposals_vote.field_os2web_cit_props_v_zipcode
+id: comment.os2web_citizen_proposals_vote.default
+targetEntityType: comment
+bundle: os2web_citizen_proposals_vote
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_os2web_cit_props_v_address:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_cit_props_v_city:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_cit_props_v_email:
+    type: email_default
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_os2web_cit_props_v_name:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_cit_props_v_zipcode:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

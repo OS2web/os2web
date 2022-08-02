@@ -1,0 +1,14 @@
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - os2web_borgerdk
+id: os2web_borgerdk
+label: 'Borger.dk imports'
+description: 'Borger.dk content import'
+source_type: 'Borger.dk content'
+module: null
+shared_configuration:
+  source:
+    key: default

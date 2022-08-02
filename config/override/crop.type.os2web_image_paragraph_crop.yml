@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies: {  }
+label: 'Paragraph - image - crop'
+id: os2web_image_paragraph_crop
+description: ''
+aspect_ratio: '3:2'
+soft_limit_width: 600
+soft_limit_height: 400
+hard_limit_width: 600
+hard_limit_height: 400

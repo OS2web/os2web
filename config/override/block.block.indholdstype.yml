@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - facets.facet.os2web_search_page_type
+  module:
+    - facets
+    - system
+  theme:
+    - fds_redwhite_theme
+id: indholdstype
+theme: fds_redwhite_theme
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'facet_block:os2web_search_page_type'
+settings:
+  id: 'facet_block:os2web_search_page_type'
+  label: 'Sortér efter'
+  label_display: visible
+  provider: facets
+  block_id: indholdstype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/s?sq*\r\n/s"

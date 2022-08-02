@@ -1,0 +1,56 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_body
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_fb_body
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_fb_heading
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_heading
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_subheading
+    - paragraphs.paragraphs_type.os2web_factbox_paragraph
+  module:
+    - text
+id: paragraph.os2web_factbox_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_factbox_paragraph
+mode: default
+content:
+  field_os2web_factbox_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_factbox_fb_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_factbox_fb_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_factbox_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_factbox_subheading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

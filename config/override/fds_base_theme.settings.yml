@@ -1,0 +1,66 @@
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: ''
+favicon:
+  use_default: 0
+  path: ''
+business_owner_name: ''
+business_startup_year: ''
+address: ''
+zipcode: ''
+city: ''
+phone_system: ''
+phone_readable: ''
+fax_system: ''
+fax_readable: ''
+email: ''
+vat_no: ''
+giro_no: ''
+ean_no: ''
+additional_information: ''
+working_hours__row_1__day: ''
+working_hours__row_1__time: ''
+working_hours__row_2__day: ''
+working_hours__row_2__time: ''
+working_hours__row_3__day: ''
+working_hours__row_3__time: ''
+working_hours__row_4__day: ''
+working_hours__row_4__time: ''
+working_hours__row_5__day: ''
+working_hours__row_5__time: ''
+facebook: 0
+facebook_url: ''
+facebook_tooltip: ''
+twitter: 0
+twitter_url: ''
+twitter_tooltip: ''
+googleplus: 0
+googleplus_url: ''
+googleplus_tooltip: ''
+instagram: 0
+instagram_url: ''
+instagram_tooltip: ''
+linkedin: 0
+linkedin_url: ''
+linkedin_tooltip: ''
+pinterest: 0
+pinterest_url: ''
+pinterest_tooltip: ''
+vimeo: 0
+vimeo_url: ''
+vimeo_tooltip: ''
+youtube: 0
+youtube_url: ''
+youtube_tooltip: ''
+github: 0
+github_url: ''
+github_tooltip: ''
+footer_use_default_logo: 0
+footer_logo_path: ''
+footer_logo_upload: ''
+footer_text: ''

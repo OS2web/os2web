@@ -1,0 +1,9 @@
+langcode: da
+status: false
+dependencies:
+  module:
+    - node
+id: node.full
+label: 'Fuldt indhold'
+targetEntityType: node
+cache: true

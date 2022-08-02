@@ -1,0 +1,72 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_meetings_bp.body
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_bpas
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_case
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_closed
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_com_name
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_enclosures
+    - field.field.node.os2web_meetings_bp.field_os2web_m_esdh_id
+    - node.type.os2web_meetings_bp
+  module:
+    - file
+    - text
+    - user
+id: node.os2web_meetings_bp.default
+targetEntityType: node
+bundle: os2web_meetings_bp
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_os2web_m_bp_bpas:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_os2web_m_bp_closed:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_os2web_m_bp_enclosures:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_os2web_m_esdh_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_os2web_m_bp_case: true
+  field_os2web_m_bp_com_name: true
+  langcode: true
+  search_api_excerpt: true

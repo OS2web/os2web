@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.os2web_image_paragraph_crop
+  module:
+    - crop
+name: os2web_image_paragraph
+label: 'Paragraph - image'
+effects:
+  66361e20-5c17-4c8c-b56e-3ad4c6fdacbe:
+    uuid: 66361e20-5c17-4c8c-b56e-3ad4c6fdacbe
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: os2web_image_paragraph_crop
+  10fc69a2-29ca-442a-972e-2aaba4719707:
+    uuid: 10fc69a2-29ca-442a-972e-2aaba4719707
+    id: image_scale
+    weight: 2
+    data:
+      width: 900
+      height: null
+      upscale: false

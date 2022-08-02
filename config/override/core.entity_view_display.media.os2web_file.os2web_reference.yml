@@ -1,0 +1,35 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.os2web_reference
+    - field.field.media.os2web_file.field_media_description
+    - field.field.media.os2web_file.field_media_file_1
+    - media.type.os2web_file
+id: media.os2web_file.os2web_reference
+targetEntityType: media
+bundle: os2web_file
+mode: os2web_reference
+content:
+  field_media_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_file_1: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

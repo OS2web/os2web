@@ -1,0 +1,259 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg_tekst
+    - media.type.images
+    - node.type.os2web_citizen_proposals
+    - node.type.os2web_event
+    - node.type.os2web_hearings_hearing_case
+    - node.type.os2web_news
+    - node.type.os2web_newsletter
+    - node.type.os2web_page
+    - node.type.os2web_person_information
+    - taxonomy.vocabulary.media_folders
+    - taxonomy.vocabulary.os2web_keyword
+    - taxonomy.vocabulary.os2web_pi_group
+    - workflows.workflow.kladde
+    - workflows.workflow.news
+    - workflows.workflow.publish_content
+  module:
+    - comment
+    - content_moderation
+    - content_translation
+    - contextual
+    - entity_browser
+    - field_ui
+    - file
+    - filter
+    - media
+    - media_directories_ui
+    - menu_link_content
+    - metatag
+    - node
+    - os2web_accordion_paragraph
+    - os2web_borgerdk
+    - os2web_contact
+    - paragraphs_type_permissions
+    - path
+    - quickedit
+    - redirect
+    - scheduler
+    - system
+    - taxonomy
+    - toolbar
+    - workbench
+    - workbench_access
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access media directories ui browser'
+  - 'access media overview'
+  - 'access media_directories_editor_browser entity browser pages'
+  - 'access media_directories_modal entity browser pages'
+  - 'access media_directories_overview entity browser pages'
+  - 'access os2web_borgerdk content overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access workbench'
+  - 'add os2web accordion entities'
+  - 'add os2web contact entities'
+  - 'administer comments'
+  - 'administer menu'
+  - 'administer menu_link_content display'
+  - 'administer meta tags'
+  - 'administer os2web accordion entities'
+  - 'administer os2web contact entities'
+  - 'administer os2web_accordion display'
+  - 'administer os2web_accordion form display'
+  - 'administer os2web_borgerdk content'
+  - 'administer os2web_borgerdk_article display'
+  - 'administer os2web_borgerdk_article form display'
+  - 'administer os2web_borgerdk_microarticle display'
+  - 'administer os2web_borgerdk_microarticle form display'
+  - 'administer os2web_borgerdk_selfservice display'
+  - 'administer os2web_borgerdk_selfservice fields'
+  - 'administer os2web_borgerdk_selfservice form display'
+  - 'administer os2web_contact display'
+  - 'administer os2web_contact form display'
+  - 'administer redirects'
+  - 'administer url aliases'
+  - 'assign selected workbench access'
+  - 'assign workbench access'
+  - 'batch update workbench access'
+  - 'bypass workbench access'
+  - 'create content translations'
+  - 'create images media'
+  - 'create media'
+  - 'create os2web_borgerdk content'
+  - 'create os2web_hearings_hearing_case content'
+  - 'create os2web_news content'
+  - 'create os2web_page content'
+  - 'create os2web_person_information content'
+  - 'create paragraph content os2web_accordion_item'
+  - 'create paragraph content os2web_accordion_reusable'
+  - 'create paragraph content os2web_banner_paragraph'
+  - 'create paragraph content os2web_borgerdk_article'
+  - 'create paragraph content os2web_borgerdk_selfser_ref'
+  - 'create paragraph content os2web_cnt_paragraph_reference'
+  - 'create paragraph content os2web_factbox_paragraph'
+  - 'create paragraph content os2web_files_paragraph'
+  - 'create paragraph content os2web_gis_map'
+  - 'create paragraph content os2web_pi'
+  - 'create paragraph content os2web_simple_text_paragraph'
+  - 'create terms in media_folders'
+  - 'create terms in os2web_keyword'
+  - 'create terms in os2web_pi_group'
+  - 'create url aliases'
+  - 'delete any images media'
+  - 'delete any media'
+  - 'delete any os2web_hearings_hearing_case content'
+  - 'delete any os2web_news content'
+  - 'delete any os2web_page content'
+  - 'delete any os2web_person_information content'
+  - 'delete media'
+  - 'delete os2web accordion entities'
+  - 'delete os2web contact entities'
+  - 'delete os2web_hearings_hearing_case revisions'
+  - 'delete os2web_news revisions'
+  - 'delete os2web_page revisions'
+  - 'delete own images media'
+  - 'delete own os2web_borgerdk content'
+  - 'delete own os2web_event content'
+  - 'delete own os2web_hearings_hearing_case content'
+  - 'delete own os2web_news content'
+  - 'delete own os2web_page content'
+  - 'delete own os2web_person_information content'
+  - 'delete paragraph content os2web_accordion'
+  - 'delete paragraph content os2web_accordion_item'
+  - 'delete paragraph content os2web_accordion_reusable'
+  - 'delete paragraph content os2web_banner_paragraph'
+  - 'delete paragraph content os2web_borgerdk_article'
+  - 'delete paragraph content os2web_borgerdk_selfser_ref'
+  - 'delete paragraph content os2web_cnt_paragraph'
+  - 'delete paragraph content os2web_cnt_paragraph_reference'
+  - 'delete paragraph content os2web_factbox_paragraph'
+  - 'delete paragraph content os2web_files_paragraph'
+  - 'delete paragraph content os2web_gis_map'
+  - 'delete paragraph content os2web_image_paragraph'
+  - 'delete paragraph content os2web_pi'
+  - 'delete paragraph content os2web_simple_text_paragraph'
+  - 'delete terms in os2web_keyword'
+  - 'delete terms in os2web_pi_group'
+  - 'edit any images media'
+  - 'edit any os2web_citizen_proposals content'
+  - 'edit any os2web_hearings_hearing_case content'
+  - 'edit any os2web_news content'
+  - 'edit any os2web_newsletter content'
+  - 'edit any os2web_page content'
+  - 'edit any os2web_person_information content'
+  - 'edit os2web accordion entities'
+  - 'edit os2web contact entities'
+  - 'edit own comments'
+  - 'edit own images media'
+  - 'edit own os2web_borgerdk content'
+  - 'edit own os2web_hearings_hearing_case content'
+  - 'edit own os2web_news content'
+  - 'edit own os2web_newsletter content'
+  - 'edit own os2web_page content'
+  - 'edit own os2web_person_information content'
+  - 'edit terms in media_folders'
+  - 'edit terms in os2web_keyword'
+  - 'edit terms in os2web_pi_group'
+  - 'post comments'
+  - 'revert os2web_hearings_hearing_case revisions'
+  - 'revert os2web_news revisions'
+  - 'revert os2web_page revisions'
+  - 'schedule publishing of nodes'
+  - 'skip comment approval'
+  - 'translate os2web_page node'
+  - 'update any media'
+  - 'update media'
+  - 'update paragraph content os2web_accordion'
+  - 'update paragraph content os2web_accordion_item'
+  - 'update paragraph content os2web_accordion_reusable'
+  - 'update paragraph content os2web_banner_paragraph'
+  - 'update paragraph content os2web_borgerdk_article'
+  - 'update paragraph content os2web_borgerdk_selfser_ref'
+  - 'update paragraph content os2web_cnt_paragraph'
+  - 'update paragraph content os2web_cnt_paragraph_reference'
+  - 'update paragraph content os2web_factbox_paragraph'
+  - 'update paragraph content os2web_files_paragraph'
+  - 'update paragraph content os2web_gis_map'
+  - 'update paragraph content os2web_pi'
+  - 'update paragraph content os2web_simple_text_paragraph'
+  - 'use kladde transition create_new_draft'
+  - 'use kladde transition kladde'
+  - 'use kladde transition publish'
+  - 'use news transition til_gennemsyn'
+  - 'use publish_content transition create_new_draft'
+  - 'use publish_content transition publish'
+  - 'use publish_content transition ubupliceret'
+  - 'use text format wysiwyg_tekst'
+  - 'use workbench access'
+  - 'view all media revisions'
+  - 'view all os2web contact revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view media'
+  - 'view os2web_borgerdk content'
+  - 'view os2web_hearings_hearing_case revisions'
+  - 'view os2web_news revisions'
+  - 'view os2web_page revisions'
+  - 'view os2web_person_information revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view paragraph content os2web_2_columns'
+  - 'view paragraph content os2web_3_columns'
+  - 'view paragraph content os2web_accordion'
+  - 'view paragraph content os2web_accordion_item'
+  - 'view paragraph content os2web_accordion_reusable'
+  - 'view paragraph content os2web_banner_paragraph'
+  - 'view paragraph content os2web_borgerdk_article'
+  - 'view paragraph content os2web_borgerdk_selfser_ref'
+  - 'view paragraph content os2web_borgerdk_selfservice_cats'
+  - 'view paragraph content os2web_box_paragraph'
+  - 'view paragraph content os2web_citizen_proposals'
+  - 'view paragraph content os2web_cnt_paragraph'
+  - 'view paragraph content os2web_cnt_paragraph_reference'
+  - 'view paragraph content os2web_content_reference'
+  - 'view paragraph content os2web_events'
+  - 'view paragraph content os2web_events_search'
+  - 'view paragraph content os2web_factbox_paragraph'
+  - 'view paragraph content os2web_files_paragraph'
+  - 'view paragraph content os2web_gis_map'
+  - 'view paragraph content os2web_hearings_search'
+  - 'view paragraph content os2web_iframe'
+  - 'view paragraph content os2web_image_paragraph'
+  - 'view paragraph content os2web_keyword_paragraph'
+  - 'view paragraph content os2web_meetings'
+  - 'view paragraph content os2web_meetings_search'
+  - 'view paragraph content os2web_menu_links_paragraph'
+  - 'view paragraph content os2web_news_block'
+  - 'view paragraph content os2web_news_page'
+  - 'view paragraph content os2web_pi'
+  - 'view paragraph content os2web_section_paragraph'
+  - 'view paragraph content os2web_section_promoted_pages'
+  - 'view paragraph content os2web_simple_text_paragraph'
+  - 'view paragraph content os2web_slideshow'
+  - 'view paragraph content os2web_spotbox'
+  - 'view paragraph content os2web_spotbox_reference'
+  - 'view paragraph content os2web_twi_paragraph'
+  - 'view paragraph content os2web_webform'
+  - 'view paragraph content os2web_wrapper'
+  - 'view published os2web accordion entities'
+  - 'view published os2web contact entities'
+  - 'view scheduled content'
+  - 'view the administration theme'
+  - 'view unpublished os2web accordion entities'
+  - 'view unpublished os2web contact entities'
+  - 'view workbench access information'

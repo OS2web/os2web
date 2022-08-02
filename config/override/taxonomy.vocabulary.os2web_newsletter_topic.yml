@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+name: 'OS2Web Newsletter topic'
+vid: os2web_newsletter_topic
+description: ''
+weight: 0

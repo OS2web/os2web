@@ -1,0 +1,92 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_meetings_acadre_import
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - os2web_meetings
+migration_group: os2web_meetings
+label: 'Meeting import (Acadre)'
+source:
+  plugin: os2web_meetings_directory_acadre
+  data_fetcher_plugin: file
+  data_parser_plugin: os2web_meetings_simple_xml_array
+  pattern: '/.*\.(xml)$/i'
+  item_selector: '//table[@name=''agenda'']'
+  track_changes: true
+  data_parser_plugin_simple_array: true
+  fields:
+    -
+      name: agenda_id
+      label: 'Agenda ID'
+      selector: 'fields/field[@name=''sysid'']'
+    -
+      name: meeting_id
+      label: 'Meeting ID'
+      selector: 'table[@name=''meeting'']/fields/field[@name=''sysid'']'
+    -
+      name: produced_date
+      label: 'Produced date'
+      selector: 'fields/field[@name=''producedate'']'
+    -
+      name: title
+      label: 'Meeting title'
+      selector: 'table[@name=''meeting'']/fields/field[@name=''name'']'
+    -
+      name: meeting_start_date
+      label: 'Meeting start date'
+      selector: 'table[@name=''meeting'']/fields/field[@name=''date'']'
+    -
+      name: meeting_end_date
+      label: 'Meeting end date'
+      selector: 'table[@name=''meeting'']/fields/field[@name=''finish'']'
+    -
+      name: committee_id
+      label: 'Committee id'
+      selector: 'table[@name=''committee'']/fields/field[@name=''sysid'']'
+    -
+      name: committee_name
+      label: 'Committee name'
+      selector: 'table[@name=''committee'']/fields/field[@name=''name'']'
+    -
+      name: location_name
+      label: 'Location name'
+      selector: 'table[@name=''meeting'']/fields/field[@name=''location'']'
+    -
+      name: bullet_points
+      label: 'Bullet points'
+      selector: 'table[@name=''agendaitemparents'']'
+  ids:
+    meeting_id:
+      type: string
+    agenda_id:
+      type: string
+process:
+  type:
+    plugin: default_value
+    default_value: os2web_meetings_meeting
+  title: title
+  field_os2web_m_esdh_id: agenda_id
+  field_os2web_m_meet_id: meeting_id
+  field_os2web_m_type: agenda_type
+  field_os2web_m_start_date:
+    plugin: format_date
+    from_format: U
+    to_format: 'Y-m-d\TH:i:s'
+    source: meeting_start_date
+  field_os2web_m_end_date:
+    plugin: format_date
+    from_format: U
+    to_format: 'Y-m-d\TH:i:s'
+    source: meeting_end_date
+  field_os2web_m_doc: agenda_document
+  field_os2web_m_committee: committee_target
+  field_os2web_m_location: location_target
+  field_os2web_m_bps: bullet_points_targets
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }
+  optional: {  }

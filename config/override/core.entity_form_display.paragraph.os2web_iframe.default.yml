@@ -1,0 +1,40 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_iframe.field_os2web_iframe_code
+    - field.field.paragraph.os2web_iframe.field_os2web_iframe_heading
+    - field.field.paragraph.os2web_iframe.field_os2web_iframe_subheading
+    - paragraphs.paragraphs_type.os2web_iframe
+id: paragraph.os2web_iframe.default
+targetEntityType: paragraph
+bundle: os2web_iframe
+mode: default
+content:
+  field_os2web_iframe_code:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_iframe_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_iframe_subheading:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,16 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - content_translation
+    - os2web_accordion_paragraph
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: os2web_accordion.os2web_accordion
+target_entity_type_id: os2web_accordion
+target_bundle: os2web_accordion
+default_langcode: site_default
+language_alterable: false

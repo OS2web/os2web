@@ -1,0 +1,97 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_meetings_edoc_fujitsu_import
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - os2web_meetings
+migration_group: os2web_meetings
+label: 'Meeting import (EDOC Fujitsu)'
+source:
+  plugin: os2web_meetings_directory_edoc_fujitsu
+  data_fetcher_plugin: file
+  data_parser_plugin: os2web_meetings_simple_xml_array
+  data_parser_xml_namespace: edoc
+  namespaces:
+    edoc: 'http://www.fujitsu.dk/agenda/xml/schemas/2009/03/31/'
+  pattern: '/.*\.(xml)$/i'
+  item_selector: /Root
+  track_changes: true
+  data_parser_plugin_simple_array: true
+  fields:
+    -
+      name: agenda_id
+      label: 'Agenda ID'
+      selector: 'edoc:Committee/edoc:Meeting/edoc:Agenda/edoc:Identifier'
+    -
+      name: agenda_type
+      label: 'Agenda type'
+      selector: 'edoc:OutputTypeEnumName'
+    -
+      name: agenda_access
+      label: 'Agenda accesss'
+      selector: 'edoc:OutputFilterIsPublic'
+    -
+      name: meeting_id
+      label: 'Meeting ID'
+      selector: 'edoc:Committee/edoc:Meeting/edoc:MeetingIdentifier'
+    -
+      name: title
+      label: 'Meeting title'
+      selector: 'edoc:Committee/edoc:Name'
+    -
+      name: meeting_start_date
+      label: 'Meeting start date'
+      selector: 'edoc:Committee/edoc:Meeting/edoc:MeetingDateTime'
+    -
+      name: meeting_end_date
+      label: 'Meeting end date'
+      selector: 'edoc:Committee/edoc:Meeting/edoc:EndDateTime'
+    -
+      name: committee_id
+      label: 'Committee id'
+      selector: 'edoc:Committee/edoc:Identifier'
+    -
+      name: committee_name
+      label: 'Committee name'
+      selector: 'edoc:Committee/edoc:Name'
+    -
+      name: location_name
+      label: 'Location name'
+      selector: 'edoc:Committee/edoc:Meeting/edoc:MeetingLocation'
+    -
+      name: bullet_points
+      label: 'Bullet points'
+      selector: 'edoc:Committee/edoc:Meeting/edoc:Agenda/edoc:AgendaElements/edoc:AgendaElement'
+  ids:
+    agenda_id:
+      type: string
+process:
+  type:
+    plugin: default_value
+    default_value: os2web_meetings_meeting
+  title: title
+  field_os2web_m_esdh_id: agenda_id
+  field_os2web_m_meet_id: meeting_id
+  field_os2web_m_type: agenda_type
+  field_os2web_m_start_date:
+    plugin: format_date
+    from_format: U
+    to_format: 'Y-m-d\TH:i:s'
+    source: meeting_start_date
+  field_os2web_m_end_date:
+    plugin: format_date
+    from_format: U
+    to_format: 'Y-m-d\TH:i:s'
+    source: meeting_end_date
+  field_os2web_m_doc: agenda_document
+  field_os2web_m_committee: committee_target
+  field_os2web_m_location: location_target
+  field_os2web_m_bps: bullet_points_targets
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }
+  optional: {  }

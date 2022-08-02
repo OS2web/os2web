@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_spotbox
+id: os2web_spotbox.token
+label: Token
+targetEntityType: os2web_spotbox
+cache: true

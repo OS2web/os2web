@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies: {  }
+label: Nyhed
+id: nyhed
+description: 'Image crop for Nyhed/News'
+aspect_ratio: '720:400'
+soft_limit_width: 720
+soft_limit_height: 400
+hard_limit_width: 1440
+hard_limit_height: 800

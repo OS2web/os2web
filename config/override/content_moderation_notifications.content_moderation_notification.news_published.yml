@@ -1,0 +1,16 @@
+langcode: da
+status: true
+dependencies: {  }
+id: news_published
+workflow: news
+transitions:
+  publish: publish
+roles: {  }
+author: true
+site_mail: true
+emails: ''
+subject: 'Din nyhed er udgivet'
+body:
+  value: "<p>Din nyhed er udgivet</p>\r\n"
+  format: wysiwyg_tekst
+label: 'Nyhed er publiseret'

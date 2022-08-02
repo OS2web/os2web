@@ -1,0 +1,39 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.os2web_spotbox.field_os2web_spotbox_link
+  module:
+    - link
+    - link_field_autocomplete_filter
+    - os2web_spotbox
+third_party_settings:
+  link_field_autocomplete_filter:
+    negate: true
+    allowed_content_types:
+      os2web_meetings_bp: os2web_meetings_bp
+      os2web_meetings_bpa: os2web_meetings_bpa
+      os2web_meetings_meeting: os2web_meetings_meeting
+      os2web_system_page: os2web_system_page
+      os2web_citizen_proposals: '0'
+      os2web_event: '0'
+      os2web_hearings_hearing_case: '0'
+      os2web_news: '0'
+      os2web_newsletter: '0'
+      os2web_page: '0'
+      os2web_person_information: '0'
+      os2web_postlister: '0'
+id: os2web_spotbox.os2web_spotbox.field_os2web_spotbox_link
+field_name: field_os2web_spotbox_link
+entity_type: os2web_spotbox
+bundle: os2web_spotbox
+label: 'Spotboks Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_m_bp_enclosures
+    - node.type.os2web_meetings_bp
+  module:
+    - file
+id: node.os2web_meetings_bp.field_os2web_m_bp_enclosures
+field_name: field_os2web_m_bp_enclosures
+entity_type: node
+bundle: os2web_meetings_bp
+label: Enclosures
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf docx doc ppt pptx xls xlsx'
+  max_filesize: ''
+  description_field: true
+field_type: file

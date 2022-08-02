@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1c660995-fffd-4d9d-8f04-5b9073390151'
+  module:
+    - block_content
+  theme:
+    - fds_redwhite_theme
+id: footerthree
+theme: fds_redwhite_theme
+region: footer_third
+weight: -14
+provider: null
+plugin: 'block_content:1c660995-fffd-4d9d-8f04-5b9073390151'
+settings:
+  id: 'block_content:1c660995-fffd-4d9d-8f04-5b9073390151'
+  label: Footer-three
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

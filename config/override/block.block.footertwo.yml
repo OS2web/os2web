@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f6d81548-14e1-4a13-9b3b-38b2ac54dd19'
+  module:
+    - block_content
+  theme:
+    - fds_redwhite_theme
+id: footertwo
+theme: fds_redwhite_theme
+region: footer_second
+weight: -21
+provider: null
+plugin: 'block_content:f6d81548-14e1-4a13-9b3b-38b2ac54dd19'
+settings:
+  id: 'block_content:f6d81548-14e1-4a13-9b3b-38b2ac54dd19'
+  label: Borgerservice
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,13 @@
+langcode: da
+content_access_roles_gids:
+  anonymous: 1
+  authenticated: 2
+  administrator: 3
+  editor: 4
+  webmaster: 5
+  kommunikation: 6
+  borgerdrevne_forslag: 7
+  ervherv: 8
+content_access_node_type:
+  os2web_newsletter: 'a:2:{s:8:"view_own";a:7:{i:0;s:13:"authenticated";i:1;s:6:"editor";i:2;s:9:"webmaster";i:3;s:13:"kommunikation";i:4;s:20:"borgerdrevne_forslag";i:5;s:7:"ervherv";i:6;s:13:"administrator";}s:4:"view";a:7:{i:0;s:13:"authenticated";i:1;s:6:"editor";i:2;s:9:"webmaster";i:3;s:13:"kommunikation";i:4;s:20:"borgerdrevne_forslag";i:5;s:7:"ervherv";i:6;s:13:"administrator";}}'
+  os2web_postlister: 'a:2:{s:8:"view_own";a:3:{i:0;s:9:"anonymous";i:1;s:13:"authenticated";i:2;s:13:"administrator";}s:4:"view";a:3:{i:0;s:9:"anonymous";i:1;s:13:"authenticated";i:2;s:13:"administrator";}}'

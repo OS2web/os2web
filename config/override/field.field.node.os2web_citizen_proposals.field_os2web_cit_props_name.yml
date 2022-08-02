@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_cit_props_name
+    - node.type.os2web_citizen_proposals
+id: node.os2web_citizen_proposals.field_os2web_cit_props_name
+field_name: field_os2web_cit_props_name
+entity_type: node
+bundle: os2web_citizen_proposals
+label: Navn
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

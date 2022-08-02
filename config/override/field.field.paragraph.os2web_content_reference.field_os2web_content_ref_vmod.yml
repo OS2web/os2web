@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_content_ref_vmod
+    - paragraphs.paragraphs_type.os2web_content_reference
+  module:
+    - options
+id: paragraph.os2web_content_reference.field_os2web_content_ref_vmod
+field_name: field_os2web_content_ref_vmod
+entity_type: paragraph
+bundle: os2web_content_reference
+label: 'View mode'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: teaser
+default_value_callback: ''
+settings: {  }
+field_type: list_string

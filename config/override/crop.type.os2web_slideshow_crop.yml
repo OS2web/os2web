@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies: {  }
+label: 'Slideshow crop'
+id: os2web_slideshow_crop
+description: ''
+aspect_ratio: '310:207'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 310
+hard_limit_height: 207

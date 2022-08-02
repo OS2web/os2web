@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+name: 'os2web hearings categroy'
+vid: os2web_hearings_categroy
+description: ''
+weight: 0

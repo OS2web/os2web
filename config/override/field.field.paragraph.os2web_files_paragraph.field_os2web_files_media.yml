@@ -1,0 +1,30 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_files_media
+    - media.type.document
+    - media.type.os2web_file
+    - paragraphs.paragraphs_type.os2web_files_paragraph
+id: paragraph.os2web_files_paragraph.field_os2web_files_media
+field_name: field_os2web_files_media
+entity_type: paragraph
+bundle: os2web_files_paragraph
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      os2web_file: os2web_file
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

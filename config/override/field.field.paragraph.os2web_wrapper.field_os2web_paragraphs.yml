@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_paragraphs
+    - paragraphs.paragraphs_type.os2web_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.os2web_wrapper.field_os2web_paragraphs
+field_name: field_os2web_paragraphs
+entity_type: paragraph
+bundle: os2web_wrapper
+label: Afsnit
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      os2web_wrapper: os2web_wrapper
+    negate: 1
+    target_bundles_drag_drop:
+      os2web_wrapper:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

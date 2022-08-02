@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_accordion_subheadin
+    - paragraphs.paragraphs_type.os2web_accordion
+id: paragraph.os2web_accordion.field_os2web_accordion_subheadin
+field_name: field_os2web_accordion_subheadin
+entity_type: paragraph
+bundle: os2web_accordion
+label: Underoverskrift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

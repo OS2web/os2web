@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+name: 'OS2Web Hearing tender'
+vid: os2web_hearings_tender
+description: ''
+weight: 0

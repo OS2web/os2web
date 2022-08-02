@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_page_paragraph_righ
+  module:
+    - entity_reference_revisions
+    - fieldblock
+  theme:
+    - fds_custom_theme
+id: paragraph_sidebar_second
+theme: fds_custom_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'fieldblock:node'
+settings:
+  id: 'fieldblock:node'
+  label: 'Paragraph - sidebar second'
+  label_display: '0'
+  provider: fieldblock
+  label_from_field: false
+  field_name: field_os2web_page_paragraph_righ
+  formatter_id: entity_reference_revisions_entity_view
+  formatter_settings:
+    view_mode: default
+visibility: {  }

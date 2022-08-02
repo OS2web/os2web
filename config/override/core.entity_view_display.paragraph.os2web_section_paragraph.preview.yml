@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.os2web_section_paragraph.field_os2web_section_par_section
+    - field.field.paragraph.os2web_section_paragraph.field_os2web_section_par_type
+    - paragraphs.paragraphs_type.os2web_section_paragraph
+id: paragraph.os2web_section_paragraph.preview
+targetEntityType: paragraph
+bundle: os2web_section_paragraph
+mode: preview
+content:
+  field_os2web_section_par_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_os2web_section_par_type: true
+  search_api_excerpt: true

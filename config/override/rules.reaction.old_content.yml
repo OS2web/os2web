@@ -1,0 +1,103 @@
+langcode: da
+status: false
+dependencies: {  }
+id: old_content
+label: 'Old content'
+events:
+  -
+    event_name: 'rules_entity_view:node--os2web_page'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: f2390d24-1ce9-4736-849b-3efbae689bfd
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 9992ccfc-4641-47e3-a27c-36d3d763b080
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 7ed146a1-a62d-4d34-aca0-65d7ff06bda3
+        weight: 0
+        condition_id: rules_data_comparison
+        negate: false
+        context_values:
+          operation: '<'
+          value: 'NOW - 4 months'
+        context_mapping:
+          data: node.changed.value
+        context_processors:
+          operation:
+            rules_tokens: {  }
+          value:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: fa86cd25-267f-49ec-96c5-23fc4f8d1c42
+        weight: 0
+        condition_id: rules_data_comparison
+        negate: true
+        context_values:
+          operation: '=='
+          value: foraeldet
+        context_mapping:
+          data: node.moderation_state.value
+        context_processors:
+          operation:
+            rules_tokens: {  }
+          value:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 2df1ef47-d0d4-4bc5-8b5c-56b33ce5a77d
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 7045d46d-6ecd-49cc-9106-abfc121ade5b
+        weight: 0
+        action_id: rules_system_message
+        context_values:
+          message: 'Siden er forældet'
+          type: status
+          repeat: true
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 04559e2f-ac43-414d-9592-8c92b6b86f40
+        weight: 0
+        action_id: rules_data_set
+        context_values:
+          value: foraeldet
+        context_mapping:
+          data: '@node.node_route_context:node.moderation_state.value'
+        context_processors:
+          value:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 429b4334-d792-4e21-9798-ef8697618716
+        weight: 0
+        action_id: rules_entity_save
+        context_values:
+          immediate: ''
+        context_mapping:
+          entity: '@node.node_route_context:node'
+        context_processors:
+          immediate:
+            rules_tokens: {  }
+        provides_mapping: {  }

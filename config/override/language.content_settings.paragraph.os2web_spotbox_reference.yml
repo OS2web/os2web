@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.os2web_spotbox_reference
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.os2web_spotbox_reference
+target_entity_type_id: paragraph
+target_bundle: os2web_spotbox_reference
+default_langcode: site_default
+language_alterable: true

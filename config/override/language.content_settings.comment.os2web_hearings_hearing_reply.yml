@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_hearings_hearing_reply
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: comment.os2web_hearings_hearing_reply
+target_entity_type_id: comment
+target_bundle: os2web_hearings_hearing_reply
+default_langcode: site_default
+language_alterable: false

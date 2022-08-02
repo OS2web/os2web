@@ -1,0 +1,30 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.media.os2web_file.field_media_description
+    - field.field.media.os2web_file.field_media_file_1
+    - media.type.os2web_file
+  module:
+    - file
+id: media.os2web_file.default
+targetEntityType: media
+bundle: os2web_file
+mode: default
+content:
+  field_media_file_1:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_description: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

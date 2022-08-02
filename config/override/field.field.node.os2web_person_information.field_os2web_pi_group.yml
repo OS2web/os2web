@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_pi_group
+    - node.type.os2web_person_information
+    - taxonomy.vocabulary.os2web_pi_group
+id: node.os2web_person_information.field_os2web_pi_group
+field_name: field_os2web_pi_group
+entity_type: node
+bundle: os2web_person_information
+label: Gruppe
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_pi_group: os2web_pi_group
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

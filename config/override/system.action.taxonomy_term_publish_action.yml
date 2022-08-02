@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term_publish_action
+label: 'Publicér taksonomiterm'
+type: taxonomy_term
+plugin: 'entity:publish_action:taxonomy_term'
+configuration: {  }

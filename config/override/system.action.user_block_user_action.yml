@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - user
+id: user_block_user_action
+label: 'Blokér de(n) valgte bruger(e)'
+type: user
+plugin: user_block_user_action
+configuration: {  }

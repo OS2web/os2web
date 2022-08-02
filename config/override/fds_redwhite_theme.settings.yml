@@ -1,0 +1,67 @@
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 1
+  path: 'public://logo.png'
+favicon:
+  use_default: 1
+business_owner_name: OS2Web
+business_startup_year: 'Startup year'
+address: 'OS2web 1'
+zipcode: '1234'
+city: City
+phone_system: '+451234567'
+phone_readable: '+451234567'
+fax_system: 'Fax - system'
+fax_readable: 'Fax - readable'
+email: os2web@os2web.dk
+vat_no: '1234567'
+giro_no: 'Giro nummer'
+ean_no: 'EAN nummer'
+additional_information: ''
+working_hours__row_1__day: 'Man - tors'
+working_hours__row_1__time: 11.00-15.00
+working_hours__row_2__day: Fre
+working_hours__row_2__time: 11.00-13.00
+working_hours__row_3__day: ''
+working_hours__row_3__time: ''
+working_hours__row_4__day: ''
+working_hours__row_4__time: ''
+working_hours__row_5__day: ''
+working_hours__row_5__time: ''
+facebook: 0
+facebook_url: ''
+facebook_tooltip: ''
+twitter: 0
+twitter_url: ''
+twitter_tooltip: ''
+googleplus: 0
+googleplus_url: ''
+googleplus_tooltip: ''
+instagram: 0
+instagram_url: ''
+instagram_tooltip: ''
+linkedin: 0
+linkedin_url: ''
+linkedin_tooltip: ''
+pinterest: 0
+pinterest_url: ''
+pinterest_tooltip: ''
+vimeo: 0
+vimeo_url: ''
+vimeo_tooltip: ''
+youtube: 0
+youtube_url: ''
+youtube_tooltip: ''
+github: 0
+github_url: ''
+github_tooltip: ''
+footer_use_default_logo: 0
+footer_logo_path: ''
+footer_logo_upload: ''
+footer_text: ''
+frontpage_banner_heading: ''
+frontpage_banner_subheading: ''

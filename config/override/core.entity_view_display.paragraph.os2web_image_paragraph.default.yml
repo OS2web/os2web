@@ -1,0 +1,34 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_image_paragraph.field_os2web_image_description
+    - field.field.paragraph.os2web_image_paragraph.field_os2web_image_image
+    - image.style.os2web_image_paragraph
+    - paragraphs.paragraphs_type.os2web_image_paragraph
+  module:
+    - svg_image
+    - text
+id: paragraph.os2web_image_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_image_paragraph
+mode: default
+content:
+  field_os2web_image_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_image_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: os2web_image_paragraph
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

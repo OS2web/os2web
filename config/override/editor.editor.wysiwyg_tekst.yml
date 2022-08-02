@@ -1,0 +1,88 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg_tekst
+  module:
+    - ckeditor
+format: wysiwyg_tekst
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatering
+          items:
+            - Format
+            - Bold
+            - Underline
+            - Italic
+            - Strike
+        -
+          name: Edit
+          items:
+            - Paste
+            - PasteText
+            - PasteFromWord
+            - Undo
+            - Redo
+        -
+          name: Alignment
+          items:
+            - JustifyCenter
+            - JustifyLeft
+            - JustifyRight
+            - JustifyBlock
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - Link
+            - DrupalUnlink
+        -
+          name: Lister
+          items:
+            - BulletedList
+            - NumberedList
+            - Table
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - media_directories
+            - video_embed
+        -
+          name: Embed
+          items:
+            - Iframe
+        -
+          name: Værktøjer
+          items:
+            - Source
+            - RemoveFormat
+            - HorizontalRule
+  plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: os2web_hjemmeside
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: 2000
+    height: 2000

@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.os2web_spotbox.field_os2web_spotbox_icon
+    - taxonomy.vocabulary.os2web_icons
+  module:
+    - os2web_spotbox
+id: os2web_spotbox.os2web_spotbox.field_os2web_spotbox_icon
+field_name: field_os2web_spotbox_icon
+entity_type: os2web_spotbox
+bundle: os2web_spotbox
+label: Ikon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_icons: os2web_icons
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,68 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - filter
+    - media
+    - os2web_borgerdk
+    - os2web_spotbox
+    - paragraphs_type_permissions
+    - search_api_autocomplete
+    - system
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'post comments'
+  - 'use search_api_autocomplete for os2web_meetings_search_page'
+  - 'use search_api_autocomplete for os2web_search'
+  - 'use text format restricted_html'
+  - 'view media'
+  - 'view os2web_borgerdk content'
+  - 'view paragraph content os2web_2_columns'
+  - 'view paragraph content os2web_3_columns'
+  - 'view paragraph content os2web_accordion'
+  - 'view paragraph content os2web_accordion_item'
+  - 'view paragraph content os2web_accordion_reusable'
+  - 'view paragraph content os2web_banner_paragraph'
+  - 'view paragraph content os2web_borgerdk_article'
+  - 'view paragraph content os2web_borgerdk_selfser_ref'
+  - 'view paragraph content os2web_borgerdk_selfservice_cats'
+  - 'view paragraph content os2web_box_paragraph'
+  - 'view paragraph content os2web_citizen_proposals'
+  - 'view paragraph content os2web_cnt_paragraph'
+  - 'view paragraph content os2web_cnt_paragraph_reference'
+  - 'view paragraph content os2web_content_reference'
+  - 'view paragraph content os2web_events'
+  - 'view paragraph content os2web_events_search'
+  - 'view paragraph content os2web_factbox_paragraph'
+  - 'view paragraph content os2web_field_paragraph'
+  - 'view paragraph content os2web_files_paragraph'
+  - 'view paragraph content os2web_gis_map'
+  - 'view paragraph content os2web_hearings_search'
+  - 'view paragraph content os2web_iframe'
+  - 'view paragraph content os2web_image_paragraph'
+  - 'view paragraph content os2web_keyword_paragraph'
+  - 'view paragraph content os2web_meetings'
+  - 'view paragraph content os2web_meetings_search'
+  - 'view paragraph content os2web_menu_links_paragraph'
+  - 'view paragraph content os2web_news_block'
+  - 'view paragraph content os2web_news_page'
+  - 'view paragraph content os2web_pi'
+  - 'view paragraph content os2web_section_paragraph'
+  - 'view paragraph content os2web_section_promoted_pages'
+  - 'view paragraph content os2web_simple_text_paragraph'
+  - 'view paragraph content os2web_slideshow'
+  - 'view paragraph content os2web_spotbox'
+  - 'view paragraph content os2web_spotbox_reference'
+  - 'view paragraph content os2web_twi_paragraph'
+  - 'view paragraph content os2web_video'
+  - 'view paragraph content os2web_webform'
+  - 'view paragraph content os2web_wrapper'
+  - 'view published os2web spotbox entities'

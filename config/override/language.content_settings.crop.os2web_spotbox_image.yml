@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.os2web_spotbox_image
+id: crop.os2web_spotbox_image
+target_entity_type_id: crop
+target_bundle: os2web_spotbox_image
+default_langcode: site_default
+language_alterable: false

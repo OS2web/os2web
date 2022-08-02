@@ -1,0 +1,33 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_box_paragraph.field_os2web_box_bg_color
+    - field.field.paragraph.os2web_box_paragraph.field_os2web_box_body
+    - field.field.paragraph.os2web_box_paragraph.field_os2web_box_heading
+    - paragraphs.paragraphs_type.os2web_box_paragraph
+  module:
+    - text
+id: paragraph.os2web_box_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_box_paragraph
+mode: default
+content:
+  field_os2web_box_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_box_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_os2web_box_bg_color: true
+  search_api_excerpt: true

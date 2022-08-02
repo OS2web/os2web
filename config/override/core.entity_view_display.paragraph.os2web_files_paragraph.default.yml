@@ -1,0 +1,55 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_files_paragraph.field_file_with_description
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_files
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_files_descrip
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_heading
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_media
+    - paragraphs.paragraphs_type.os2web_files_paragraph
+  module:
+    - entity_reference_revisions
+    - file
+id: paragraph.os2web_files_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_files_paragraph
+mode: default
+content:
+  field_file_with_description:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_files_files:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_files_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_files_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: os2web_reference
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_os2web_files_files_descrip: true
+  search_api_excerpt: true

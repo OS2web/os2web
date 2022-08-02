@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_newsltr_body
+    - node.type.os2web_newsletter
+  module:
+    - text
+id: node.os2web_newsletter.field_os2web_newsltr_body
+field_name: field_os2web_newsltr_body
+entity_type: node
+bundle: os2web_newsletter
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

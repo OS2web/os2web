@@ -1,0 +1,126 @@
+langcode: da
+status: false
+dependencies:
+  module:
+    - anonymous_subscriptions
+    - system
+  theme:
+    - fds_redwhite_theme
+id: anonymoustaxonomytermssubscription
+theme: fds_redwhite_theme
+region: content
+weight: -14
+provider: null
+plugin: subscribe_taxonomy_terms_block
+settings:
+  id: subscribe_taxonomy_terms_block
+  label: ' Dagsorden og referater'
+  label_display: visible
+  provider: anonymous_subscriptions
+  0: vid
+  1: description_top
+  2: vid
+  3: description_top
+  4: vid
+  5: description_top
+  6: vid
+  7: description_top
+  8: vid
+  9: description_top
+  10: vid
+  11: description_top
+  12: vid
+  13: description_top
+  14: vid
+  15: description_top
+  16: vid
+  17: description_top
+  18: vid
+  19: description_top
+  20: vid
+  21: description_top
+  22: vid
+  23: description_top
+  24: vid
+  25: description_top
+  26: vid
+  27: description_top
+  28: vid
+  29: description_top
+  30: vid
+  31: description_top
+  32: vid
+  33: description_top
+  34: vid
+  35: description_top
+  36: vid
+  37: description_top
+  38: vid
+  39: description_top
+  40: vid
+  41: description_top
+  42: vid
+  43: description_top
+  44: vid
+  45: description_top
+  46: vid
+  47: description_top
+  48: vid
+  49: description_top
+  50: vid
+  51: description_top
+  52: vid
+  53: description_top
+  54: vid
+  55: description_top
+  56: vid
+  57: description_top
+  58: vid
+  59: description_top
+  60: vid
+  61: description_top
+  62: vid
+  63: description_top
+  64: vid
+  65: description_top
+  66: vid
+  67: description_top
+  68: vid
+  69: description_top
+  70: vid
+  71: description_top
+  72: vid
+  73: description_top
+  74: vid
+  75: description_top
+  76: vid
+  77: description_top
+  78: vid
+  79: description_top
+  80: vid
+  81: description_top
+  82: vid
+  83: description_top
+  84: vid
+  85: description_top
+  86: vid
+  87: description_top
+  88: vid
+  89: description_top
+  90: vid
+  91: description_top
+  92: vid
+  93: description_top
+  94: vid
+  95: description_top
+  96: vid
+  97: description_top
+  98: vid
+  99: description_top
+  vid: os2web_m_committee
+  description_top: 'Abonner på Dagsorden og referater'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /abonner

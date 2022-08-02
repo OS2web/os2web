@@ -1,0 +1,34 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.media.os2web_video.field_media_video_file
+    - media.type.os2web_video
+  module:
+    - file
+id: media.os2web_video.default
+targetEntityType: media
+bundle: os2web_video
+mode: default
+content:
+  field_media_video_file:
+    type: file_video
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+      muted: false
+      width: 640
+      height: 360
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

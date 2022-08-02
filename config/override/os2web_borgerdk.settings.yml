@@ -1,0 +1,9 @@
+selected_municipality: '329'
+import_sources:
+  da: da
+  en: 0
+replacements: ''
+obsolete_notification_enabled: 0
+obsolete_notification_recipients: ''
+obsolete_notification_email_subject: ''
+obsolete_notification_email_body: null

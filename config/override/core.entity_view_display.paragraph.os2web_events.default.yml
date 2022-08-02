@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_events.field_os2web_events_par_category
+    - paragraphs.paragraphs_type.os2web_events
+id: paragraph.os2web_events.default
+targetEntityType: paragraph
+bundle: os2web_events
+mode: default
+content:
+  field_os2web_events_par_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

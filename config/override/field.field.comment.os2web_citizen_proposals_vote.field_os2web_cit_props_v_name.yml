@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_citizen_proposals_vote
+    - field.storage.comment.field_os2web_cit_props_v_name
+id: comment.os2web_citizen_proposals_vote.field_os2web_cit_props_v_name
+field_name: field_os2web_cit_props_v_name
+entity_type: comment
+bundle: os2web_citizen_proposals_vote
+label: 'Your name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

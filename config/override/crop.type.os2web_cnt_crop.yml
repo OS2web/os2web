@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies: {  }
+label: 'Paragraph - Contact section - crop'
+id: os2web_cnt_crop
+description: ''
+aspect_ratio: '4:5'
+soft_limit_width: 800
+soft_limit_height: 1000
+hard_limit_width: 400
+hard_limit_height: 500

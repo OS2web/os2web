@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_box_heading
+    - paragraphs.paragraphs_type.os2web_box_paragraph
+id: paragraph.os2web_box_paragraph.field_os2web_box_heading
+field_name: field_os2web_box_heading
+entity_type: paragraph
+bundle: os2web_box_paragraph
+label: Overskrift
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

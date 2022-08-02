@@ -1,0 +1,28 @@
+watchdog_dblog_enabled: 1
+watchdog_files_store_period: '180'
+watchdog_files_log_path: ../logs
+submit: 'Gem indstillinger'
+form_build_id: form-2OkP9O7-9Mt6JHRVuBGEiU0WTOwa-uX5SYZFOkWT7Zs
+form_token: BsZRnagF-RCCK2wcpOLQO_c5gtrdPwboSgJLyS01hFg
+form_id: os2web_logging_settings_form
+op: 'Gem indstillinger'
+logged_node_types:
+  os2web_event: os2web_event
+  os2web_meetings_bpa: os2web_meetings_bpa
+  os2web_citizen_proposals: os2web_citizen_proposals
+  os2web_external_page: os2web_external_page
+  os2web_hearings_hearing_case: os2web_hearings_hearing_case
+  os2web_page: os2web_page
+  os2web_meetings_meeting: os2web_meetings_meeting
+  os2web_news: os2web_news
+  os2web_newsletter: os2web_newsletter
+  os2web_person_information: os2web_person_information
+  os2web_postlister: os2web_postlister
+  os2web_meetings_bp: os2web_meetings_bp
+  os2web_system_page: os2web_system_page
+log_anonymous_user: 0
+dblogs_store_period: '200'
+files_store_period: '200'
+files_log_path: ../logs
+logs_import_files_select: {  }
+logs_import_file: ''

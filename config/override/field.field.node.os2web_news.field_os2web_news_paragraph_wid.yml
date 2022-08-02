@@ -1,0 +1,88 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_news_paragraph_wid
+    - node.type.os2web_news
+    - paragraphs.paragraphs_type.os2web_2_columns
+    - paragraphs.paragraphs_type.os2web_3_columns
+    - paragraphs.paragraphs_type.os2web_wrapper
+  module:
+    - entity_reference_revisions
+id: node.os2web_news.field_os2web_news_paragraph_wid
+field_name: field_os2web_news_paragraph_wid
+entity_type: node
+bundle: os2web_news
+label: 'Afsnit (brede)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      os2web_2_columns: os2web_2_columns
+      os2web_3_columns: os2web_3_columns
+      os2web_wrapper: os2web_wrapper
+    negate: 0
+    target_bundles_drag_drop:
+      os2web_2_columns:
+        weight: 20
+        enabled: true
+      os2web_3_columns:
+        weight: 21
+        enabled: true
+      os2web_accordion:
+        weight: 22
+        enabled: false
+      os2web_accordion_item:
+        weight: 23
+        enabled: false
+      os2web_banner_paragraph:
+        weight: 24
+        enabled: false
+      os2web_borgerdk_article:
+        weight: 25
+        enabled: false
+      os2web_borgerdk_selfser_ref:
+        weight: 26
+        enabled: false
+      os2web_borgerdk_selfservice_cats:
+        weight: 27
+        enabled: false
+      os2web_box_paragraph:
+        weight: 28
+        enabled: false
+      os2web_content_reference:
+        weight: 29
+        enabled: false
+      os2web_events_search:
+        weight: 30
+        enabled: false
+      os2web_files_paragraph:
+        weight: 31
+        enabled: false
+      os2web_gis_map:
+        weight: 32
+        enabled: false
+      os2web_meetings_search:
+        weight: 33
+        enabled: false
+      os2web_menu_links_paragraph:
+        weight: 34
+        enabled: false
+      os2web_section_paragraph:
+        weight: 35
+        enabled: false
+      os2web_section_promoted_pages:
+        weight: 36
+        enabled: false
+      os2web_simple_text_paragraph:
+        weight: 37
+        enabled: false
+      os2web_wrapper:
+        weight: 38
+        enabled: true
+field_type: entity_reference_revisions

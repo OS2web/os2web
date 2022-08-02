@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_newsltr_rel_news
+    - node.type.os2web_news
+    - node.type.os2web_newsletter
+id: node.os2web_newsletter.field_os2web_newsltr_rel_news
+field_name: field_os2web_newsltr_rel_news
+entity_type: node
+bundle: os2web_newsletter
+label: Nyheder
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      os2web_news: os2web_news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

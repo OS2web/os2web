@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_factbox_body
+    - paragraphs.paragraphs_type.os2web_factbox_paragraph
+  module:
+    - text
+id: paragraph.os2web_factbox_paragraph.field_os2web_factbox_body
+field_name: field_os2web_factbox_body
+entity_type: paragraph
+bundle: os2web_factbox_paragraph
+label: Indholdstekst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

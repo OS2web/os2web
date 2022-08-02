@@ -1,0 +1,233 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_cnt_paragraph.field_adresse
+    - field.field.paragraph.os2web_cnt_paragraph.field_arbejdsopgaver
+    - field.field.paragraph.os2web_cnt_paragraph.field_beskrivelse
+    - field.field.paragraph.os2web_cnt_paragraph.field_by
+    - field.field.paragraph.os2web_cnt_paragraph.field_direkte_nummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_efternavn
+    - field.field.paragraph.os2web_cnt_paragraph.field_fornavn
+    - field.field.paragraph.os2web_cnt_paragraph.field_hovednummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_jobtitel
+    - field.field.paragraph.os2web_cnt_paragraph.field_mobilnummer
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_body
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_email
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_facebook
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_heading
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_image
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_image_position
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_link
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_open_hours
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_phone
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_subheading
+    - field.field.paragraph.os2web_cnt_paragraph.field_os2web_cnt_website
+    - field.field.paragraph.os2web_cnt_paragraph.field_postnummer
+    - image.style.os2web_cnt
+    - paragraphs.paragraphs_type.os2web_cnt_paragraph
+  module:
+    - link
+    - office_hours
+    - svg_image
+    - text
+id: paragraph.os2web_cnt_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_cnt_paragraph
+mode: default
+content:
+  field_adresse:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_arbejdsopgaver:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_beskrivelse:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_by:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_direkte_nummer:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_efternavn:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_fornavn:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_hovednummer:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_jobtitel:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_mobilnummer:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_os2web_cnt_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_cnt_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_os2web_cnt_facebook:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_os2web_cnt_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_cnt_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: os2web_cnt
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_cnt_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_os2web_cnt_open_hours:
+    type: office_hours
+    label: hidden
+    settings:
+      day_format: long
+      time_format: G
+      compress: false
+      grouped: false
+      show_closed: all
+      closed_format: Closed
+      separator:
+        days: '<br />'
+        grouped_days: ' - '
+        day_hours: ': '
+        hours_hours: '-'
+        more_hours: ', '
+      current_status:
+        position: ''
+        open_text: 'Currently open!'
+        closed_text: 'Currently closed'
+      timezone_field: ''
+      office_hours_first_day: ''
+      schema:
+        enabled: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_os2web_cnt_phone:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_os2web_cnt_subheading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_cnt_website:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_postnummer:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  field_os2web_cnt_image_position: true
+  search_api_excerpt: true

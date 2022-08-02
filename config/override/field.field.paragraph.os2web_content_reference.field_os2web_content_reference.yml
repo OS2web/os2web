@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_content_reference
+    - node.type.os2web_page
+    - paragraphs.paragraphs_type.os2web_content_reference
+id: paragraph.os2web_content_reference.field_os2web_content_reference
+field_name: field_os2web_content_reference
+entity_type: paragraph
+bundle: os2web_content_reference
+label: Reference
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      os2web_page: os2web_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

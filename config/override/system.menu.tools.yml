@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: tools
+label: Værktøjer
+description: 'Bruger værktøjslinks, som typisk tilføjes af moduler'
+locked: true

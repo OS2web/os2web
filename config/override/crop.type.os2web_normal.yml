@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies: {  }
+label: Normal
+id: os2web_normal
+description: ''
+aspect_ratio: '180:100'
+soft_limit_width: 1200
+soft_limit_height: 666
+hard_limit_width: 565
+hard_limit_height: 313

@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.ervherv
+  module:
+    - user
+id: user_add_role_action.ervherv
+label: 'Add the Ervherv role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ervherv

@@ -1,0 +1,7 @@
+langcode: da
+system_log:
+  log_level: warning
+debug_log:
+  enabled: true
+  system_debug: true
+  log_level: debug

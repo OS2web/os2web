@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_hearings_search_typ
+    - paragraphs.paragraphs_type.os2web_hearings_search
+  module:
+    - options
+id: paragraph.os2web_hearings_search.field_os2web_hearings_search_typ
+field_name: field_os2web_hearings_search_typ
+entity_type: paragraph
+bundle: os2web_hearings_search
+label: Type
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: os2web_hearings_embed_search_simple
+default_value_callback: ''
+settings: {  }
+field_type: list_string

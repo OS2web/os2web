@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.os2web_search
+  module:
+    - system
+    - views
+  theme:
+    - fds_ballerup_theme
+id: fds_ballerup_theme_os2web_search_exposed_header_search
+theme: fds_ballerup_theme
+region: header__top_navigation
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:os2web_search-os2web_search_page'
+settings:
+  id: 'views_exposed_filter_block:os2web_search-os2web_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

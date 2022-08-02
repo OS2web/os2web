@@ -1,0 +1,33 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_hearings_category
+    - node.type.os2web_hearings_hearing_case
+    - taxonomy.vocabulary.os2web_hearings_categories
+  module:
+    - anonymous_subscriptions
+third_party_settings:
+  anonymous_subscriptions:
+    enabled: true
+id: node.os2web_hearings_hearing_case.field_os2web_hearings_category
+field_name: field_os2web_hearings_category
+entity_type: node
+bundle: os2web_hearings_hearing_case
+label: 'Opdaterings Kategori'
+description: 'Vælg hvilken opdaterings kategori der skal benyttes til udsendelse af opdateringer'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      os2web_hearings_categories: os2web_hearings_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

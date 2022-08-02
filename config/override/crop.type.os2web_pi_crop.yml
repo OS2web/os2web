@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies: {  }
+label: 'Person oplysninger crop'
+id: os2web_pi_crop
+description: ''
+aspect_ratio: '230:260'
+soft_limit_width: 1150
+soft_limit_height: 1300
+hard_limit_width: 230
+hard_limit_height: 260

@@ -1,0 +1,30 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_body
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_fb_body
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_fb_heading
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_heading
+    - field.field.paragraph.os2web_factbox_paragraph.field_os2web_factbox_subheading
+    - paragraphs.paragraphs_type.os2web_factbox_paragraph
+id: paragraph.os2web_factbox_paragraph.preview
+targetEntityType: paragraph
+bundle: os2web_factbox_paragraph
+mode: preview
+content:
+  field_os2web_factbox_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_os2web_factbox_body: true
+  field_os2web_factbox_fb_body: true
+  field_os2web_factbox_fb_heading: true
+  field_os2web_factbox_subheading: true
+  search_api_excerpt: true

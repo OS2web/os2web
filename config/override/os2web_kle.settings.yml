@@ -1,0 +1,4 @@
+webservice_url: 'http://www.klxml.dk/download/XML-ver2-0/KLE-Emneplan_Version2-0.xml'
+local_file_url: 'public://kle.xml'
+retsinfo_url: 'http://www.retsinfo.dk/_GETDOC_/ACCN/'
+import_interval_days: 30

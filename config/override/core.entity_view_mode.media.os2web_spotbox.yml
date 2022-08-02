@@ -1,0 +1,9 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - media
+id: media.os2web_spotbox
+label: Spotbox
+targetEntityType: media
+cache: true

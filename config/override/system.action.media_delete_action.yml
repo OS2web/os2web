@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - media
+id: media_delete_action
+label: 'Slet medie'
+type: media
+plugin: 'entity:delete_action:media'
+configuration: {  }

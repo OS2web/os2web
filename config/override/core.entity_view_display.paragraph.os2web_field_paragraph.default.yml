@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_field_paragraph.field_os2web_field_field_name
+    - paragraphs.paragraphs_type.os2web_field_paragraph
+  module:
+    - os2web_field_paragraph
+id: paragraph.os2web_field_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_field_paragraph
+mode: default
+content:
+  field_os2web_field_field_name:
+    type: os2web_node_field_paragraph_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

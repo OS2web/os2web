@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_hearings_hearing_reply
+label: 'OS2Web hearing reply'
+target_entity_type_id: node
+description: ''

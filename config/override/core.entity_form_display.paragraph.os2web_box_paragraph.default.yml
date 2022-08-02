@@ -1,0 +1,45 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_box_paragraph.field_os2web_box_bg_color
+    - field.field.paragraph.os2web_box_paragraph.field_os2web_box_body
+    - field.field.paragraph.os2web_box_paragraph.field_os2web_box_heading
+    - paragraphs.paragraphs_type.os2web_box_paragraph
+  module:
+    - text
+id: paragraph.os2web_box_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_box_paragraph
+mode: default
+content:
+  field_os2web_box_bg_color:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_os2web_box_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_box_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

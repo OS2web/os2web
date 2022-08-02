@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_meetings_sp_view
+    - paragraphs.paragraphs_type.os2web_meetings_search
+  module:
+    - options
+id: paragraph.os2web_meetings_search.field_os2web_meetings_sp_view
+field_name: field_os2web_meetings_sp_view
+entity_type: paragraph
+bundle: os2web_meetings_search
+label: Visning
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: os2web_meetings_embed_search_simple
+default_value_callback: ''
+settings: {  }
+field_type: list_string

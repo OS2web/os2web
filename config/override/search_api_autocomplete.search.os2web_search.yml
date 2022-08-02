@@ -1,0 +1,37 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - search_api.index.os2web_search_content
+    - views.view.os2web_search
+  module:
+    - views
+    - search_api_solr
+id: os2web_search
+label: 'OS2Web Search'
+index_id: os2web_search_content
+suggester_settings:
+  search_api_solr_spellcheck: {  }
+  search_api_solr_suggester:
+    search_api_solr/site_hash: 1
+    search_api/index: os2web_search_content
+    drupal/langcode: multilingual
+  search_api_solr_terms:
+    fields: {  }
+suggester_weights:
+  search_api_solr_spellcheck: 0
+  search_api_solr_suggester: 0
+  search_api_solr_terms: 0
+suggester_limits: {  }
+search_settings:
+  'views:os2web_search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

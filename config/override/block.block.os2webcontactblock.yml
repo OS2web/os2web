@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_contact
+  theme:
+    - fds_custom_theme
+id: os2webcontactblock
+theme: fds_custom_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: os2web_contact
+settings:
+  id: os2web_contact
+  label: 'OS2Web Contact block'
+  label_display: '0'
+  provider: os2web_contact
+visibility: {  }

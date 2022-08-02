@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_borgerdk_article.field_os2web_bdk_article
+    - paragraphs.paragraphs_type.os2web_borgerdk_article
+  module:
+    - os2web_borgerdk
+  enforced:
+    module:
+      - os2web_borgerdk
+id: paragraph.os2web_borgerdk_article.default
+targetEntityType: paragraph
+bundle: os2web_borgerdk_article
+mode: default
+content:
+  field_os2web_bdk_article:
+    type: os2web_borgerdk_article_reference_formatter
+    label: above
+    settings:
+      view_mode: field_reference
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

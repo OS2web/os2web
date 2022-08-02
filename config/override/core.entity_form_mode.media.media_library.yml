@@ -1,0 +1,12 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - media_library
+id: media.media_library
+label: 'Medie bibliotek'
+targetEntityType: media
+cache: true

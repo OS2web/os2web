@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies: {  }
+label: 'Banner crop'
+id: banner_crop
+description: ''
+aspect_ratio: '1200:520'
+soft_limit_width: null
+soft_limit_height: 520
+hard_limit_width: 1200
+hard_limit_height: null

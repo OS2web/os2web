@@ -1,0 +1,23 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_page_intro
+    - node.type.os2web_page
+  module:
+    - os2web_field_paragraph
+third_party_settings:
+  os2web_field_paragraph:
+    enabled: true
+id: node.os2web_page.field_os2web_page_intro
+field_name: field_os2web_page_intro
+entity_type: node
+bundle: os2web_page
+label: Intro
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

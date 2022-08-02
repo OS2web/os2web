@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.os2web_alert_block
+    - field.storage.block_content.field_os2web_alert_page_ref
+    - node.type.os2web_system_page
+id: block_content.os2web_alert_block.field_os2web_alert_page_ref
+field_name: field_os2web_alert_page_ref
+entity_type: block_content
+bundle: os2web_alert_block
+label: Referencer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      os2web_system_page: os2web_system_page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

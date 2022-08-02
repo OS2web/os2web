@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node_make_sticky_action
+label: 'Gør indhold klæbrigt'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

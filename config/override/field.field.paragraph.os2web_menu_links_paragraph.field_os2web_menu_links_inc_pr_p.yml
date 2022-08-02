@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_menu_links_inc_pr_p
+    - paragraphs.paragraphs_type.os2web_menu_links_paragraph
+id: paragraph.os2web_menu_links_paragraph.field_os2web_menu_links_inc_pr_p
+field_name: field_os2web_menu_links_inc_pr_p
+entity_type: paragraph
+bundle: os2web_menu_links_paragraph
+label: 'Inkl. forfremmet sider'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Tilsluttet
+  off_label: Afbrudt
+field_type: boolean

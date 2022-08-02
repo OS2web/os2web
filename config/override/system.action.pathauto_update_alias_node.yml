@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - pathauto
+  enforced:
+    module:
+      - node
+id: pathauto_update_alias_node
+label: 'Opdatér alternativ URL'
+type: node
+plugin: pathauto_update_alias
+configuration: {  }

@@ -1,0 +1,29 @@
+langcode: da
+status: false
+dependencies:
+  content:
+    - 'block_content:os2web_alert_block:3675ec12-a344-4d35-b830-649674ba7a79'
+  module:
+    - block_content
+    - system
+  theme:
+    - fds_redwhite_theme
+id: alertblock
+theme: fds_redwhite_theme
+region: alert
+weight: 0
+provider: null
+plugin: 'block_content:3675ec12-a344-4d35-b830-649674ba7a79'
+settings:
+  id: 'block_content:3675ec12-a344-4d35-b830-649674ba7a79'
+  label: 'Alert block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /kultunautindhold

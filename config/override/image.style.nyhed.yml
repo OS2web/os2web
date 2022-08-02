@@ -1,0 +1,14 @@
+langcode: da
+status: true
+dependencies: {  }
+name: nyhed
+label: Nyhed
+effects:
+  66a7fb44-bec7-4e67-86cb-83a76a1a2176:
+    uuid: 66a7fb44-bec7-4e67-86cb-83a76a1a2176
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 400
+      anchor: center-center

@@ -1,0 +1,39 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_files_paragraph.field_file_with_description
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_files
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_files_descrip
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_heading
+    - field.field.paragraph.os2web_files_paragraph.field_os2web_files_media
+    - paragraphs.paragraphs_type.os2web_files_paragraph
+  module:
+    - media_library
+id: paragraph.os2web_files_paragraph.default
+targetEntityType: paragraph
+bundle: os2web_files_paragraph
+mode: default
+content:
+  field_os2web_files_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_files_media:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_file_with_description: true
+  field_os2web_files_files: true
+  field_os2web_files_files_descrip: true
+  status: true
+  translation: true

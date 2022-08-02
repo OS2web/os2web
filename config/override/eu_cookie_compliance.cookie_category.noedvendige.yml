@@ -1,0 +1,8 @@
+langcode: da
+status: true
+dependencies: {  }
+id: noedvendige
+label: Nødvendige
+description: ''
+checkbox_default_state: required
+weight: -9

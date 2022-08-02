@@ -1,0 +1,32 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.os2web_gis_map.field_os2web_gis_map_heading
+    - field.field.paragraph.os2web_gis_map.field_os2web_gis_map_iframe_url
+    - field.field.paragraph.os2web_gis_map.field_os2web_gis_map_subheading
+    - paragraphs.paragraphs_type.os2web_gis_map
+id: paragraph.os2web_gis_map.preview
+targetEntityType: paragraph
+bundle: os2web_gis_map
+mode: preview
+content:
+  field_os2web_gis_map_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_gis_map_subheading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_os2web_gis_map_iframe_url: true
+  search_api_excerpt: true

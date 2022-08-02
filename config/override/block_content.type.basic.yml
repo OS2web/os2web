@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: basic
+label: 'Simpel blok'
+revision: 0
+description: 'En simpel blok indeholder en titel og en brødtekst.'

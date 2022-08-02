@@ -14,6 +14,7 @@ composer create-project drupal-composer/drupal-project:8.x-dev os2web --no-inter
 cd os2web
 composer require os2web/os2web
 drush si os2web --db-url=mysql://db_user:db_pass@mysql_host/db_name--locale=da --site-name="OS2Web" --account-pass=admin -y
+drush cim --partial --source=profiles/contrib/os2web/config/override
 ```
 
 ### Installation profile

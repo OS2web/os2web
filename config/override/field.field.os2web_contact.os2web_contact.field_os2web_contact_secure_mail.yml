@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.os2web_contact.field_os2web_contact_secure_mail
+  module:
+    - link
+    - os2web_contact
+id: os2web_contact.os2web_contact.field_os2web_contact_secure_mail
+field_name: field_os2web_contact_secure_mail
+entity_type: os2web_contact
+bundle: os2web_contact
+label: 'Send sikker post'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

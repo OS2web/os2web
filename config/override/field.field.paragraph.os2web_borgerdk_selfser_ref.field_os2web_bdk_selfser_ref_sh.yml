@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_bdk_selfser_ref_sh
+    - paragraphs.paragraphs_type.os2web_borgerdk_selfser_ref
+  enforced:
+    module:
+      - os2web_borgerdk
+id: paragraph.os2web_borgerdk_selfser_ref.field_os2web_bdk_selfser_ref_sh
+field_name: field_os2web_bdk_selfser_ref_sh
+entity_type: paragraph
+bundle: os2web_borgerdk_selfser_ref
+label: Underoverskrift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

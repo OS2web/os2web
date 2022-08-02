@@ -1,0 +1,25 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_cnt_par_ref
+    - paragraphs.paragraphs_type.os2web_cnt_paragraph_reference
+id: paragraph.os2web_cnt_paragraph_reference.field_os2web_cnt_par_ref
+field_name: field_os2web_cnt_par_ref
+entity_type: paragraph
+bundle: os2web_cnt_paragraph_reference
+label: 'Contact reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:os2web_contact'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

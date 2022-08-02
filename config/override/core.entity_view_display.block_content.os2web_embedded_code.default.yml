@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.os2web_embedded_code
+    - field.field.block_content.os2web_embedded_code.field_embedded_code
+id: block_content.os2web_embedded_code.default
+targetEntityType: block_content
+bundle: os2web_embedded_code
+mode: default
+content:
+  field_embedded_code:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

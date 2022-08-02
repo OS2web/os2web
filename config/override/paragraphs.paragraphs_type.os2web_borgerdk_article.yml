@@ -1,0 +1,12 @@
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - os2web_borgerdk
+id: os2web_borgerdk_article
+label: 'Borger.dk artikel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

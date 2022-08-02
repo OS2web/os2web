@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_hearings_hearing_reply
+    - field.storage.comment.field_os2web_hearings_reply_arg
+id: comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_arg
+field_name: field_os2web_hearings_reply_arg
+entity_type: comment
+bundle: os2web_hearings_hearing_reply
+label: 'Jeg har læst vejledningen'
+description: 'Jeg har læst vejledningen vedrørende at indgive høringssvar og er derudover indforstået med, at jeg ikke må skrive personfølsomme oplysninger som f.eks. cpr-nummer'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Ja
+  off_label: Nej
+field_type: boolean

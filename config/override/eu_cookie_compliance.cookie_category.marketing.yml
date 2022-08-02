@@ -1,0 +1,8 @@
+langcode: da
+status: true
+dependencies: {  }
+id: marketing
+label: Marketing
+description: ''
+checkbox_default_state: unchecked
+weight: -8

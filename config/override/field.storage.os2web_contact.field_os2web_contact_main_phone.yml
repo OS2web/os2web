@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_contact
+id: os2web_contact.field_os2web_contact_main_phone
+field_name: field_os2web_contact_main_phone
+entity_type: os2web_contact
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

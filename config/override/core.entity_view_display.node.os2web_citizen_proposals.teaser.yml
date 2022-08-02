@@ -1,0 +1,63 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_address
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_city
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_email
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_name
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_proposal
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_rej_ext
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_rej_reas
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_status
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_votes
+    - field.field.node.os2web_citizen_proposals.field_os2web_cit_props_zip_code
+    - node.type.os2web_citizen_proposals
+  module:
+    - options
+    - user
+id: node.os2web_citizen_proposals.teaser
+targetEntityType: node
+bundle: os2web_citizen_proposals
+mode: teaser
+content:
+  field_os2web_cit_props_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_cit_props_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_cit_props_proposal:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_cit_props_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_os2web_cit_props_address: true
+  field_os2web_cit_props_city: true
+  field_os2web_cit_props_rej_ext: true
+  field_os2web_cit_props_rej_reas: true
+  field_os2web_cit_props_votes: true
+  field_os2web_cit_props_zip_code: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

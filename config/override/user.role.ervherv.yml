@@ -1,0 +1,41 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_event
+    - node.type.os2web_system_page
+  module:
+    - eu_cookie_compliance
+    - node
+    - os2web_spotbox
+    - paragraphs_type_permissions
+    - workbench_access
+id: ervherv
+label: Ervherv
+weight: 7
+is_admin: null
+permissions:
+  - 'add os2web spotbox entities'
+  - 'administer eu cookie compliance categories'
+  - 'administer eu cookie compliance popup'
+  - 'assign selected workbench access'
+  - 'assign workbench access'
+  - 'create os2web_event content'
+  - 'create os2web_system_page content'
+  - 'create paragraph content os2web_spotbox_reference'
+  - 'delete all os2web spotbox revisions'
+  - 'delete os2web spotbox entities'
+  - 'delete os2web_event revisions'
+  - 'delete paragraph content os2web_spotbox_reference'
+  - 'edit any os2web_event content'
+  - 'edit os2web spotbox entities'
+  - 'edit own os2web_event content'
+  - 'revert all os2web spotbox revisions'
+  - 'revert os2web_event revisions'
+  - 'update paragraph content os2web_spotbox_reference'
+  - 'use workbench access'
+  - 'view all os2web spotbox revisions'
+  - 'view os2web_event revisions'
+  - 'view paragraph content os2web_spotbox_reference'
+  - 'view unpublished os2web spotbox entities'
+  - 'view workbench access information'

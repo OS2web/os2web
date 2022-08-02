@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_postlister_heading
+    - node.type.os2web_postlister
+id: node.os2web_postlister.field_os2web_postlister_heading
+field_name: field_os2web_postlister_heading
+entity_type: node
+bundle: os2web_postlister
+label: Overskrift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

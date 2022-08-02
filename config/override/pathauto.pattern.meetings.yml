@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: meetings
+label: 'OS2Web Meetings'
+type: 'canonical_entities:node'
+pattern: 'dagsorden/[node:title]'
+selection_criteria:
+  7c8baa91-180c-4ddb-893f-e7ab9e429440:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7c8baa91-180c-4ddb-893f-e7ab9e429440
+    context_mapping:
+      node: node
+    bundles:
+      os2web_meetings_meeting: os2web_meetings_meeting
+selection_logic: and
+weight: -5
+relationships: {  }

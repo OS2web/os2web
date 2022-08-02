@@ -1,0 +1,35 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.os2web_meetings_bp.body
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_bpas
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_case
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_closed
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_com_name
+    - field.field.node.os2web_meetings_bp.field_os2web_m_bp_enclosures
+    - field.field.node.os2web_meetings_bp.field_os2web_m_esdh_id
+    - node.type.os2web_meetings_bp
+  module:
+    - user
+id: node.os2web_meetings_bp.search_result
+targetEntityType: node
+bundle: os2web_meetings_bp
+mode: search_result
+content:
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_os2web_m_bp_bpas: true
+  field_os2web_m_bp_case: true
+  field_os2web_m_bp_closed: true
+  field_os2web_m_bp_com_name: true
+  field_os2web_m_bp_enclosures: true
+  field_os2web_m_esdh_id: true
+  langcode: true
+  links: true

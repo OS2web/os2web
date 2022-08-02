@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+id: footer
+label: Sidefod
+description: 'Links til informationen om sitet'
+locked: true

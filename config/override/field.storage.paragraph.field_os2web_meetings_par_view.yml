@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_os2web_meetings_par_view
+field_name: field_os2web_meetings_par_view
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: os2web_meetings_embed_coming_agendas
+      label: 'Kommende dagsordner'
+    -
+      value: os2web_meetings_embed_last_referat
+      label: 'Seneste referater'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

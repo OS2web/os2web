@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+name: Workbench_access
+vid: workbench_access
+description: Arbejdsgrupper
+weight: 0

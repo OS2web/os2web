@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_os2web_meetings_sp_view
+field_name: field_os2web_meetings_sp_view
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: os2web_meetings_embed_search_simple
+      label: Simpel
+    -
+      value: os2web_meetings_embed_search_from_to_dates
+      label: 'Med fra og til datoer'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

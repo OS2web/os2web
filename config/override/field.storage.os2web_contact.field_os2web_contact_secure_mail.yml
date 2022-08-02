@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - link
+    - os2web_contact
+id: os2web_contact.field_os2web_contact_secure_mail
+field_name: field_os2web_contact_secure_mail
+entity_type: os2web_contact
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_video_video
+    - paragraphs.paragraphs_type.os2web_video
+  module:
+    - video
+id: paragraph.os2web_video.field_os2web_video_video
+field_name: field_os2web_video_video
+entity_type: paragraph
+bundle: os2web_video
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: ''
+  max_filesize: ''
+field_type: video

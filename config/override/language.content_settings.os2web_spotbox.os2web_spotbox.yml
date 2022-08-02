@@ -1,0 +1,16 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - content_translation
+    - os2web_spotbox
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: os2web_spotbox.os2web_spotbox
+target_entity_type_id: os2web_spotbox
+target_bundle: os2web_spotbox
+default_langcode: site_default
+language_alterable: true

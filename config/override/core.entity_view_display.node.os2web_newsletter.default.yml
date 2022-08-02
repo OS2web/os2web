@@ -1,0 +1,104 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_body
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_date_text
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_header
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_picture
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_prim_link
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_rel_events
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_rel_news
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_subject
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_topic
+    - node.type.os2web_newsletter
+  module:
+    - text
+    - user
+id: node.os2web_newsletter.default
+targetEntityType: node
+bundle: os2web_newsletter
+mode: default
+content:
+  field_os2web_newsltr_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_os2web_newsltr_date_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_newsltr_header:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_os2web_newsltr_picture:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_os2web_newsltr_prim_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_os2web_newsltr_rel_events:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_os2web_newsltr_rel_news:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_os2web_newsltr_subject:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_newsltr_topic:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

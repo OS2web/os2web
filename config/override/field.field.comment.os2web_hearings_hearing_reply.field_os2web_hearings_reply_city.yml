@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_hearings_hearing_reply
+    - field.storage.comment.field_os2web_hearings_reply_city
+id: comment.os2web_hearings_hearing_reply.field_os2web_hearings_reply_city
+field_name: field_os2web_hearings_reply_city
+entity_type: comment
+bundle: os2web_hearings_hearing_reply
+label: By
+description: 'Offentliggøres ved politisk behandling'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

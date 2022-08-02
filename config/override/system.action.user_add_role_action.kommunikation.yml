@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.kommunikation
+  module:
+    - user
+id: user_add_role_action.kommunikation
+label: 'Add the Kommunikation role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: kommunikation

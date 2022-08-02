@@ -1,0 +1,39 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_accordion.field_os2web_accordion_heading
+    - field.field.paragraph.os2web_accordion.field_os2web_accordion_reference
+    - field.field.paragraph.os2web_accordion.field_os2web_accordion_subheadin
+    - paragraphs.paragraphs_type.os2web_accordion
+  module:
+    - paragraphs
+id: paragraph.os2web_accordion.default
+targetEntityType: paragraph
+bundle: os2web_accordion
+mode: default
+content:
+  field_os2web_accordion_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_os2web_accordion_reference:
+    type: entity_reference_paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: 'Accrodion afsnit'
+      title_plural: 'Accrodion afsnitte'
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: os2web_accordion_item
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_os2web_accordion_subheadin: true
+  status: true

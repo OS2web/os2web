@@ -1,0 +1,153 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_news_paragraph_narr
+    - node.type.os2web_news
+    - paragraphs.paragraphs_type.os2web_accordion
+    - paragraphs.paragraphs_type.os2web_accordion_item
+    - paragraphs.paragraphs_type.os2web_banner_paragraph
+    - paragraphs.paragraphs_type.os2web_wrapper
+  module:
+    - entity_reference_revisions
+id: node.os2web_news.field_os2web_news_paragraph_narr
+field_name: field_os2web_news_paragraph_narr
+entity_type: node
+bundle: os2web_news
+label: 'Afsnit (smalle)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      os2web_accordion: os2web_accordion
+      os2web_accordion_item: os2web_accordion_item
+      os2web_banner_paragraph: os2web_banner_paragraph
+      os2web_wrapper: os2web_wrapper
+    negate: 1
+    target_bundles_drag_drop:
+      os2web_2_columns:
+        weight: 20
+        enabled: false
+      os2web_3_columns:
+        weight: 21
+        enabled: false
+      os2web_accordion:
+        weight: 22
+        enabled: true
+      os2web_accordion_item:
+        weight: 23
+        enabled: true
+      os2web_accordion_reusable:
+        weight: 45
+        enabled: false
+      os2web_banner_paragraph:
+        weight: 24
+        enabled: true
+      os2web_borgerdk_article:
+        weight: 25
+        enabled: false
+      os2web_borgerdk_selfser_ref:
+        weight: 26
+        enabled: false
+      os2web_borgerdk_selfservice_cats:
+        weight: 27
+        enabled: false
+      os2web_box_paragraph:
+        weight: 28
+        enabled: false
+      os2web_citizen_proposals:
+        weight: 51
+        enabled: false
+      os2web_cnt_paragraph:
+        weight: 52
+        enabled: false
+      os2web_cnt_paragraph_reference:
+        weight: 53
+        enabled: false
+      os2web_content_reference:
+        weight: 29
+        enabled: false
+      os2web_events:
+        weight: 55
+        enabled: false
+      os2web_events_search:
+        weight: 30
+        enabled: false
+      os2web_factbox_paragraph:
+        weight: 57
+        enabled: false
+      os2web_field_paragraph:
+        weight: 58
+        enabled: false
+      os2web_files_paragraph:
+        weight: 31
+        enabled: false
+      os2web_gis_map:
+        weight: 32
+        enabled: false
+      os2web_hearings_search:
+        weight: 61
+        enabled: false
+      os2web_iframe:
+        weight: 36
+        enabled: false
+      os2web_image_paragraph:
+        weight: 63
+        enabled: false
+      os2web_keyword_paragraph:
+        weight: 64
+        enabled: false
+      os2web_meetings:
+        weight: 65
+        enabled: false
+      os2web_meetings_search:
+        weight: 33
+        enabled: false
+      os2web_menu_links_paragraph:
+        weight: 34
+        enabled: false
+      os2web_news_block:
+        weight: 39
+        enabled: false
+      os2web_news_page:
+        weight: 40
+        enabled: false
+      os2web_pi:
+        weight: 70
+        enabled: false
+      os2web_section_paragraph:
+        weight: 35
+        enabled: false
+      os2web_section_promoted_pages:
+        weight: 36
+        enabled: false
+      os2web_simple_text_paragraph:
+        weight: 37
+        enabled: false
+      os2web_slideshow:
+        weight: 74
+        enabled: false
+      os2web_spotbox:
+        weight: 75
+        enabled: false
+      os2web_spotbox_reference:
+        weight: 76
+        enabled: false
+      os2web_twi_paragraph:
+        weight: 77
+        enabled: false
+      os2web_video:
+        weight: 78
+        enabled: false
+      os2web_webform:
+        weight: 79
+        enabled: false
+      os2web_wrapper:
+        weight: 38
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_cnt_image_position
+    - paragraphs.paragraphs_type.os2web_cnt_paragraph
+  module:
+    - options
+id: paragraph.os2web_cnt_paragraph.field_os2web_cnt_image_position
+field_name: field_os2web_cnt_image_position
+entity_type: paragraph
+bundle: os2web_cnt_paragraph
+label: 'Placering af kontakt person billede'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

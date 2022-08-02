@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - facets.facet.os2web_meetings_search_type
+  module:
+    - facets
+    - system
+  theme:
+    - fds_redwhite_theme
+id: fds_redwhite_theme_os2web_meetings_search_type
+theme: fds_redwhite_theme
+region: sidebar_second
+weight: -14
+provider: null
+plugin: 'facet_block:os2web_meetings_search_type'
+settings:
+  id: 'facet_block:os2web_meetings_search_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: fds_redwhite_theme_os2web_meetings_search_type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/soeg-dagsorden?sq*\r\n/soeg-dagsorden"

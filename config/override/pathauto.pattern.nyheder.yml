@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: nyheder
+label: Nyheder
+type: 'canonical_entities:node'
+pattern: 'nyheder/[node:title]'
+selection_criteria:
+  930609c8-05c7-45eb-8e4d-c58845dfc5a0:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 930609c8-05c7-45eb-8e4d-c58845dfc5a0
+    context_mapping:
+      node: node
+    bundles:
+      os2web_news: os2web_news
+selection_logic: and
+weight: -5
+relationships: {  }

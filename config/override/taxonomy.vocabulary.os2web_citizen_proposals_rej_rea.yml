@@ -1,0 +1,7 @@
+langcode: da
+status: true
+dependencies: {  }
+name: 'OS2Web Citizen Proposals Reject Reason'
+vid: os2web_citizen_proposals_rej_rea
+description: ''
+weight: 0

@@ -1,0 +1,16 @@
+langcode: da
+status: true
+dependencies: {  }
+id: news_to_draft
+workflow: news
+transitions:
+  create_new_draft: create_new_draft
+roles: {  }
+author: true
+site_mail: true
+emails: ''
+subject: 'Din nyhed er ændret til Kladde'
+body:
+  value: "<p>En af dine nyheder har ændret status til \"Kladde\".</p>\r\n"
+  format: wysiwyg_tekst
+label: 'Nyhed til kladde'

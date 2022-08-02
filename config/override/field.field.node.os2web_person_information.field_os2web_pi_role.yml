@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_pi_role
+    - node.type.os2web_person_information
+id: node.os2web_person_information.field_os2web_pi_role
+field_name: field_os2web_pi_role
+entity_type: node
+bundle: os2web_person_information
+label: Role
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

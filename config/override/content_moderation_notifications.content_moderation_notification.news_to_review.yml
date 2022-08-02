@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies: {  }
+id: news_to_review
+workflow: news
+transitions:
+  til_gennemsyn: til_gennemsyn
+roles:
+  kommunikation: kommunikation
+author: false
+site_mail: true
+emails: ''
+subject: 'Ny nyhed på OS2web.dk skal gennemgås'
+body:
+  value: "<p>Hej</p>\r\n\r\n<p>Der er lavet en nyhed på os2web.dk som du afventer at blive udgivet.</p>\r\n\r\n<p><a aria-label=\"\" data-entity-substitution=\"\" data-entity-type=\"\" data-entity-uuid=\"\" href=\"[site:url]/admin/content/review\" id=\"\" media_library=\"Mediebibliotek\" rel=\"\" target=\"\" title=\"\">[site:url]/admin/content/review</a></p>\r\n"
+  format: wysiwyg_tekst
+label: 'Nyhed til gennemsyn'

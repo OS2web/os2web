@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e0310c05-fc88-4909-9d1c-e8bf6af74cfe'
+  module:
+    - block_content
+    - system
+  theme:
+    - fds_redwhite_theme
+id: abonnersideteksts
+theme: fds_redwhite_theme
+region: content
+weight: -18
+provider: null
+plugin: 'block_content:e0310c05-fc88-4909-9d1c-e8bf6af74cfe'
+settings:
+  id: 'block_content:e0310c05-fc88-4909-9d1c-e8bf6af74cfe'
+  label: 'Abonnerside teksts'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /abonner

@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_meetings_search.field_os2web_meetings_sp_view
+    - paragraphs.paragraphs_type.os2web_meetings_search
+  module:
+    - options
+id: paragraph.os2web_meetings_search.default
+targetEntityType: paragraph
+bundle: os2web_meetings_search
+mode: default
+content:
+  field_os2web_meetings_sp_view:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

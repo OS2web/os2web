@@ -1,0 +1,322 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_page_section
+    - field.storage.node.field_os2web_page_keyword
+    - search_api.server.os2web_search_server
+    - core.entity_view_mode.node.search_index
+  module:
+    - search_api_solr
+    - node
+    - taxonomy
+    - search_api
+    - os2web_search
+    - paragraphs
+    - search_api_synonym
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    debug_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 10000000
+      fuzzy: 2
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+id: os2web_search_content
+name: 'OS2Web Search Content'
+description: ''
+read_only: false
+field_settings:
+  changed:
+    label: Ændret
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_os2web_page_section:
+    label: Sektion
+    datasource_id: 'entity:node'
+    property_path: field_os2web_page_section
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_os2web_page_section
+  keyword:
+    label: 'Nøgleord » Ord i ordforråd » Navn'
+    datasource_id: 'entity:node'
+    property_path: 'field_os2web_page_keyword:entity:name'
+    type: text
+    boost: !!float 5
+    dependencies:
+      config:
+        - field.storage.node.field_os2web_page_keyword
+      module:
+        - taxonomy
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          os2web_event: search_index
+          os2web_news: search_index
+          os2web_page: search_index
+          os2web_postlister: search_index
+        'entity:paragraph':
+          os2web_2_columns: ''
+          os2web_3_columns: ''
+          os2web_accordion: ''
+          os2web_accordion_item: ''
+          os2web_accordion_reusable: ''
+          os2web_banner_paragraph: ''
+          os2web_borgerdk_article: ''
+          os2web_borgerdk_selfser_ref: ''
+          os2web_borgerdk_selfservice_cats: ''
+          os2web_box_paragraph: ''
+          os2web_citizen_proposals: ''
+          os2web_cnt_paragraph: ''
+          os2web_cnt_paragraph_reference: ''
+          os2web_content_reference: ''
+          os2web_events: ''
+          os2web_events_search: ''
+          os2web_factbox_paragraph: ''
+          os2web_files_paragraph: ''
+          os2web_gis_map: ''
+          os2web_hearings_search: ''
+          os2web_iframe: ''
+          os2web_image_paragraph: ''
+          os2web_keyword_paragraph: ''
+          os2web_meetings: ''
+          os2web_meetings_search: ''
+          os2web_menu_links_paragraph: ''
+          os2web_news_block: ''
+          os2web_news_page: ''
+          os2web_pi: ''
+          os2web_section_paragraph: ''
+          os2web_section_promoted_pages: ''
+          os2web_simple_text_paragraph: ''
+          os2web_slideshow: ''
+          os2web_spotbox: ''
+          os2web_spotbox_reference: ''
+          os2web_twi_paragraph: ''
+          os2web_webform: ''
+          os2web_wrapper: ''
+  rendered_item_spellcheck:
+    label: 'Rendered HTML output (spellcheck)'
+    property_path: rendered_item
+    type: solr_text_spellcheck
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          os2web_event: default
+          os2web_news: default
+          os2web_page: default
+          os2web_postlister: default
+        'entity:paragraph':
+          os2web_2_columns: ''
+          os2web_3_columns: ''
+          os2web_accordion: ''
+          os2web_accordion_item: ''
+          os2web_accordion_reusable: ''
+          os2web_banner_paragraph: ''
+          os2web_borgerdk_article: ''
+          os2web_borgerdk_selfser_ref: ''
+          os2web_borgerdk_selfservice_cats: ''
+          os2web_box_paragraph: ''
+          os2web_citizen_proposals: ''
+          os2web_cnt_paragraph: ''
+          os2web_cnt_paragraph_reference: ''
+          os2web_content_reference: ''
+          os2web_events: ''
+          os2web_events_search: ''
+          os2web_factbox_paragraph: ''
+          os2web_files_paragraph: ''
+          os2web_gis_map: ''
+          os2web_hearings_search: ''
+          os2web_iframe: ''
+          os2web_image_paragraph: ''
+          os2web_keyword_paragraph: ''
+          os2web_meetings: ''
+          os2web_meetings_search: ''
+          os2web_menu_links_paragraph: ''
+          os2web_news_block: ''
+          os2web_news_page: ''
+          os2web_pi: ''
+          os2web_section_paragraph: ''
+          os2web_section_promoted_pages: ''
+          os2web_simple_text_paragraph: ''
+          os2web_slideshow: ''
+          os2web_spotbox: ''
+          os2web_spotbox_reference: ''
+          os2web_twi_paragraph: ''
+          os2web_webform: ''
+          os2web_wrapper: ''
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 21
+    dependencies:
+      module:
+        - node
+  type:
+    label: Indholdstype
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - os2web_event
+        - os2web_external_page
+        - os2web_news
+        - os2web_page
+        - os2web_postlister
+    languages:
+      default: true
+      selected: {  }
+  'entity:paragraph':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:search_api_synonym': {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  entity_type: {  }
+  hierarchy:
+    weights:
+      preprocess_index: -45
+    fields:
+      field_os2web_page_section: taxonomy_term-parent
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_always: false
+    excerpt_length: 256
+    exclude_fields:
+      - keyword
+    highlight: always
+    highlight_partial: true
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+    all_fields: true
+    fields:
+      - keyword
+      - rendered_item
+      - rendered_item_spellcheck
+      - title
+      - type
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+  ignore_character:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: false
+    fields:
+      - rendered_item
+      - rendered_item_spellcheck
+      - title
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+  language_with_fallback: {  }
+  os2web_search_phrase_catcher:
+    weights:
+      preprocess_query: 0
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: os2web_search_server

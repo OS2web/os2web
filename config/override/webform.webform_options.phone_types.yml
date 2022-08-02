@@ -1,0 +1,14 @@
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: phone_types
+label: 'Phone type'
+category: Demografi
+likert: false
+options: |
+  Home: Home
+  Office: Office
+  Cell: Cell

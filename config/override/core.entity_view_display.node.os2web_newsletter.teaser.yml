@@ -1,0 +1,39 @@
+langcode: da
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_body
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_date_text
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_header
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_picture
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_prim_link
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_rel_events
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_rel_news
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_subject
+    - field.field.node.os2web_newsletter.field_os2web_newsltr_topic
+    - node.type.os2web_newsletter
+  module:
+    - user
+id: node.os2web_newsletter.teaser
+targetEntityType: node
+bundle: os2web_newsletter
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_os2web_newsltr_body: true
+  field_os2web_newsltr_date_text: true
+  field_os2web_newsltr_header: true
+  field_os2web_newsltr_picture: true
+  field_os2web_newsltr_prim_link: true
+  field_os2web_newsltr_rel_events: true
+  field_os2web_newsltr_rel_news: true
+  field_os2web_newsltr_subject: true
+  field_os2web_newsltr_topic: true
+  langcode: true
+  search_api_excerpt: true

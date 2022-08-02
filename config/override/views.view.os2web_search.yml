@@ -1,0 +1,309 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - search_api.index.os2web_search_content
+  module:
+    - search_api
+    - search_api_spellcheck
+id: os2web_search
+label: 'OS2Web Search'
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_os2web_search_content
+base_field: search_api_id
+display:
+  default:
+    id: default
+    display_title: Master
+    display_plugin: default
+    position: 0
+    display_options:
+      title: Søgning
+      fields: {  }
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ''
+            previous: ''
+            first: ''
+            last: ''
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Udfør
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: none
+        options: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'Ingen resultater'
+            format: wysiwyg_tekst
+          tokenize: false
+      sorts:
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_os2web_search_content
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: search_api_relevance
+          exposed: false
+        changed:
+          id: changed
+          table: search_api_index_os2web_search_content
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: changed
+          exposed: false
+      arguments: {  }
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_os2web_search_content
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_fulltext
+          operator: or
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: 'Indtast søgeord'
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: sq
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: sloppy_terms
+          min_length: null
+          fields: {  }
+        search_api_language:
+          id: search_api_language
+          table: search_api_index_os2web_search_content
+          field: search_api_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      style:
+        type: default
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              os2web_event: search_result
+              os2web_external_page: search_result
+              os2web_news: search_result
+              os2web_page: search_result
+              os2web_postlister: search_result
+            'entity:paragraph':
+              os2web_2_columns: default
+              os2web_3_columns: default
+              os2web_accordion: default
+              os2web_accordion_item: default
+              os2web_accordion_reusable: default
+              os2web_banner_paragraph: default
+              os2web_borgerdk_article: default
+              os2web_borgerdk_selfser_ref: default
+              os2web_borgerdk_selfservice_cats: default
+              os2web_box_paragraph: default
+              os2web_citizen_proposals: default
+              os2web_cnt_paragraph: default
+              os2web_cnt_paragraph_reference: default
+              os2web_content_reference: default
+              os2web_events: default
+              os2web_events_search: default
+              os2web_factbox_paragraph: default
+              os2web_field_paragraph: default
+              os2web_files_paragraph: default
+              os2web_gis_map: default
+              os2web_hearings_search: default
+              os2web_iframe: default
+              os2web_image_paragraph: default
+              os2web_keyword_paragraph: default
+              os2web_meetings: default
+              os2web_meetings_search: default
+              os2web_menu_links_paragraph: default
+              os2web_news_block: default
+              os2web_news_page: default
+              os2web_pi: default
+              os2web_section_paragraph: default
+              os2web_section_promoted_pages: default
+              os2web_simple_text_paragraph: default
+              os2web_slideshow: default
+              os2web_spotbox: default
+              os2web_spotbox_reference: default
+              os2web_twi_paragraph: default
+              os2web_video: default
+              os2web_webform: default
+              os2web_wrapper: default
+            'entity:search_api_synonym':
+              search_api_synonym: default
+      query:
+        type: views_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+      relationships: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Søgeresultater<h2>'
+            format: wysiwyg_tekst
+          tokenize: false
+        search_api_spellcheck_did_you_mean:
+          id: search_api_spellcheck_did_you_mean
+          table: views
+          field: search_api_spellcheck_did_you_mean
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_spellcheck_did_you_mean
+          empty: true
+          search_api_spellcheck_count: 1
+          search_api_spellcheck_hide_on_result: 0
+          search_api_spellcheck_collate: true
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.os2web_search_content'
+  os2web_search_page:
+    id: os2web_search_page
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      cache:
+        type: none
+      defaults:
+        cache: false
+      exposed_block: true
+      display_extenders: {  }
+      path: s
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.os2web_search_content'

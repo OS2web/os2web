@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_os2web_m_bpa_file
+    - node.type.os2web_meetings_bpa
+  module:
+    - file
+id: node.os2web_meetings_bpa.field_os2web_m_bpa_file
+field_name: field_os2web_m_bpa_file
+entity_type: node
+bundle: os2web_meetings_bpa
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'docx doc xls xlsx ppt pptx pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

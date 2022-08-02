@@ -1,0 +1,28 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - facets.facet.os2web_meetings_search_committee
+  module:
+    - facets
+    - system
+  theme:
+    - fds_custom_theme
+id: os2web_meetings_search_committee
+theme: fds_custom_theme
+region: sidebar_first
+weight: -2
+provider: null
+plugin: 'facet_block:os2web_meetings_search_committee'
+settings:
+  id: 'facet_block:os2web_meetings_search_committee'
+  label: Udvalg
+  label_display: visible
+  provider: facets
+  block_id: os2web_meetings_search_committee
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/soeg-dagsorden?sq*\r\n/soeg-dagsorden"

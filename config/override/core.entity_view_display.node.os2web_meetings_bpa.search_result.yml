@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.os2web_meetings_bpa.body
+    - field.field.node.os2web_meetings_bpa.field_os2web_m_bpa_file
+    - field.field.node.os2web_meetings_bpa.field_os2web_m_esdh_id
+    - node.type.os2web_meetings_bpa
+  module:
+    - user
+id: node.os2web_meetings_bpa.search_result
+targetEntityType: node
+bundle: os2web_meetings_bpa
+mode: search_result
+content:
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_os2web_m_bpa_file: true
+  field_os2web_m_esdh_id: true
+  langcode: true
+  links: true

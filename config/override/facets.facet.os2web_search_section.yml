@@ -1,0 +1,66 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - search_api.index.os2web_search_content
+    - views.view.os2web_search
+  module:
+    - search_api
+id: os2web_search_section
+name: 'OS2Web Search Section'
+weight: 0
+min_count: 1
+url_alias: sektion
+facet_source_id: 'search_api:views_page__os2web_search__os2web_search_page'
+field_identifier: field_os2web_page_section
+query_operator: or
+hard_limit: 0
+exclude: false
+use_hierarchy: true
+keep_hierarchy_parents_active: false
+hierarchy:
+  type: taxonomy
+  config: {  }
+expand_hierarchy: true
+enable_parent_when_child_gets_disabled: true
+widget:
+  type: checkbox
+  config:
+    show_numbers: true
+    soft_limit: 0
+    show_reset_link: false
+    reset_text: 'Vis alle'
+    hide_reset_when_no_selection: false
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+empty_behavior:
+  behavior: none
+only_visible_when_facet_source_is_visible: true
+show_only_one_result: false
+show_title: false
+processor_configs:
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings:
+      sort: ASC
+  os2web_search_term_depth:
+    processor_id: os2web_search_term_depth
+    weights:
+      build: 40
+    settings:
+      level: '2'
+      bundle: os2web_sektion
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }

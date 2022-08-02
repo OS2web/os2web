@@ -1,0 +1,35 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_citizen_proposals
+  module:
+    - content_moderation
+    - node
+    - paragraphs_type_permissions
+    - system
+    - workbench_access
+id: borgerdrevne_forslag
+label: 'Borgerdrevne forslag'
+weight: 6
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'create os2web_citizen_proposals content'
+  - 'create paragraph content os2web_citizen_proposals'
+  - 'delete any os2web_citizen_proposals content'
+  - 'delete os2web_citizen_proposals revisions'
+  - 'delete own os2web_citizen_proposals content'
+  - 'delete paragraph content os2web_citizen_proposals'
+  - 'edit any os2web_citizen_proposals content'
+  - 'edit own os2web_citizen_proposals content'
+  - 'revert os2web_citizen_proposals revisions'
+  - 'update paragraph content os2web_citizen_proposals'
+  - 'use workbench access'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view os2web_citizen_proposals revisions'
+  - 'view own unpublished content'
+  - 'view paragraph content os2web_citizen_proposals'
+  - 'view workbench access information'

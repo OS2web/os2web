@@ -1,0 +1,82 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.os2web_news.field_os2web_news_article_author
+    - field.field.node.os2web_news.field_os2web_news_article_date
+    - field.field.node.os2web_news.field_os2web_news_description
+    - field.field.node.os2web_news.field_os2web_news_heading
+    - field.field.node.os2web_news.field_os2web_news_intro
+    - field.field.node.os2web_news.field_os2web_news_kle
+    - field.field.node.os2web_news.field_os2web_news_paragraph_bann
+    - field.field.node.os2web_news.field_os2web_news_paragraph_left
+    - field.field.node.os2web_news.field_os2web_news_paragraph_narr
+    - field.field.node.os2web_news.field_os2web_news_paragraph_righ
+    - field.field.node.os2web_news.field_os2web_news_paragraph_wid
+    - field.field.node.os2web_news.field_os2web_news_primaryimage
+    - field.field.node.os2web_news.field_os2web_news_section
+    - node.type.os2web_news
+  module:
+    - datetime
+    - smart_trim
+    - user
+id: node.os2web_news.teaser
+targetEntityType: node
+bundle: os2web_news
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_os2web_news_article_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd. F Y'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_os2web_news_description:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 150
+      trim_type: chars
+      trim_suffix: ...
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os2web_news_heading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_os2web_news_article_author: true
+  field_os2web_news_intro: true
+  field_os2web_news_kle: true
+  field_os2web_news_paragraph_bann: true
+  field_os2web_news_paragraph_left: true
+  field_os2web_news_paragraph_narr: true
+  field_os2web_news_paragraph_righ: true
+  field_os2web_news_paragraph_wid: true
+  field_os2web_news_primaryimage: true
+  field_os2web_news_section: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

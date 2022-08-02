@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_menu_links_show_int
+    - paragraphs.paragraphs_type.os2web_menu_links_paragraph
+id: paragraph.os2web_menu_links_paragraph.field_os2web_menu_links_show_int
+field_name: field_os2web_menu_links_show_int
+entity_type: paragraph
+bundle: os2web_menu_links_paragraph
+label: 'Vis intro tekst'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,10 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node_promote_action
+label: 'Vis indhold på forsiden'
+type: node
+plugin: node_promote_action
+configuration: {  }

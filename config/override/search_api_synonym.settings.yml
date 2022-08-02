@@ -1,0 +1,8 @@
+langcode: da
+cron:
+  plugin: solr
+  interval: 900
+  type: all
+  filter: none
+  separate_files: 0
+  export_if_changed: 0

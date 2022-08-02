@@ -1,0 +1,25 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.os2web_system_page.field_os2web_system_page_content
+    - node.type.os2web_system_page
+  module:
+    - text
+    - user
+id: node.os2web_system_page.default
+targetEntityType: node
+bundle: os2web_system_page
+mode: default
+content:
+  field_os2web_system_page_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true
