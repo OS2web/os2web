@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_citizen_proposals_vote
+id: comment.os2web_citizen_proposals_vote.name
+field_name: name
+entity_type: comment
+bundle: os2web_citizen_proposals_vote
+label: Navn
+description: 'Forfatterens navn.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

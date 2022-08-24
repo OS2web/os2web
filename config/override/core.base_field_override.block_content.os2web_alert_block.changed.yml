@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.os2web_alert_block
+id: block_content.os2web_alert_block.changed
+field_name: changed
+entity_type: block_content
+bundle: os2web_alert_block
+label: Ændret
+description: 'Tidspunktet hvor den brugerdefinerede blok sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

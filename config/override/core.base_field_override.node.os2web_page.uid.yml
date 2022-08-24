@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_page
+id: node.os2web_page.uid
+field_name: uid
+entity_type: node
+bundle: os2web_page
+label: 'Skrevet af'
+description: 'Forfatterens brugernavn.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.os2web_section_promoted_pages
+id: paragraph.os2web_section_promoted_pages.created
+field_name: created
+entity_type: paragraph
+bundle: os2web_section_promoted_pages
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

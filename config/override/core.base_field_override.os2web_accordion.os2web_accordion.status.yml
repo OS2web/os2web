@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_accordion_paragraph
+id: os2web_accordion.os2web_accordion.status
+field_name: status
+entity_type: os2web_accordion
+bundle: os2web_accordion
+label: Published
+description: 'A boolean indicating whether the OS2Web Accordion is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

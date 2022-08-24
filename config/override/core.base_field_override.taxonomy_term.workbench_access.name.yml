@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workbench_access
+id: taxonomy_term.workbench_access.name
+field_name: name
+entity_type: taxonomy_term
+bundle: workbench_access
+label: Navn
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - media.type.os2web_file
+id: media.os2web_file.metatag
+field_name: metatag
+entity_type: media
+bundle: os2web_file
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

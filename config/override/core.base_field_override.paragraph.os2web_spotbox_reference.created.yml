@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.os2web_spotbox_reference
+id: paragraph.os2web_spotbox_reference.created
+field_name: created
+entity_type: paragraph
+bundle: os2web_spotbox_reference
+label: 'Skrevet den'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

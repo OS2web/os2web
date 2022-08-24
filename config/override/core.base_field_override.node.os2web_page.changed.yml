@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_page
+id: node.os2web_page.changed
+field_name: changed
+entity_type: node
+bundle: os2web_page
+label: Ændret
+description: 'Tidspunktet hvor indholdselementet sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

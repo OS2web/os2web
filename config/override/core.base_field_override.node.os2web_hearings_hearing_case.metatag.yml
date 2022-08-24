@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_hearings_hearing_case
+id: node.os2web_hearings_hearing_case.metatag
+field_name: metatag
+entity_type: node
+bundle: os2web_hearings_hearing_case
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

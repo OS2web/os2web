@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_meetings_bp
+  module:
+    - options
+id: node.os2web_meetings_bp.publish_state
+field_name: publish_state
+entity_type: node
+bundle: os2web_meetings_bp
+label: 'Publish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

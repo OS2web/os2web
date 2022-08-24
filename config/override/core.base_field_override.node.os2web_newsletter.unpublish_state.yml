@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_newsletter
+  module:
+    - options
+id: node.os2web_newsletter.unpublish_state
+field_name: unpublish_state
+entity_type: node
+bundle: os2web_newsletter
+label: 'Unpublish state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.os2web_icons
+id: taxonomy_term.os2web_icons.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: os2web_icons
+label: Ændret
+description: 'Datoen hvor termen senest blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

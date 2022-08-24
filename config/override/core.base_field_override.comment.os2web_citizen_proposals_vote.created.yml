@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_citizen_proposals_vote
+id: comment.os2web_citizen_proposals_vote.created
+field_name: created
+entity_type: comment
+bundle: os2web_citizen_proposals_vote
+label: Created
+description: 'Tidspunktet hvor kommentaren blev oprettet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

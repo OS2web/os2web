@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_meetings_meeting
+id: node.os2web_meetings_meeting.created
+field_name: created
+entity_type: node
+bundle: os2web_meetings_meeting
+label: 'Authored on'
+description: 'Tidspunktet hvor indholdselementet blev oprettet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

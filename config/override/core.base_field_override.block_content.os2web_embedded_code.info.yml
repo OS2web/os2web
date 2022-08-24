@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.os2web_embedded_code
+id: block_content.os2web_embedded_code.info
+field_name: info
+entity_type: block_content
+bundle: os2web_embedded_code
+label: Beskrivelse
+description: 'En kort beskrivelse af din blok.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

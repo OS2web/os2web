@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_citizen_proposals_vote
+id: comment.os2web_citizen_proposals_vote.mail
+field_name: mail
+entity_type: comment
+bundle: os2web_citizen_proposals_vote
+label: E-mail
+description: 'Kommentarforfatterens e-mail-adresse.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

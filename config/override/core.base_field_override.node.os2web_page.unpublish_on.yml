@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_page
+id: node.os2web_page.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: os2web_page
+label: 'Afpublicér den'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

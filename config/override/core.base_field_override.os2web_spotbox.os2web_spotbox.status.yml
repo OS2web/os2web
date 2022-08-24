@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_spotbox
+id: os2web_spotbox.os2web_spotbox.status
+field_name: status
+entity_type: os2web_spotbox
+bundle: os2web_spotbox
+label: Published
+description: 'A boolean indicating whether the OS2Web Spotbox is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

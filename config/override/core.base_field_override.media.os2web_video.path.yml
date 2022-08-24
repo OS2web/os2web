@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - media.type.os2web_video
+  module:
+    - path
+id: media.os2web_video.path
+field_name: path
+entity_type: media
+bundle: os2web_video
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

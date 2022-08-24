@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_page
+id: node.os2web_page.sticky
+field_name: sticky
+entity_type: node
+bundle: os2web_page
+label: Klæbrig
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

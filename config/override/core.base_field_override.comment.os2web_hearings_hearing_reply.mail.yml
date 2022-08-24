@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.os2web_hearings_hearing_reply
+id: comment.os2web_hearings_hearing_reply.mail
+field_name: mail
+entity_type: comment
+bundle: os2web_hearings_hearing_reply
+label: E-mail
+description: 'Kommentarforfatterens e-mail-adresse.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

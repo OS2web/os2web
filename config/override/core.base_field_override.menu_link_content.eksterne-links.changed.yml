@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.eksterne-links
+id: menu_link_content.eksterne-links.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: eksterne-links
+label: Ændret
+description: 'Tidspunktet hvor menu-linket sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

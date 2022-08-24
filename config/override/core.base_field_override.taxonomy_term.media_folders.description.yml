@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_folders
+  module:
+    - text
+id: taxonomy_term.media_folders.description
+field_name: description
+entity_type: taxonomy_term
+bundle: media_folders
+label: Beskrivelse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

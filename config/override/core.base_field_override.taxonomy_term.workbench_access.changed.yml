@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workbench_access
+id: taxonomy_term.workbench_access.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: workbench_access
+label: Ændret
+description: 'Datoen hvor termen senest blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

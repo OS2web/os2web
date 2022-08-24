@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_accordion_paragraph
+id: os2web_accordion.os2web_accordion.metatag
+field_name: metatag
+entity_type: os2web_accordion
+bundle: os2web_accordion
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

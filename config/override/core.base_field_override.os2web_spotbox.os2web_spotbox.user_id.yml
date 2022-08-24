@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_spotbox
+id: os2web_spotbox.os2web_spotbox.user_id
+field_name: user_id
+entity_type: os2web_spotbox
+bundle: os2web_spotbox
+label: 'Skrevet af'
+description: 'The user ID of author of the OS2Web Spotbox entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

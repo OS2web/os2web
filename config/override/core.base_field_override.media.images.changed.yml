@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - media.type.images
+id: media.images.changed
+field_name: changed
+entity_type: media
+bundle: images
+label: Ændret
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

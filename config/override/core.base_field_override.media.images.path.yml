@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - media.type.images
+  module:
+    - path
+id: media.images.path
+field_name: path
+entity_type: media
+bundle: images
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

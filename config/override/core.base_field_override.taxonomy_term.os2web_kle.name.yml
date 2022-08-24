@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.os2web_kle
+id: taxonomy_term.os2web_kle.name
+field_name: name
+entity_type: taxonomy_term
+bundle: os2web_kle
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

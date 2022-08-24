@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_person_information
+id: node.os2web_person_information.promote
+field_name: promote
+entity_type: node
+bundle: os2web_person_information
+label: 'Forfremmet til forside'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

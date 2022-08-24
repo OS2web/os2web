@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.os2web_meetings_bp
+id: node.os2web_meetings_bp.publish_on
+field_name: publish_on
+entity_type: node
+bundle: os2web_meetings_bp
+label: 'Udgiv den'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

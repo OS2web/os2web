@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.os2web_pi_group
+id: taxonomy_term.os2web_pi_group.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: os2web_pi_group
+label: Ændret
+description: 'Datoen hvor termen senest blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

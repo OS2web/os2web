@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workbench_access
+  module:
+    - text
+id: taxonomy_term.workbench_access.description
+field_name: description
+entity_type: taxonomy_term
+bundle: workbench_access
+label: Beskrivelse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
