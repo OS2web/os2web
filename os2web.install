@@ -40,7 +40,6 @@ function os2web_install() {
       "os2web_slideshow_paragraph",
       "os2web_twi_paragraph",
       "os2web_webform_paragraph",
-      "os2web_logging",
       "os2web_embedded_code"
     ]);
 }

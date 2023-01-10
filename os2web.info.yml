@@ -42,5 +42,8 @@ install:
   - queue_ui
   - locale
 
+  # OS2Web
+  - os2web_logging
+
 themes:
   - seven
