@@ -186,6 +186,7 @@ module:
   os2web: 1000
   eu_cookie_compliance: 1001
   queue_mail: 1
+  mysql: 0
 theme:
   seven: 0
   stable: 0
