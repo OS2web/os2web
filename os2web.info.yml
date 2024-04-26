@@ -2,11 +2,12 @@ name: OS2Web
 type: profile
 description: 'OS2Web installation profile.'
 core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
 install:
   # Drupal core
   - node
   - block
-  - ckeditor
+  - ckeditor5
   - config
   - contextual
   - menu_link_content
@@ -26,6 +27,3 @@ install:
 
   # Contrib
   - admin_toolbar
-
-themes:
-  - seven
