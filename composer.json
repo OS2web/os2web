@@ -32,8 +32,7 @@
         "drupal/rules": "3.x-dev@dev",
         "drupal/user_delete_reassign": "1.x-dev@dev",
         "drupal/node_revision_delete": "2.0.x-dev@dev",
-        "drupal/facets": "^2.0",
-        "drupal/seven": "^1.0"
+        "drupal/facets": "^2.0"
     },
     "config": {
         "allow-plugins": {
