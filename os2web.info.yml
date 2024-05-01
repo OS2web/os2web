@@ -29,6 +29,20 @@ install:
   - admin_toolbar
   - admin_toolbar_tools
   - update
+  - easy_breadcrumb
+  - extlink
+  - color
+  - ckeditor_iframe
+  - linkit
+  - pathauto
+  - token
+  - chosen_lib
+  - chosen
+  - media
+  - metatag
+  - redirect
+  - textfield_counter
+  - save_edit
 
 themes:
   - claro
