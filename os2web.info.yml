@@ -27,3 +27,5 @@ install:
 
   # Contrib
   - admin_toolbar
+themes:
+  - claro
