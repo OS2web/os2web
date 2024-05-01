@@ -43,6 +43,7 @@ install:
   - redirect
   - textfield_counter
   - save_edit
+  - editor_advanced_link
 
 themes:
   - claro
