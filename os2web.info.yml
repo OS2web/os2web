@@ -44,6 +44,12 @@ install:
   - textfield_counter
   - save_edit
   - editor_advanced_link
-
+  - field_group
+  - paragraphs
+  - scheduler
+  - feeds
+  - feeds_ex
+  - feeds_tamper
+  - tamper
 themes:
   - claro
