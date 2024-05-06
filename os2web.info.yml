@@ -44,6 +44,25 @@ install:
   - textfield_counter
   - save_edit
   - editor_advanced_link
-
+  - field_group
+  - image_widget_crop
+  - crop
+  - menu_ui
+  - paragraphs
+  - entity_reference_revisions
+  - inline_entity_form
+  - fieldblock
+  - scheduler
+  - scheduler_content_moderation_integration
+  - office_hours
+  - migrate
+  - comment
+  - contact
+  - workflows
+  - admin_audit_trail_workflows
+  - content_translation
+  - language
+  - content_moderation
+  - pathologic
 themes:
   - claro
