@@ -13,13 +13,6 @@
         "assets": {
             "type": "composer",
             "url": "https://asset-packagist.org"
-        },
-        "os2": {
-            "type": "path",
-            "url": "/var/www/develop/*",
-            "options": {
-                "symlink": false
-            }
         }
      },
     "require": {
