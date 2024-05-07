@@ -1,0 +1,7 @@
+status: true
+dependencies: {  }
+id: webmaster
+label: Webmaster
+weight: 3
+is_admin: false
+permissions: {  }
