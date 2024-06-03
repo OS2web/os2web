@@ -39,6 +39,9 @@ install:
   - chosen_lib
   - chosen
   - media
+  - media_directories
+  - media_directories_editor
+  - media_directories_ui
   - metatag
   - redirect
   - textfield_counter
