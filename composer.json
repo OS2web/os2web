@@ -18,7 +18,7 @@
     "require": {
         "os2core/os2core": "dev-drupal10",
         "drupal/ckeditor_iframe": "^2.0 || ^3.0",
-        "drupal/menu_item_extras": "^2.11",
+        "drupal/menu_item_extras": "^2.11 || ^3.0",
         "drupal/metatag": "^2.0",
         "drupal/textfield_counter": "^2.3",
         "drupal/save_edit": "^1.3",
