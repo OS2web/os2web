@@ -16,7 +16,7 @@
         }
      },
     "require": {
-        "os2core/os2core": "dev-drupal10",
+        "os2core/os2core": "dev-drupal11",
         "drupal/ckeditor_iframe": "^2.0 || ^3.0",
         "drupal/menu_item_extras": "^2.11 || ^3.0",
         "drupal/metatag": "^2.0",
